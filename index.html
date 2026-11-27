@@ -1,0 +1,1992 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="description" content="14 days of IELTS Academic Reading vocabulary: 252 words + 24 phrases, flashcards, games and tests. Interface in Azerbaijani, Uzbek, English, Russian and Turkish.">
+<meta name="theme-color" content="#FFF5E8">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect x='4' y='4' width='56' height='56' rx='16' fill='%23FF7A5C' stroke='%23231B38' stroke-width='5'/%3E%3Ctext x='32' y='42' font-family='Arial' font-weight='900' font-size='26' text-anchor='middle' fill='%23231B38'%3E14%3C/text%3E%3C/svg%3E">
+</head>
+<body>
+<title>IELTS Söz 14</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&family=Unbounded:wght@500;700;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#FFF5E8;--surface:#FFFFFF;--soft:#F5E9D8;--ink:#231B38;--ink-2:#6E6585;--line:#231B38;--shadow:#231B38;--on:#231B38;
+  --coral:#FF7A5C;--sun:#FFC83D;--mint:#3DD6A8;--sky:#5AAEFF;--grape:#B49AFF;--pink:#FF8CC0;
+  --ok:#3DD6A8;--bad:#FF6B6B;--ok-bg:#DDF8EE;--bad-bg:#FFE4E1;--ok-ink:#10805B;--bad-ink:#C8303E;
+  color-scheme:light;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --bg:#15121E;--surface:#231E31;--soft:#2E2842;--ink:#F5F0FF;--ink-2:#ACA4C4;--line:#06050A;--shadow:#06050A;
+  --ok-bg:#173A2F;--bad-bg:#3D1F25;--ok-ink:#7FF0C8;--bad-ink:#FF9AA4;color-scheme:dark;
+}}
+:root[data-theme="dark"]{
+  --bg:#15121E;--surface:#231E31;--soft:#2E2842;--ink:#F5F0FF;--ink-2:#ACA4C4;--line:#06050A;--shadow:#06050A;
+  --ok-bg:#173A2F;--bad-bg:#3D1F25;--ok-ink:#7FF0C8;--bad-ink:#FF9AA4;color-scheme:dark;
+}
+*{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+html,body{margin:0}
+body{background:var(--bg);color:var(--ink);font:16px/1.5 Rubik,system-ui,sans-serif;min-height:100vh;overflow-x:hidden;
+  padding:0 max(16px,env(safe-area-inset-right)) calc(100px + env(safe-area-inset-bottom)) max(16px,env(safe-area-inset-left))}
+body.bare{padding-bottom:calc(28px + env(safe-area-inset-bottom))}
+.wrap{max-width:540px;margin:0 auto}
+h1,h2,h3{font-family:Unbounded,Rubik,sans-serif;letter-spacing:-.01em;margin:0}
+h2{font-size:26px;line-height:1.15;margin:14px 0 6px}
+button{font:inherit;color:inherit;cursor:pointer}
+:focus-visible{outline:3px solid var(--sky);outline-offset:2px}
+.sub{color:var(--ink-2);margin:0 0 16px;font-size:15px}
+.sh{font:700 12.5px Unbounded;text-transform:uppercase;letter-spacing:.07em;color:var(--ink-2);margin:28px 0 10px}
+
+/* chunky buttons */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;font:700 15px Unbounded,sans-serif;background:var(--ink);color:var(--bg);
+  border:2.5px solid var(--line);border-radius:16px;padding:14px 20px;min-height:54px;box-shadow:0 4px 0 var(--shadow);transition:transform .08s,box-shadow .08s}
+.btn:active{transform:translateY(3px);box-shadow:0 1px 0 var(--shadow)}
+.btn.c{background:var(--c);color:var(--on)}
+.btn.ghost{background:var(--surface);color:var(--ink)}
+.btn.wide{width:100%}
+.say{display:inline-flex;align-items:center;gap:5px;border:2px solid var(--line);background:var(--surface);color:var(--ink);border-radius:10px;padding:5px 8px;
+  font:600 12px Rubik;box-shadow:0 2px 0 var(--shadow);vertical-align:middle;line-height:1}
+.say.big{padding:10px 14px;border-radius:14px}
+.say.ping{animation:pop .45s}
+.lb{flex:none;display:inline-grid;place-items:center;min-width:36px;height:24px;padding:0 6px;border-radius:8px;background:var(--c);color:var(--on);border:2px solid var(--line);font:700 11px Unbounded}
+mark{background:var(--sun);color:var(--on);border-radius:5px;padding:0 3px;font-style:normal;font-weight:600}
+.ipa{color:var(--ink-2);font-size:15px}
+
+/* top bar + hero */
+.topbar{display:flex;align-items:center;justify-content:space-between;padding:14px 0 4px}
+.brand{font:800 14px Unbounded;display:flex;align-items:center;gap:9px}
+.brand i{width:30px;height:30px;border-radius:9px;background:var(--coral);border:2.5px solid var(--line);display:grid;place-items:center;font:800 12px Unbounded;font-style:normal;color:var(--on);transform:rotate(-7deg);box-shadow:0 2px 0 var(--shadow)}
+.lpill{border:2px solid var(--line);background:var(--surface);border-radius:999px;padding:6px 12px;font:700 11.5px Unbounded;box-shadow:0 2px 0 var(--shadow)}
+.hero{background:var(--c);color:var(--on);border:2.5px solid var(--line);border-radius:28px;box-shadow:0 6px 0 var(--shadow);padding:18px 18px 16px;margin:12px 0 22px;position:relative;overflow:hidden;animation:rise .45s both}
+.hero::before{content:"";position:absolute;width:190px;height:190px;border-radius:50%;background:rgba(255,255,255,.22);right:-60px;top:-70px}
+.hero::after{content:"";position:absolute;width:90px;height:90px;border-radius:50%;background:rgba(255,255,255,.18);left:44%;bottom:-50px}
+.hero-row{display:flex;align-items:center;justify-content:space-between;gap:12px;position:relative;z-index:1}
+.streak{display:inline-flex;gap:6px;align-items:center;background:rgba(255,255,255,.6);border:2px solid var(--line);border-radius:999px;padding:3px 10px;font:600 12.5px Rubik}
+.daynum{font:800 68px/.95 Unbounded;margin-top:10px}
+.daynum small{font:700 13px Unbounded;display:block;margin-bottom:4px;text-transform:uppercase;letter-spacing:.06em}
+.daynum em{font-style:normal;font-size:20px;opacity:.6}
+.hero p{margin:12px 0 0;font-size:14.5px;position:relative;z-index:1}
+.ring{flex:none}
+.ring circle{fill:none;stroke-width:9}
+.ring .bgc{stroke:rgba(255,255,255,.55)}
+.ring .fgc{stroke:var(--on);stroke-linecap:round;animation:ringin 1s .2s cubic-bezier(.3,1,.4,1) both}
+.ring text{font:800 17px Unbounded;fill:var(--on)}
+
+/* today steps */
+.steps{display:grid;gap:12px}
+.step{display:grid;grid-template-columns:54px 1fr auto;gap:12px;align-items:center;text-align:left;background:var(--surface);border:2.5px solid var(--line);
+  border-radius:22px;padding:12px 14px 12px 12px;box-shadow:0 4px 0 var(--shadow);width:100%;animation:rise .45s both;transition:transform .08s,box-shadow .08s}
+.step:active{transform:translateY(3px);box-shadow:0 1px 0 var(--shadow)}
+.step .ic{width:54px;height:54px;border-radius:17px;background:var(--c);border:2.5px solid var(--line);display:grid;place-items:center;color:var(--on)}
+.step b{font:700 15.5px/1.25 Unbounded;display:block}
+.step small{color:var(--ink-2);font-size:13.5px;display:block;line-height:1.35;margin-top:2px}
+.step .go{width:38px;height:38px;border-radius:50%;display:grid;place-items:center;background:var(--soft);border:2px solid var(--line)}
+.step.done .go{background:var(--ok);color:var(--on)}
+.step .mk{font:800 13px Unbounded;background:var(--ok);color:var(--on);border:2px solid var(--line);border-radius:999px;padding:6px 9px}
+.step.off{opacity:.7}
+.chips-x{display:flex;gap:9px;overflow-x:auto;scroll-snap-type:x proximity;padding:4px 16px 12px;margin:0 -16px;scrollbar-width:none}
+.chips-x::-webkit-scrollbar{display:none}
+.wchip{scroll-snap-align:start;flex:none;background:var(--c);color:var(--on);border:2px solid var(--line);border-radius:16px;padding:9px 13px;box-shadow:0 3px 0 var(--shadow);text-align:left;min-width:118px;max-width:200px;animation:rise .4s both}
+.wchip:active{transform:translateY(2px);box-shadow:0 1px 0 var(--shadow)}
+.wchip b{display:block;font-weight:700;font-size:15.5px}
+.wchip span{font-size:12.5px;opacity:.85;display:block;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.note{background:var(--surface);border:2.5px solid var(--line);border-radius:24px;padding:20px;box-shadow:0 5px 0 var(--shadow);text-align:center;animation:rise .4s both}
+.note h2{margin-top:6px}
+.note .acts{display:grid;gap:10px;margin-top:16px}
+.linkb{background:none;border:0;color:var(--ink-2);text-decoration:underline;text-underline-offset:3px;padding:10px 0;font-size:14.5px}
+
+/* bottom nav */
+.bnav{position:fixed;left:0;right:0;bottom:0;z-index:20;background:var(--surface);border-top:2.5px solid var(--line);
+  padding:6px max(6px,env(safe-area-inset-right)) calc(6px + env(safe-area-inset-bottom)) max(6px,env(safe-area-inset-left));display:grid;grid-template-columns:repeat(5,1fr)}
+.bnav button{background:none;border:0;display:flex;flex-direction:column;align-items:center;gap:3px;font:600 10.5px Rubik;color:var(--ink-2);padding:3px 0;min-width:0}
+.bnav .bl{white-space:nowrap;overflow:hidden;text-overflow:ellipsis;max-width:100%}
+.bnav .bi{width:48px;height:32px;border-radius:999px;display:grid;place-items:center;border:2px solid transparent}
+.bnav button[aria-current=page]{color:var(--ink)}
+.bnav button[aria-current=page] .bi{background:var(--c);color:var(--on);border-color:var(--line);animation:pop .35s}
+body.bare .bnav{display:none}
+@media (min-width:700px){.bnav{left:50%;right:auto;transform:translateX(-50%);width:540px;border:2.5px solid var(--line);border-bottom:0;border-radius:22px 22px 0 0}}
+
+/* onboarding */
+.onb{padding-top:26px;min-height:calc(100vh - 60px)}
+.dots-step{display:flex;gap:6px;margin-bottom:18px}
+.dots-step i{width:28px;height:9px;border-radius:99px;background:var(--soft);border:2px solid var(--line)}
+.dots-step i.on{background:var(--coral)}
+.cycle{font:800 clamp(26px,8vw,36px)/1.15 Unbounded;min-height:2.5em}
+.cycle span{display:inline-block;animation:fadeword 1.7s both}
+.ltiles{display:grid;gap:12px;margin-top:8px}
+.ltile{display:flex;align-items:center;justify-content:space-between;gap:12px;background:var(--c);color:var(--on);border:2.5px solid var(--line);border-radius:22px;
+  padding:15px 18px;box-shadow:0 5px 0 var(--shadow);text-align:left;animation:rise .5s both;transition:transform .08s,box-shadow .08s}
+.ltile:active{transform:translateY(3px);box-shadow:0 2px 0 var(--shadow)}
+.ltile b{font:800 19px Unbounded;display:block}
+.ltile small{font-size:14px;opacity:.85}
+.ltile .code{font:800 28px Unbounded;opacity:.35}
+.ltile.chosen{animation:chosen .45s both}
+.onb-acts{display:grid;grid-template-columns:auto 1fr;gap:10px;margin-top:22px}
+
+/* combo builder */
+.cb-card{background:var(--surface);border:2.5px solid var(--line);border-radius:24px;box-shadow:0 6px 0 var(--shadow);padding:16px;position:relative;transition:outline-color .2s}
+.cb-card.hot{outline:3px dashed var(--sky);outline-offset:5px}
+.cb-word{font:800 26px Unbounded;display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+.cb-en{display:flex;gap:10px;align-items:center;padding:8px 0 12px;border-bottom:2px dashed var(--soft);font-size:14px}
+.cb-en .lock{margin-left:auto;font:600 11px Rubik;color:var(--ink-2);white-space:nowrap}
+.cb-slots{position:relative;transition:height .25s;margin-top:10px}
+.cb-row{position:absolute;left:0;right:0;top:0;height:50px;display:flex;align-items:center;gap:10px;background:var(--surface);border:2px solid var(--line);border-left:7px solid var(--c);
+  border-radius:14px;padding:0 7px 0 6px;transition:transform .28s cubic-bezier(.3,1.25,.5,1),opacity .2s;touch-action:none;user-select:none;-webkit-user-select:none;cursor:grab}
+.cb-row.drag{transition:opacity .2s;z-index:5;box-shadow:0 12px 22px rgba(0,0,0,.2);cursor:grabbing}
+.cb-row.out{opacity:.4}
+.cb-row.new{animation:rowin .45s}
+.cb-row .grip{color:var(--ink-2);font-size:17px;letter-spacing:-4px;padding:0 6px 0 2px}
+.cb-row .mt{flex:1;font-size:16px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.cb-row .x{width:34px;height:34px;border-radius:10px;border:2px solid var(--line);background:var(--soft);display:grid;place-items:center;flex:none}
+.cb-empty{padding:12px 2px 2px;color:var(--ink-2);font-size:14px;margin:0}
+.cb-tl{font:700 11.5px Unbounded;text-transform:uppercase;letter-spacing:.06em;color:var(--ink-2);margin:18px 0 8px}
+.cb-tray{display:flex;flex-wrap:wrap;gap:10px;min-height:66px;padding:12px;border:2.5px dashed var(--ink-2);border-radius:20px;transition:background .2s}
+.cb-tray.hot{background:var(--bad-bg)}
+.cb-chip{display:flex;align-items:center;gap:8px;background:var(--c);color:var(--on);border:2.5px solid var(--line);border-radius:14px;padding:8px 12px;box-shadow:0 3px 0 var(--shadow);
+  font:700 14px Unbounded;touch-action:none;user-select:none;-webkit-user-select:none;animation:pop .3s}
+.cb-chip small{font:500 12.5px Rubik}
+.cb-ghost{position:fixed;z-index:60;pointer-events:none;animation:none !important;transform:translate(-50%,-50%) rotate(-5deg) scale(1.08);box-shadow:0 12px 22px rgba(0,0,0,.25)}
+.cb-full{color:var(--ink-2);font-size:14px;align-self:center}
+.seg{display:flex;gap:8px;overflow-x:auto;padding:2px 2px 10px;scrollbar-width:none}
+.seg::-webkit-scrollbar{display:none}
+.seg.wrapit{flex-wrap:wrap;overflow:visible}
+.pchip{flex:none;border:2px solid var(--line);background:var(--surface);color:var(--ink);border-radius:999px;padding:8px 14px;font:600 13.5px Rubik;box-shadow:0 2px 0 var(--shadow);white-space:nowrap}
+.pchip[aria-pressed=true]{background:var(--ink);color:var(--bg)}
+
+/* path */
+.path{display:grid;gap:12px;padding:6px 0 4px}
+.node{display:flex;align-items:center;gap:14px;margin-left:var(--x);background:none;border:0;text-align:left;padding:0;width:max-content;max-width:calc(100% - var(--x));animation:rise .4s both}
+.node:disabled{cursor:default}
+.dot{width:62px;height:62px;border-radius:50%;display:grid;place-items:center;font:800 21px Unbounded;background:var(--surface);border:3px solid var(--line);box-shadow:0 5px 0 var(--shadow);flex:none;color:var(--ink)}
+.node.test .dot{border-radius:20px}
+.node.done .dot{background:var(--c);color:var(--on)}
+.node.cur .dot{background:var(--c);color:var(--on);animation:bob 1.5s ease-in-out infinite}
+.node.lock .dot{background:var(--soft);color:var(--ink-2);box-shadow:0 3px 0 var(--shadow)}
+.nlab b{display:block;font:700 13.5px/1.3 Unbounded}
+.nlab small{color:var(--ink-2);font-size:12.5px}
+.tag{display:inline-block;background:var(--ink);color:var(--bg);font:700 9.5px Unbounded;padding:3px 8px;border-radius:999px;text-transform:uppercase;vertical-align:2px}
+.bars{display:grid;grid-template-columns:repeat(6,1fr);gap:8px;align-items:end;height:160px;background:var(--surface);border:2.5px solid var(--line);border-radius:20px;padding:14px 12px 8px;box-shadow:0 4px 0 var(--shadow)}
+.bar{display:flex;flex-direction:column;align-items:center;justify-content:flex-end;height:100%;gap:3px}
+.bar i{width:100%;background:var(--c);border:2px solid var(--line);border-radius:9px 9px 4px 4px;min-height:6px;transform-origin:bottom;animation:grow .7s cubic-bezier(.3,1.3,.5,1) both}
+.bar b{font:700 12px Unbounded}
+.bar small{font-size:11px;color:var(--ink-2)}
+
+/* games */
+.ggrid{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.gt{background:var(--c);color:var(--on);border:2.5px solid var(--line);border-radius:22px;box-shadow:0 5px 0 var(--shadow);padding:14px;text-align:left;min-height:156px;
+  display:flex;flex-direction:column;gap:7px;animation:rise .4s both;transition:transform .08s,box-shadow .08s}
+.gt:active{transform:translateY(3px);box-shadow:0 2px 0 var(--shadow)}
+.gt .gi{width:46px;height:46px;border-radius:14px;background:rgba(255,255,255,.62);border:2px solid var(--line);display:grid;place-items:center}
+.gt b{font:700 14.5px/1.2 Unbounded}
+.gt small{font-size:12.5px;line-height:1.35;opacity:.88}
+
+/* words */
+.search{width:100%;font:500 16px Rubik;padding:14px 16px;border:2.5px solid var(--line);border-radius:16px;background:var(--surface);color:var(--ink);box-shadow:0 3px 0 var(--shadow);margin-bottom:12px}
+.daysel{font:600 14px Rubik;padding:8px 12px;border:2px solid var(--line);border-radius:999px;background:var(--surface);color:var(--ink);box-shadow:0 2px 0 var(--shadow)}
+.count{font:700 11.5px Unbounded;color:var(--ink-2);text-transform:uppercase;letter-spacing:.06em;margin:4px 0 10px}
+.wrow{background:var(--surface);border:2px solid var(--line);border-left:8px solid var(--c);border-radius:16px;margin-bottom:9px;overflow:hidden;display:grid;grid-template-columns:1fr auto;align-items:start}
+.wbtn{display:grid;grid-template-columns:1fr auto;gap:1px 10px;width:100%;background:none;border:0;text-align:left;padding:10px 4px 10px 12px;min-width:0}
+.wbtn b{font-weight:700;font-size:17px}
+.wbtn .ipa{font-size:13px}
+.wbtn .m{grid-column:1/-1;color:var(--ink-2);font-size:14.5px}
+.wrow .say{margin:12px 10px 0 0}
+.wdet{grid-column:1/-1;padding:0 12px 12px;animation:rise .25s both;font-size:15px}
+.wdet p{margin:6px 0}
+.bx{display:inline-flex;gap:3px;align-items:center}
+.bx i{width:8px;height:8px;border-radius:50%;border:1.5px solid var(--line);background:var(--soft)}
+.bx i.f{background:var(--mint)}
+.bx .nw{font:700 9.5px Unbounded;text-transform:uppercase;color:var(--ink-2)}
+
+/* settings */
+.how{padding-left:20px;margin:0;color:var(--ink-2);font-size:14.5px}
+.how li{margin-bottom:9px}
+.sync{font:600 12.5px Rubik;color:var(--ink-2);margin-top:18px}
+
+/* session */
+.stop{display:flex;align-items:center;gap:12px;padding:14px 0 10px;position:sticky;top:0;background:var(--bg);z-index:5}
+.xbtn{width:42px;height:42px;border-radius:13px;border:2.5px solid var(--line);background:var(--surface);display:grid;place-items:center;box-shadow:0 2px 0 var(--shadow);flex:none}
+.pbar{flex:1;height:18px;border-radius:999px;background:var(--soft);border:2.5px solid var(--line);overflow:hidden}
+.pbar i{display:block;height:100%;background:var(--c);border-radius:999px;transition:width .4s cubic-bezier(.3,1.1,.4,1)}
+.pcount{font:700 12.5px Unbounded;min-width:44px;text-align:right}
+.stitle{font:700 12.5px Unbounded;color:var(--ink-2);text-transform:uppercase;letter-spacing:.06em;margin:4px 0 14px}
+
+/* flash card */
+.deck{position:relative;height:clamp(340px,calc(100vh - 300px),540px);height:clamp(340px,calc(100svh - 300px),540px)}
+.swipe{position:absolute;inset:0;touch-action:pan-y;transition:transform .25s,opacity .25s}
+.swipe.dragging{transition:none}
+.flip{position:absolute;inset:0;perspective:1400px}
+.flip-in{position:absolute;inset:0;transform-style:preserve-3d;transition:transform .6s cubic-bezier(.3,1.3,.5,1)}
+.flip.on .flip-in{transform:rotateY(180deg)}
+.face{position:absolute;inset:0;backface-visibility:hidden;-webkit-backface-visibility:hidden;border:2.5px solid var(--line);border-radius:28px;box-shadow:0 6px 0 var(--shadow);overflow:auto;padding:22px 20px}
+.front{background:var(--c);color:var(--on);display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;gap:8px;cursor:pointer}
+.front .ipa{color:var(--on);opacity:.75}
+.back{background:var(--surface);transform:rotateY(180deg)}
+.fw{font:800 clamp(30px,9.5vw,46px)/1.1 Unbounded;word-break:break-word}
+.fw.sm{font-size:clamp(22px,6.5vw,30px)}
+.pos{display:inline-block;font:700 10.5px Unbounded;letter-spacing:.06em;text-transform:uppercase;border:2px solid currentColor;border-radius:999px;padding:3px 9px}
+.hintq{margin:14px 0 0;font:600 14px Rubik;opacity:.8}
+.oth{font-size:14px;opacity:.8}
+.stamp{position:absolute;top:26px;font:800 18px Unbounded;padding:6px 12px;border:3px solid;border-radius:12px;opacity:0;pointer-events:none;z-index:3;background:var(--surface)}
+.st-no{right:20px;color:var(--bad-ink);transform:rotate(9deg)}
+.st-ok{left:20px;color:var(--ok-ink);transform:rotate(-9deg)}
+.bk-head{display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin-bottom:8px}
+.bk-head b{font:800 24px Unbounded}
+.mrow{display:flex;gap:10px;align-items:center;padding:8px 0;border-bottom:2px dashed var(--soft)}
+.mrow .mt{font-size:17px;font-weight:500}
+.mrow:first-of-type .mt{font-weight:700;font-size:19px}
+.defl{margin:12px 0 6px;font-size:15px;display:flex;gap:10px;align-items:baseline}
+.syns{display:flex;flex-wrap:wrap;gap:6px;margin:10px 0;align-items:center}
+.syn{background:var(--soft);border-radius:999px;padding:3px 11px;font-size:14px;border:1.5px solid var(--line)}
+.exl{font-style:italic;font-size:15.5px;margin:10px 0 4px}
+.fam{font-size:13.5px;color:var(--ink-2);margin:8px 0 0}
+.rate{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin-top:20px;animation:rise .3s both}
+.rate button{border:2.5px solid var(--line);border-radius:16px;background:var(--c);color:var(--on);box-shadow:0 4px 0 var(--shadow);padding:8px 2px;display:flex;flex-direction:column;align-items:center;justify-content:center;min-height:60px;transition:transform .08s,box-shadow .08s}
+.rate button:active{transform:translateY(3px);box-shadow:0 1px 0 var(--shadow)}
+.rate b{font:700 12px Unbounded}
+.rate small{font-size:11px;opacity:.8}
+.hint{text-align:center;color:var(--ink-2);font-size:13.5px;margin:14px 0 0}
+
+/* questions */
+.qa{animation:slidein .35s both;padding-bottom:30px}
+.qh{font:700 12.5px Unbounded;color:var(--ink-2);margin:2px 0 10px;text-transform:uppercase;letter-spacing:.05em}
+.qword{font:800 clamp(30px,9vw,42px)/1.1 Unbounded;display:flex;align-items:center;gap:12px;flex-wrap:wrap}
+.qmean{font:700 22px/1.3 Rubik;margin:0 0 4px}
+.qsent{font-size:19px;line-height:1.55;margin:0;background:var(--surface);border:2.5px solid var(--line);border-radius:18px;padding:16px;box-shadow:0 4px 0 var(--shadow)}
+.blank{display:inline-block;width:86px;height:1em;border-bottom:3.5px solid var(--coral);vertical-align:-3px}
+.opts{display:grid;gap:10px;margin-top:20px}
+.opt{display:flex;align-items:center;gap:12px;width:100%;text-align:left;background:var(--surface);border:2.5px solid var(--line);border-radius:16px;padding:11px 14px;min-height:58px;
+  box-shadow:0 4px 0 var(--shadow);font-size:16.5px;line-height:1.3;transition:transform .08s,box-shadow .08s,background .2s;animation:rise .35s both}
+.opt:active:not(:disabled){transform:translateY(3px);box-shadow:0 1px 0 var(--shadow)}
+.opt .k{flex:none;width:30px;height:30px;border-radius:10px;display:grid;place-items:center;background:var(--c);color:var(--on);border:2px solid var(--line);font:700 12.5px Unbounded}
+.opt.right{background:var(--ok);color:var(--on);animation:pop .4s both}
+.opt.wrong{background:var(--bad);color:var(--on);animation:shake .4s both}
+.opt.picked{background:var(--sun);color:var(--on);animation:pop .3s both}
+.opt:disabled{cursor:default}
+.fb{position:fixed;left:0;right:0;bottom:0;z-index:30;transform:translateY(115%);transition:transform .34s cubic-bezier(.3,1.2,.5,1)}
+.fb.show{transform:none}
+.fb-in{max-width:560px;margin:0 auto;background:var(--surface);border:2.5px solid var(--line);border-bottom:0;border-radius:26px 26px 0 0;
+  padding:16px max(16px,env(safe-area-inset-right)) calc(16px + env(safe-area-inset-bottom)) max(16px,env(safe-area-inset-left));box-shadow:0 -4px 0 var(--shadow);max-height:70vh;overflow:auto}
+.fb-in.ok{background:var(--ok-bg)}
+.fb-in.bad{background:var(--bad-bg)}
+.fb-h{font:800 19px Unbounded;display:flex;align-items:center;gap:10px;margin-bottom:6px}
+.fb-in.ok .fb-h{color:var(--ok-ink)}
+.fb-in.bad .fb-h{color:var(--bad-ink)}
+.fb-in p{margin:4px 0 8px}
+.aft{margin:8px 0 14px}
+.aft .ex{font-style:italic;font-size:15px;margin:6px 0 0}
+
+/* type / match / spot */
+.slots{display:flex;flex-wrap:wrap;gap:5px;margin:16px 0 6px}
+.slots i{width:27px;height:36px;border:2.5px solid var(--line);border-radius:9px;background:var(--surface);display:grid;place-items:center;font:800 15px Unbounded;font-style:normal}
+.slots i.f{background:var(--sun);color:var(--on);animation:pop .3s}
+.slots i.sp{border:0;background:none;width:8px}
+.tin{width:100%;font:700 22px Unbounded;padding:14px 16px;border:2.5px solid var(--line);border-radius:16px;background:var(--surface);color:var(--ink);box-shadow:0 4px 0 var(--shadow);outline:none;margin-top:8px}
+.tin:focus{border-color:var(--sky)}
+.tin.shake{animation:shake .4s}
+.msg{min-height:22px;margin:10px 0 0;color:var(--ink-2);font-size:14.5px}
+.tacts{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:14px}
+.tacts .btn:first-child{grid-column:1/-1}
+.mgrid{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.mcol{display:grid;gap:10px;align-content:start}
+.mt2{background:var(--surface);border:2.5px solid var(--line);border-radius:14px;padding:10px;min-height:58px;box-shadow:0 3px 0 var(--shadow);text-align:left;font-size:14.5px;line-height:1.25;
+  transition:transform .12s,background .2s,opacity .3s;animation:rise .35s both}
+.mt2[lang=en]{font-weight:700;font-size:15.5px}
+.mt2.sel{background:var(--sun);color:var(--on);transform:translateY(-3px)}
+.mt2.done{background:var(--pc);color:var(--on);opacity:.5;animation:pop .35s both}
+.mt2.no{background:var(--bad);color:var(--on);animation:shake .4s both}
+.qsyn{display:inline-block;font:800 21px Unbounded;background:var(--grape);color:var(--on);border:2.5px solid var(--line);border-radius:14px;padding:7px 14px;box-shadow:0 3px 0 var(--shadow);margin:0 0 14px;transform:rotate(-1.5deg)}
+.spot{font-size:20px;line-height:2.05;background:var(--surface);border:2.5px solid var(--line);border-radius:18px;padding:14px 14px;box-shadow:0 4px 0 var(--shadow);margin:0}
+.tok{background:none;border:0;padding:1px 3px;border-radius:8px;font:inherit;line-height:inherit;color:inherit;transition:background .2s}
+.tok:active{background:var(--soft)}
+.tok.hit{background:var(--sun);color:var(--on);animation:pop .35s}
+.tok.miss{background:var(--bad);color:var(--on);animation:shake .4s}
+
+/* end + results */
+.end{text-align:center;padding-top:6px;animation:rise .4s both}
+.banner{display:inline-block;font:800 15px Unbounded;background:var(--sun);color:var(--on);border:2.5px solid var(--line);border-radius:999px;padding:8px 16px;box-shadow:0 3px 0 var(--shadow);margin-bottom:10px;animation:pop .5s both}
+.blob{width:156px;height:156px;margin:6px auto 14px;border-radius:44% 56% 52% 48%/50% 44% 56% 50%;background:var(--c);border:3px solid var(--line);box-shadow:0 6px 0 var(--shadow);
+  display:flex;flex-direction:column;align-items:center;justify-content:center;color:var(--on);animation:pop .55s both,morph 6s ease-in-out infinite}
+.blob .big{font:800 44px/1 Unbounded}
+.blob small{font:700 12px Unbounded;margin-top:4px}
+.end>p{max-width:40ch;margin:8px auto}
+.rlist{text-align:left;display:grid;gap:8px;margin:18px 0}
+.rrow{display:grid;grid-template-columns:24px 1fr 30px;gap:10px;align-items:center;background:var(--surface);border:2px solid var(--line);border-radius:14px;padding:8px 12px;animation:rise .3s both}
+.rrow .n{font:700 12px Unbounded;color:var(--ink-2)}
+.rrow .q{font-size:13px;color:var(--ink-2);display:block}
+.rrow .y{font-size:15px;font-weight:600}
+.rrow .r{font-size:13.5px;color:var(--ok-ink);display:block}
+.badge{width:30px;height:30px;border-radius:50%;display:grid;place-items:center;border:2px solid var(--line);color:var(--on)}
+.badge.ok{background:var(--ok)}
+.badge.no{background:var(--bad)}
+.wlist{text-align:left;display:grid;gap:6px;margin:8px 0 0}
+.wlist div{background:var(--surface);border:2px solid var(--line);border-radius:12px;padding:8px 12px;display:flex;gap:8px;align-items:center;flex-wrap:wrap}
+.end .acts{display:grid;gap:10px;margin-top:22px}
+.err{color:var(--bad-ink)}
+.cf{position:fixed;width:9px;height:13px;border-radius:2px;pointer-events:none;z-index:99}
+
+/* greeting + mascot */
+.greet{display:flex;gap:12px;align-items:flex-end;margin:10px 0 0;animation:rise .45s both}
+.mascot{flex:none;width:64px;height:64px;border-radius:46% 54% 50% 50%/52% 48% 52% 48%;background:var(--sun);border:2.5px solid var(--line);box-shadow:0 4px 0 var(--shadow);position:relative;animation:wob 3.2s ease-in-out infinite;padding:0}
+.mascot i{position:absolute;top:21px;width:9px;height:12px;border-radius:50%;background:#231B38;animation:blink 4s infinite}
+.mascot i:nth-child(1){left:18px}.mascot i:nth-child(2){right:18px}
+.mascot b{position:absolute;left:50%;bottom:14px;width:18px;height:9px;border:3px solid #231B38;border-top:0;border-radius:0 0 12px 12px;transform:translateX(-50%)}
+.mascot.hop{animation:hop .5s}
+.bubble{flex:1;min-width:0;background:var(--surface);border:2.5px solid var(--line);border-radius:20px 20px 20px 6px;padding:11px 14px;box-shadow:0 4px 0 var(--shadow)}
+.bubble b{display:block;font:700 16px/1.25 Unbounded;word-break:break-word}
+.bubble span{display:block;font-size:14.5px;color:var(--ink-2);margin-top:3px}
+.bubble span.fade{animation:rise .35s both}
+.tright{display:flex;gap:8px;align-items:center}
+.av{width:38px;height:38px;border-radius:50%;border:2.5px solid var(--line);background:var(--c);color:var(--on);display:grid;place-items:center;font:800 15px Unbounded;box-shadow:0 2px 0 var(--shadow);position:relative;padding:0;flex:none}
+.av small{position:absolute;right:-7px;bottom:-6px;background:var(--ink);color:var(--bg);font:700 9.5px Unbounded;border-radius:999px;padding:2px 5px;border:2px solid var(--bg)}
+.xpc{font:800 12px Unbounded;background:var(--sun);color:var(--on);border:2px solid var(--line);border-radius:999px;padding:4px 9px;white-space:nowrap}
+.xpc.pop{animation:pop .4s}
+.goal{position:relative;z-index:1;margin-top:12px;display:flex;align-items:center;gap:10px;font:600 12.5px Rubik}
+.goal .gb{flex:1;height:12px;border-radius:99px;background:rgba(255,255,255,.55);border:2px solid var(--line);overflow:hidden}
+.goal .gb i{display:block;height:100%;background:var(--on);border-radius:99px;transform-origin:left;animation:grow-x .9s .2s cubic-bezier(.3,1.2,.5,1) both}
+.toast{position:fixed;left:50%;top:calc(12px + env(safe-area-inset-top));z-index:80;transform:translate(-50%,-150%);transition:transform .4s cubic-bezier(.3,1.3,.5,1);background:var(--c);color:var(--on);border:2.5px solid var(--line);border-radius:18px;box-shadow:0 4px 0 var(--shadow);
+  padding:10px 16px;font:700 14.5px Rubik;display:flex;gap:10px;align-items:center;max-width:calc(100vw - 32px);width:max-content}
+.toast.show{transform:translate(-50%,0)}
+
+/* profile + leaderboard */
+.pcard{background:var(--c);color:var(--on);border:2.5px solid var(--line);border-radius:26px;box-shadow:0 6px 0 var(--shadow);padding:18px;margin:12px 0 0;position:relative;overflow:hidden;animation:rise .4s both}
+.pcard::before{content:"";position:absolute;width:170px;height:170px;border-radius:50%;background:rgba(255,255,255,.22);right:-50px;top:-60px}
+.pcard .row{display:flex;gap:14px;align-items:center;position:relative;z-index:1}
+.bigav{width:72px;height:72px;border-radius:50%;background:var(--surface);color:var(--ink);border:3px solid var(--line);display:grid;place-items:center;font:800 30px Unbounded;flex:none}
+.pname{font:800 22px/1.15 Unbounded;word-break:break-word}
+.plvl{font:600 14px Rubik;margin-top:2px}
+.xbar{height:16px;border-radius:99px;background:rgba(255,255,255,.55);border:2.5px solid var(--line);overflow:hidden;margin:14px 0 4px;position:relative;z-index:1}
+.xbar i{display:block;height:100%;background:var(--on);border-radius:99px;transform-origin:left;animation:grow-x .9s cubic-bezier(.3,1.2,.5,1) both}
+.pcard>small{position:relative;z-index:1;font:600 12.5px Rubik;display:block}
+.namebox{display:flex;gap:8px;margin-top:12px;position:relative;z-index:1}
+.namebox input{flex:1;min-width:0;font:600 16px Rubik;padding:10px 12px;border:2.5px solid var(--line);border-radius:14px;background:var(--surface);color:var(--ink)}
+.namebox .btn{min-height:46px;padding:8px 14px}
+.pedit{position:relative;z-index:1;background:rgba(255,255,255,.6);border:2px solid var(--line);border-radius:999px;padding:5px 11px;font:600 12.5px Rubik;color:var(--on);margin-top:10px}
+.stats{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:18px}
+.stat{background:var(--surface);border:2.5px solid var(--line);border-radius:18px;padding:12px 14px;box-shadow:0 3px 0 var(--shadow);animation:rise .4s both;border-top:8px solid var(--c)}
+.stat b{display:block;font:800 24px Unbounded}
+.stat small{color:var(--ink-2);font-size:12.5px}
+.badges{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}
+.bdg{background:var(--surface);border:2.5px solid var(--line);border-radius:18px;padding:10px 6px;text-align:center;box-shadow:0 3px 0 var(--shadow);animation:rise .4s both}
+.bdg .bi2{width:46px;height:46px;margin:0 auto 6px;border-radius:50%;display:grid;place-items:center;background:var(--c);color:var(--on);border:2.5px solid var(--line)}
+.bdg b{display:block;font:700 11px/1.2 Unbounded}
+.bdg small{display:block;font-size:11px;color:var(--ink-2);line-height:1.25;margin-top:3px}
+.bdg.off{opacity:.55}
+.bdg.off .bi2{background:var(--soft);color:var(--ink-2)}
+.podium{display:grid;grid-template-columns:1fr 1fr 1fr;gap:8px;align-items:end;margin:6px 0 14px}
+.pod{text-align:center;animation:rise .5s both;min-width:0}
+.pod .av{margin:0 auto 6px;width:50px;height:50px;font-size:18px}
+.pod b{display:block;font:700 13px Rubik;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.pod small{font-size:12px;color:var(--ink-2)}
+.pod .blk{border:2.5px solid var(--line);border-bottom:0;border-radius:14px 14px 0 0;background:var(--c);color:var(--on);font:800 22px Unbounded;display:grid;place-items:center;margin-top:6px;transform-origin:bottom;animation:grow .7s .15s cubic-bezier(.3,1.3,.5,1) both}
+.lrow{display:grid;grid-template-columns:22px 38px 1fr auto;gap:10px;align-items:center;background:var(--surface);border:2px solid var(--line);border-radius:16px;padding:8px 12px;margin-bottom:8px;animation:rise .35s both}
+.lrow.me{background:var(--sun);color:var(--on)}
+.lrow .n{font:800 12.5px Unbounded;opacity:.7}
+.lrow .av{width:38px;height:38px;font-size:14px;box-shadow:none}
+.lrow b{display:block;font-weight:700;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.lrow small{font-size:12.5px;opacity:.75;display:block;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.lrow .x{font:800 13px Unbounded;white-space:nowrap}
+.onote{font-size:13.5px;color:var(--ink-2);margin:6px 0}
+.nin{width:100%;font:700 22px Unbounded;padding:16px;border:2.5px solid var(--line);border-radius:18px;background:var(--surface);color:var(--ink);box-shadow:0 4px 0 var(--shadow);outline:none;margin-top:6px}
+.nin:focus{border-color:var(--sky)}
+.btn:disabled{opacity:.45;transform:none;box-shadow:0 4px 0 var(--shadow)}
+@keyframes wob{50%{border-radius:54% 46% 48% 52%/46% 54% 46% 54%;transform:rotate(-3deg)}}
+@keyframes blink{0%,92%,100%{transform:scaleY(1)}95%{transform:scaleY(.1)}}
+@keyframes hop{40%{transform:translateY(-14px) rotate(6deg)}}
+@keyframes grow-x{from{transform:scaleX(0)}}
+@keyframes rise{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}
+@keyframes pop{0%{transform:scale(.86)}60%{transform:scale(1.06)}100%{transform:scale(1)}}
+@keyframes shake{20%,60%{transform:translateX(-6px)}40%,80%{transform:translateX(6px)}}
+@keyframes bob{50%{transform:translateY(-6px)}}
+@keyframes grow{from{transform:scaleY(0)}}
+@keyframes slidein{from{opacity:0;transform:translateX(28px)}to{opacity:1;transform:none}}
+@keyframes fadeword{0%{opacity:0;transform:translateY(12px)}14%,86%{opacity:1;transform:none}100%{opacity:0;transform:translateY(-12px)}}
+@keyframes chosen{40%{transform:scale(1.05) rotate(-1deg)}100%{transform:scale(1)}}
+@keyframes rowin{from{opacity:0}}
+@keyframes morph{50%{border-radius:56% 44% 48% 52%/46% 56% 44% 54%}}
+@keyframes ringin{from{stroke-dashoffset:var(--C)}}
+@media (prefers-reduced-motion:reduce){*,*::before,*::after{animation:none !important;transition:none !important}}
+</style>
+
+<div class="wrap"><main id="app"><p class="sub" style="padding-top:40px">…</p></main></div>
+<div class="fb" id="fb" aria-live="polite"></div>
+<nav class="bnav" aria-label="Menu">
+  <button type="button" data-v="today" style="--c:var(--coral)"><span class="bi" data-i="home"></span><span class="bl"></span></button>
+  <button type="button" data-v="path" style="--c:var(--sun)"><span class="bi" data-i="path"></span><span class="bl"></span></button>
+  <button type="button" data-v="games" style="--c:var(--grape)"><span class="bi" data-i="games"></span><span class="bl"></span></button>
+  <button type="button" data-v="words" style="--c:var(--mint)"><span class="bi" data-i="words"></span><span class="bl"></span></button>
+  <button type="button" data-v="me" style="--c:var(--sky)"><span class="bi" data-i="me"></span><span class="bl"></span></button>
+</nav>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<script>
+(() => {
+"use strict";
+const $ = (s, r = document) => r.querySelector(s);
+const $$ = (s, r = document) => [...r.querySelectorAll(s)];
+const esc = s => String(s ?? "").replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+const shuffle = a => { a = a.slice(); for (let i = a.length - 1; i > 0; i--) { const j = Math.random() * (i + 1) | 0; [a[i], a[j]] = [a[j], a[i]]; } return a; };
+const sample = (a, n) => shuffle(a).slice(0, n);
+const pick = a => a[Math.random() * a.length | 0];
+const norm = s => String(s).toLowerCase().trim().replace(/[’']/g, "'").replace(/\s+/g, " ")
+  .replace(/iz(e|es|ed|ing|ation)\b/g, "is$1").replace(/yz(e|es|ed|ing)\b/g, "ys$1");
+const RM = matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+const UIL = ["az", "uz", "en", "ru", "tr"];
+const MLANGS = ["az", "uz", "ru", "tr"];
+const CODE = { az: "AZ", uz: "UZ", en: "EN", ru: "RU", tr: "TR" };
+const NATIVE = { az: "Azərbaycanca", uz: "Oʻzbekcha", en: "English", ru: "Русский", tr: "Türkçe" };
+const HELLO = { az: "Salam!", uz: "Salom!", en: "Hello!", ru: "Привет!", tr: "Merhaba!" };
+const LCOL = { en: "var(--sky)", az: "var(--mint)", uz: "var(--sun)", ru: "var(--grape)", tr: "var(--coral)" };
+const LOC = { az: "az", uz: "uz", en: "en-GB", ru: "ru", tr: "tr" };
+const DC = ["coral", "sun", "mint", "sky", "grape", "pink"];
+const col = k => `var(--${DC[((k % 6) + 6) % 6]})`;
+const dayColor = n => col(n - 1);
+const INT = [0, 1, 2, 3, 5, 8];
+const TEST_DAYS = { 7: [1, 6], 14: [1, 13] };
+const LS_KEY = "ielts-soz-vereqi-v1";
+
+/* ---------- interface strings ---------- */
+const T = {
+en: {
+  ob_pick:"Choose your language", ob_build:"Build your card",
+  ob_build_sub:"English is always on top. Tap a language to add it, drag a row to reorder, drag it down to remove.",
+  ob_tray:"Tap or drag onto the card", ob_empty:"English only — meanings are shown as English definitions.",
+  ob_go:"Let's go", back:"Back", always:"always", presets:"Quick picks", eng_only:"EN only",
+  nav_today:"Today", nav_path:"Path", nav_games:"Games", nav_words:"Words", nav_set:"Settings",
+  day_w:"Day", day_n:"Day {n}", streak:"{n}-day streak", streak0:"Start your streak today",
+  lead:"{w} words + {p} phrases · about 15–20 min. No need to finish in one go.",
+  lead7:"No new words today. Check days 1–6: review, weak words and a 30-question test.",
+  lead14:"Last day: 40 questions from every word. This is your 14-day result.",
+  day7:"Weekly review", day14:"Final",
+  st_review:"Review", st_review_s:"{n} old words are due", st_review_0:"Nothing due today",
+  st_new:"New words", st_new_s:"{n} cards · recall first, then flip", st_game:"Game of the day",
+  st_test:"Mini test", st_test_n:"Test · {n} questions", st_test_s:"{n} questions, answers at the end", st_score:"Score: {s}/{t}",
+  st_weak:"Weak words", st_weak_s:"The words with the most mistakes",
+  words_today:"Today's words · tap to hear",
+  rest_t:"Day {n} done!", rest_s:"That's enough for today — a break helps memory. Day {m} is waiting tomorrow, but you can start now if you want.",
+  start_now:"Start day {m} now", review_n:"Review: {n}", a_game:"Play a game",
+  fin_t:"14 days done!", fin_s:"Words seen: {a}/{b}. In boxes 4–5: {c}. Final test: {d}.",
+  fin_next:"Next step: do a real Reading test with a timer and spot these words in it. Review cards will keep coming.",
+  back_cur:"Back to the current day",
+  path_t:"Your 14 days", path_s:"Started {d}. Finishing a day opens the next one right away; the rest open by calendar.",
+  opens:"opens {d}", today_tag:"today", in_prog:"in progress",
+  boxes_t:"Card boxes", boxes_s:"A word you know moves up a box. Box 5 means solid.", seen:"Seen: {a}/{b}", box:"box",
+  games_t:"Games", games_s:"Each game looks at a word from another side. Missed words go back to review.",
+  pool_day:"Day {n}", pool_l:"Learned · {n}", pool_w:"Weak · {n}", pool_a:"All · {n}",
+  g_cards:"Cards", g_cards_w:"Recall, flip, rate yourself",
+  g_rcards:"Reverse cards", g_rcards_w:"See the meaning, recall the English word",
+  g_mcq:"Pick the meaning", g_mcq_w:"Word → meaning and back, 4 options",
+  g_cloze:"Fill the gap", g_cloze_w:"Find the word inside a sentence",
+  g_spot:"Spot the synonym", g_spot_w:"IELTS paraphrase: synonym in the question, word in the text",
+  g_type:"Type it", g_type_w:"See the meaning, type the word",
+  g_match:"Pairs", g_match_w:"6 pairs against the clock",
+  g_form:"Word form", g_form_w:"predator, predation, predatory — which fits?",
+  words_t:"Words", words_s:"252 words + 24 phrases. Search works in every language and in synonyms.",
+  search:"Search: word, meaning, synonym",
+  f_all:"All", f_new:"New", f_learn:"Learning", f_known:"Known", f_solid:"Solid", all_days:"All days", n_words:"{n} words", new_tag:"new",
+  set_t:"Settings", set_ui:"App language", set_combo:"Meaning languages",
+  prog_t:"Progress", started:"Started {d} · calendar day {n}",
+  reset:"Reset everything", reset_q:"All cards, tests and the start date will be deleted. Languages stay. This can't be undone.",
+  reset_y:"Yes, reset", cancel:"Cancel",
+  sync_local:"Progress is saved in this browser.", sync_ok:"Progress is saved to your account — continue on any device.",
+  sync_wait:"Connecting to your account…", sync_err:"Couldn't save to your account; saved in this browser.",
+  how_t:"How it works",
+  how1:"Spaced repetition: a word you know comes back later and later (1, 2, 3, 5, 8 days). A word you miss comes back today.",
+  how2:"Recall first, then look: trying to remember before flipping makes a word stick better — even when you can't remember it.",
+  how3:"In a sentence: Reading always shows words inside sentences, so every word has its own example.",
+  how4:"Synonyms: IELTS questions often use a synonym of the word in the text. «Spot the synonym» trains exactly that.",
+  how5:"Where the words come from: 72 Academic Reading passages of Cambridge IELTS 16–21; the most frequent words outside the general 2,800-word list (NGSL). Example sentences are written separately.",
+  close:"Close", tap_flip:"Tap the card to flip it", swipe:"← again   ·   knew it →",
+  r0:"Again", r1:"Hard", r2:"Knew it", r3:"Easy", d_today:"today", d_in:"in {n} d",
+  recall_m:"What does it mean?", recall_w:"Which English word?", family:"Family",
+  q_meaning:"What does it mean?", q_reverse:"Which English word?", q_syn:"Which word is closest?", q_cloze:"Which word fits the gap?", q_form:"Which form fits?",
+  ok1:"Correct!", ok2:"Nice!", ok3:"Yes, exactly!", bad:"Not this time", bad_s:"The word went back to review.",
+  next:"Next", results:"Results", check:"Check", hint:"Show a letter", dunno:"I don't know", letters:"{n} letters",
+  almost:"Almost — 1–2 letters off. Try again.", type_bad:"This is the right spelling. Say it out loud once.",
+  match_h:"Match each word with its meaning", secs:"{n} s", match_r:"{p} pairs, {m} wrong taps.",
+  spot_q:"The question says", spot_tap:"Which word in the text says this? Tap it.", spot_ok:"Found it!", spot_bad:"Not this one — it's the highlighted word.",
+  res90:"Excellent. These words are yours now.", res70:"Good result. Missed words went back to review.",
+  res50:"Normal — the words are still new. Missed ones will come back to you.", res0:"Don't worry, that's normal with new words. Every missed word is waiting in review.",
+  look:"Look at these again", p_again:"Play again", b_today:"Back to today", b_games:"Back to games",
+  cards_n:"cards", learn_r:"{f} words you knew at first sight. You've now seen the rest once — that's enough. Short review tomorrow.",
+  review_r:"{f} right the first time. «Again» cards went back to the queue.",
+  type_r:"Typing is the hardest drill — and it sticks the deepest.", spot_r:"That's Reading: one word in the question, its synonym in the text.",
+  few:"Not enough words for this game yet. Learn a few cards first.", day_done:"Day {n} complete!", seconds:"seconds",
+  pos_n:"noun", pos_v:"verb", pos_adj:"adjective", pos_adv:"adverb", pos_phrase:"phrase", sentence:"sentence",
+  load_err:"Couldn't load the word file. Please reload the page."
+},
+az: {
+  ob_pick:"Dilini seç", ob_build:"Kartını qur",
+  ob_build_sub:"İngiliscə həmişə yuxarıdadır. Dil əlavə etmək üçün toxun, sıranı dəyişmək üçün sətri sürüşdür, silmək üçün aşağı at.",
+  ob_tray:"Toxun və ya karta sürüşdür", ob_empty:"Yalnız ingiliscə — mənalar ingiliscə izahla göstərilir.",
+  ob_go:"Başlayaq", back:"Geri", always:"həmişə", presets:"Hazır seçimlər", eng_only:"Yalnız EN",
+  nav_today:"Bu gün", nav_path:"Yol", nav_games:"Oyunlar", nav_words:"Sözlər", nav_set:"Ayarlar",
+  day_w:"Gün", day_n:"Gün {n}", streak:"{n} gün ardıcıl", streak0:"Seriyanı bu gün başlat",
+  lead:"{w} söz + {p} ifadə · təxminən 15–20 dəq. Bir oturuşda bitirmək şərt deyil.",
+  lead7:"Bu gün yeni söz yoxdur. 1–6-cı günləri yoxla: təkrar, zəif sözlər və 30 suallıq test.",
+  lead14:"Son gün: bütün sözlərdən 40 sual. Bu, 14 günün nəticəsidir.",
+  day7:"Həftənin təkrarı", day14:"Final",
+  st_review:"Təkrar", st_review_s:"{n} köhnə sözün vaxtı çatıb", st_review_0:"Bu gün təkrar yoxdur",
+  st_new:"Yeni sözlər", st_new_s:"{n} kart · əvvəl xatırla, sonra çevir", st_game:"Günün oyunu",
+  st_test:"Mini test", st_test_n:"Test · {n} sual", st_test_s:"{n} sual, cavablar sonda", st_score:"Nəticə: {s}/{t}",
+  st_weak:"Zəif sözlər", st_weak_s:"Ən çox səhv olan sözlər",
+  words_today:"Bu günün sözləri · eşitmək üçün toxun",
+  rest_t:"Gün {n} bitdi!", rest_s:"Bu günlük bəsdir — ara vermək yaddaşa kömək edir. Gün {m} sabah səni gözləyir, amma istəsən indi də başlaya bilərsən.",
+  start_now:"İndi başla: Gün {m}", review_n:"Təkrar: {n}", a_game:"Bir oyun oyna",
+  fin_t:"14 gün bitdi!", fin_s:"Gördüyün sözlər: {a}/{b}. 4–5-ci qutuda: {c}. Final test: {d}.",
+  fin_next:"Növbəti addım: real Reading testini vaxtla işlə və bu sözləri mətndə axtar. Təkrar kartları gəlməyə davam edəcək.",
+  back_cur:"Cari günə qayıt",
+  path_t:"Sənin 14 günün", path_s:"Başlanğıc: {d}. Bitirdiyin gündən sonrakı gün dərhal açılır, qalanları təqvimlə.",
+  opens:"açılır: {d}", today_tag:"bu gün", in_prog:"davam edir",
+  boxes_t:"Kart qutuları", boxes_s:"Bildiyin söz bir qutu yuxarı qalxır. 5-ci qutu — möhkəm yadda qalıb.", seen:"Görülüb: {a}/{b}", box:"qutu",
+  games_t:"Oyunlar", games_s:"Hər oyun sözə başqa tərəfdən baxır. Səhv etdiyin söz təkrara qayıdır.",
+  pool_day:"Gün {n}", pool_l:"Öyrəndiklərim · {n}", pool_w:"Zəif · {n}", pool_a:"Hamısı · {n}",
+  g_cards:"Kartlar", g_cards_w:"Xatırla, çevir, özünü qiymətləndir",
+  g_rcards:"Tərs kartlar", g_rcards_w:"Mənanı gör, ingilis sözünü xatırla",
+  g_mcq:"Mənanı seç", g_mcq_w:"Söz → məna və əksinə, 4 variant",
+  g_cloze:"Boşluğu doldur", g_cloze_w:"Sözü cümlənin içində tap",
+  g_spot:"Sinonimi tap", g_spot_w:"IELTS paraphrase: sualda sinonim, mətndə söz",
+  g_type:"Özün yaz", g_type_w:"Mənaya bax, sözü yaz",
+  g_match:"Cütlər", g_match_w:"6 cüt, vaxta qarşı",
+  g_form:"Söz forması", g_form_w:"predator, predation, predatory — hansı uyğundur?",
+  words_t:"Sözlər", words_s:"252 söz + 24 ifadə. Axtarış bütün dillərdə və sinonimlərdə işləyir.",
+  search:"Axtar: söz, məna, sinonim",
+  f_all:"Hamısı", f_new:"Yeni", f_learn:"Öyrənilir", f_known:"Bilinir", f_solid:"Möhkəm", all_days:"Bütün günlər", n_words:"{n} söz", new_tag:"yeni",
+  set_t:"Ayarlar", set_ui:"Tətbiqin dili", set_combo:"Məna dilləri",
+  prog_t:"İrəliləyiş", started:"Başlanğıc: {d} · təqvim günü: {n}",
+  reset:"Hər şeyi sıfırla", reset_q:"Bütün kartlar, testlər və başlanğıc tarixi silinəcək. Dillər qalacaq. Bunu geri qaytarmaq olmur.",
+  reset_y:"Bəli, sıfırla", cancel:"Ləğv et",
+  sync_local:"İrəliləyiş bu brauzerdə saxlanılır.", sync_ok:"İrəliləyiş hesabında saxlanılır — istənilən cihazda davam et.",
+  sync_wait:"Hesaba qoşulur…", sync_err:"Hesaba yazmaq alınmadı; bu brauzerdə saxlanıldı.",
+  how_t:"Necə işləyir",
+  how1:"Aralıqlı təkrar: bildiyin söz getdikcə daha gec qayıdır (1, 2, 3, 5, 8 gün). Bilmədiyin söz elə bu gün qayıdır.",
+  how2:"Əvvəl xatırla, sonra bax: çevirməzdən əvvəl xatırlamağa çalışmaq sözü daha yaxşı yadda saxlatdırır — xatırlaya bilməsən belə.",
+  how3:"Cümlə içində: Reading-də söz həmişə cümlədə çıxır, ona görə hər sözün öz nümunəsi var.",
+  how4:"Sinonim: IELTS sualları mətndəki sözü çox vaxt sinonimlə verir. «Sinonimi tap» məhz bunu məşq etdirir.",
+  how5:"Sözlər haradandır: Cambridge IELTS 16–21-in 72 Academic Reading mətni; ümumi 2800 sözlük siyahıdan (NGSL) kənarda ən çox çıxan sözlər. Nümunə cümlələri ayrıca yazılıb.",
+  close:"Bağla", tap_flip:"Çevirmək üçün karta toxun", swipe:"← yenə   ·   bildim →",
+  r0:"Yenə", r1:"Çətin", r2:"Bildim", r3:"Asan", d_today:"bu gün", d_in:"{n} gün sonra",
+  recall_m:"Mənası nədir?", recall_w:"İngiliscə necədir?", family:"Ailə",
+  q_meaning:"Mənası hansıdır?", q_reverse:"İngiliscə hansıdır?", q_syn:"Hansı söz ən yaxındır?", q_cloze:"Boşluğa hansı söz uyğundur?", q_form:"Hansı forma uyğundur?",
+  ok1:"Düzdür!", ok2:"Əla!", ok3:"Bəli, məhz belə!", bad:"Bu dəfə yox", bad_s:"Söz təkrara qayıtdı.",
+  next:"Növbəti", results:"Nəticə", check:"Yoxla", hint:"Bir hərf aç", dunno:"Bilmirəm", letters:"{n} hərf",
+  almost:"Az qaldı — 1–2 hərf fərqlidir. Yenə yoxla.", type_bad:"Düzgün yazılışı budur. Bir dəfə ucadan de.",
+  match_h:"Hər sözü mənası ilə cütlə", secs:"{n} san", match_r:"{p} cüt, {m} səhv toxunuş.",
+  spot_q:"Sualda belə yazılıb", spot_tap:"Mətndə hansı söz bunu deyir? Ona toxun.", spot_ok:"Tapdın!", spot_bad:"Bu deyil — işarələnmiş sözdür.",
+  res90:"Əla. Bu sözlər artıq səninkidir.", res70:"Yaxşı nəticədir. Səhv etdiklərin təkrara qayıtdı.",
+  res50:"Normaldır, sözlər hələ yenidir. Səhv etdiklərin yenidən qarşına çıxacaq.", res0:"Narahat olma, yeni sözlərdə bu, adi haldır. Hər səhv söz təkrarda səni gözləyir.",
+  look:"Bunlara bir də bax", p_again:"Yenə oyna", b_today:"Bu günə qayıt", b_games:"Oyunlara qayıt",
+  cards_n:"kart", learn_r:"{f} sözü ilk baxışdan bildin. Qalanlarını bir dəfə gördün — bu kifayətdir. Sabah qısa təkrar olacaq.",
+  review_r:"{f} kartı ilk dəfədən bildin. «Yenə» dediklərin növbəyə qayıtdı.",
+  type_r:"Yazmaq ən çətin məşqdir və ən dərin yadda qalır.", spot_r:"Reading də elə budur: sualda bir söz, mətndə onun sinonimi.",
+  few:"Bu oyun üçün hələ kifayət qədər söz yoxdur. Əvvəlcə bir neçə kart öyrən.", day_done:"Gün {n} tamamlandı!", seconds:"saniyə",
+  pos_n:"isim", pos_v:"fel", pos_adj:"sifət", pos_adv:"zərf", pos_phrase:"ifadə", sentence:"cümlə",
+  load_err:"Söz faylı yüklənmədi. Səhifəni yeniləyin."
+},
+uz: {
+  ob_pick:"Tilni tanlang", ob_build:"Kartangizni yigʻing",
+  ob_build_sub:"Inglizcha doim tepada. Til qoʻshish uchun bosing, tartibni oʻzgartirish uchun qatorni suring, olib tashlash uchun pastga tashlang.",
+  ob_tray:"Bosing yoki kartaga suring", ob_empty:"Faqat inglizcha — maʼnolar inglizcha izoh bilan koʻrsatiladi.",
+  ob_go:"Boshladik", back:"Orqaga", always:"doim", presets:"Tayyor tanlovlar", eng_only:"Faqat EN",
+  nav_today:"Bugun", nav_path:"Yoʻl", nav_games:"Oʻyinlar", nav_words:"Soʻzlar", nav_set:"Sozlamalar",
+  day_w:"Kun", day_n:"{n}-kun", streak:"{n} kun ketma-ket", streak0:"Seriyani bugun boshlang",
+  lead:"{w} soʻz + {p} ibora · taxminan 15–20 daqiqa. Bir oʻtirishda tugatish shart emas.",
+  lead7:"Bugun yangi soʻz yoʻq. 1–6-kunlarni tekshiring: takrorlash, zaif soʻzlar va 30 savollik test.",
+  lead14:"Oxirgi kun: barcha soʻzlardan 40 savol. Bu 14 kunning natijasi.",
+  day7:"Haftalik takrorlash", day14:"Final",
+  st_review:"Takrorlash", st_review_s:"{n} ta eski soʻzning vaqti keldi", st_review_0:"Bugun takrorlash yoʻq",
+  st_new:"Yangi soʻzlar", st_new_s:"{n} ta karta · avval eslang, keyin aylantiring", st_game:"Kun oʻyini",
+  st_test:"Mini test", st_test_n:"Test · {n} savol", st_test_s:"{n} savol, javoblar oxirida", st_score:"Natija: {s}/{t}",
+  st_weak:"Zaif soʻzlar", st_weak_s:"Eng koʻp xato qilingan soʻzlar",
+  words_today:"Bugungi soʻzlar · eshitish uchun bosing",
+  rest_t:"{n}-kun tugadi!", rest_s:"Bugunga yetarli — tanaffus xotiraga yordam beradi. {m}-kun ertaga sizni kutadi, lekin xohlasangiz hozir boshlashingiz mumkin.",
+  start_now:"{m}-kunni hozir boshlash", review_n:"Takrorlash: {n}", a_game:"Oʻyin oʻynash",
+  fin_t:"14 kun tugadi!", fin_s:"Koʻrilgan soʻzlar: {a}/{b}. 4–5-qutida: {c}. Final test: {d}.",
+  fin_next:"Keyingi qadam: haqiqiy Reading testini vaqt bilan ishlang va bu soʻzlarni matndan qidiring. Takrorlash kartalari kelishda davom etadi.",
+  back_cur:"Joriy kunga qaytish",
+  path_t:"Sizning 14 kuningiz", path_s:"Boshlangan: {d}. Tugatgan kuningizdan keyingi kun darhol ochiladi, qolganlari taqvim boʻyicha.",
+  opens:"ochiladi: {d}", today_tag:"bugun", in_prog:"davom etmoqda",
+  boxes_t:"Karta qutilari", boxes_s:"Bilgan soʻzingiz bir quti yuqoriga koʻtariladi. 5-quti — mustahkam.", seen:"Koʻrilgan: {a}/{b}", box:"quti",
+  games_t:"Oʻyinlar", games_s:"Har bir oʻyin soʻzga boshqa tomondan qaraydi. Xato qilingan soʻz takrorlashga qaytadi.",
+  pool_day:"{n}-kun", pool_l:"Oʻrganganlarim · {n}", pool_w:"Zaif · {n}", pool_a:"Hammasi · {n}",
+  g_cards:"Kartalar", g_cards_w:"Eslang, aylantiring, oʻzingizni baholang",
+  g_rcards:"Teskari kartalar", g_rcards_w:"Maʼnoni koʻring, inglizcha soʻzni eslang",
+  g_mcq:"Maʼnoni tanlang", g_mcq_w:"Soʻz → maʼno va aksincha, 4 variant",
+  g_cloze:"Boʻshliqni toʻldiring", g_cloze_w:"Soʻzni gap ichida toping",
+  g_spot:"Sinonimni toping", g_spot_w:"IELTS parafrazi: savolda sinonim, matnda soʻz",
+  g_type:"Oʻzingiz yozing", g_type_w:"Maʼnoga qarang, soʻzni yozing",
+  g_match:"Juftliklar", g_match_w:"6 juftlik, vaqtga qarshi",
+  g_form:"Soʻz shakli", g_form_w:"predator, predation, predatory — qaysi biri mos?",
+  words_t:"Soʻzlar", words_s:"252 soʻz + 24 ibora. Qidiruv barcha tillarda va sinonimlarda ishlaydi.",
+  search:"Qidirish: soʻz, maʼno, sinonim",
+  f_all:"Hammasi", f_new:"Yangi", f_learn:"Oʻrganilmoqda", f_known:"Bilinadi", f_solid:"Mustahkam", all_days:"Barcha kunlar", n_words:"{n} ta soʻz", new_tag:"yangi",
+  set_t:"Sozlamalar", set_ui:"Ilova tili", set_combo:"Maʼno tillari",
+  prog_t:"Natijalar", started:"Boshlangan: {d} · taqvim boʻyicha {n}-kun",
+  reset:"Hammasini qayta boshlash", reset_q:"Barcha kartalar, testlar va boshlanish sanasi oʻchiriladi. Tillar saqlanadi. Buni qaytarib boʻlmaydi.",
+  reset_y:"Ha, qayta boshlash", cancel:"Bekor qilish",
+  sync_local:"Natijalar shu brauzerda saqlanadi.", sync_ok:"Natijalar hisobingizda saqlanadi — istalgan qurilmada davom eting.",
+  sync_wait:"Hisobga ulanmoqda…", sync_err:"Hisobga yozib boʻlmadi; shu brauzerda saqlandi.",
+  how_t:"Qanday ishlaydi",
+  how1:"Oraliqli takrorlash: bilgan soʻzingiz tobora kechroq qaytadi (1, 2, 3, 5, 8 kun). Bilmagan soʻzingiz shu kuni qaytadi.",
+  how2:"Avval eslang, keyin qarang: aylantirishdan oldin eslashga urinish soʻzni yaxshiroq yodda saqlaydi — eslay olmasangiz ham.",
+  how3:"Gap ichida: Readingda soʻz doim gap ichida chiqadi, shuning uchun har bir soʻzning oʻz misoli bor.",
+  how4:"Sinonim: IELTS savollari matndagi soʻzni koʻpincha sinonim bilan beradi. «Sinonimni toping» aynan shuni mashq qildiradi.",
+  how5:"Soʻzlar qayerdan: Cambridge IELTS 16–21 dagi 72 ta Academic Reading matni; umumiy 2800 soʻzlik roʻyxatdan (NGSL) tashqarida eng koʻp uchraydigan soʻzlar. Misol gaplar alohida yozilgan.",
+  close:"Yopish", tap_flip:"Aylantirish uchun kartani bosing", swipe:"← yana   ·   bildim →",
+  r0:"Yana", r1:"Qiyin", r2:"Bildim", r3:"Oson", d_today:"bugun", d_in:"{n} kundan keyin",
+  recall_m:"Maʼnosi nima?", recall_w:"Inglizchasi qanday?", family:"Oila",
+  q_meaning:"Maʼnosi qaysi?", q_reverse:"Inglizchasi qaysi?", q_syn:"Qaysi soʻz eng yaqin?", q_cloze:"Boʻshliqqa qaysi soʻz mos?", q_form:"Qaysi shakl mos?",
+  ok1:"Toʻgʻri!", ok2:"Zoʻr!", ok3:"Ha, aynan!", bad:"Bu safar emas", bad_s:"Soʻz takrorlashga qaytdi.",
+  next:"Keyingi", results:"Natija", check:"Tekshirish", hint:"Bir harf ochish", dunno:"Bilmayman", letters:"{n} ta harf",
+  almost:"Oz qoldi — 1–2 harf farq qiladi. Yana tekshiring.", type_bad:"Toʻgʻri yozilishi shu. Bir marta ovoz chiqarib ayting.",
+  match_h:"Har bir soʻzni maʼnosi bilan juftlang", secs:"{n} s", match_r:"{p} juftlik, {m} ta xato bosish.",
+  spot_q:"Savolda shunday yozilgan", spot_tap:"Matnda qaysi soʻz shuni anglatadi? Uni bosing.", spot_ok:"Topdingiz!", spot_bad:"Bu emas — belgilangan soʻz.",
+  res90:"Aʼlo. Bu soʻzlar endi sizniki.", res70:"Yaxshi natija. Xato qilinganlar takrorlashga qaytdi.",
+  res50:"Normal, soʻzlar hali yangi. Xato qilinganlar yana oldingizga chiqadi.", res0:"Xavotir olmang, yangi soʻzlarda bu odatiy hol. Har bir xato soʻz takrorlashda sizni kutmoqda.",
+  look:"Bularga yana bir qarang", p_again:"Yana oʻynash", b_today:"Bugunga qaytish", b_games:"Oʻyinlarga qaytish",
+  cards_n:"karta", learn_r:"{f} ta soʻzni birinchi qarashdayoq bildingiz. Qolganlarini bir marta koʻrdingiz — bu yetarli. Ertaga qisqa takrorlash boʻladi.",
+  review_r:"{f} ta kartani birinchi urinishda bildingiz. «Yana» deganlaringiz navbatga qaytdi.",
+  type_r:"Yozish eng qiyin mashq va eng chuqur yodda qoladi.", spot_r:"Reading ham shunday: savolda bir soʻz, matnda uning sinonimi.",
+  few:"Bu oʻyin uchun hali yetarli soʻz yoʻq. Avval bir nechta karta oʻrganing.", day_done:"{n}-kun yakunlandi!", seconds:"soniya",
+  pos_n:"ot", pos_v:"feʼl", pos_adj:"sifat", pos_adv:"ravish", pos_phrase:"ibora", sentence:"gap",
+  load_err:"Soʻzlar fayli yuklanmadi. Sahifani yangilang."
+},
+ru: {
+  ob_pick:"Выбери язык", ob_build:"Собери свою карточку",
+  ob_build_sub:"Английский всегда сверху. Нажми на язык, чтобы добавить; перетащи строку, чтобы поменять порядок; перетащи вниз, чтобы убрать.",
+  ob_tray:"Нажми или перетащи на карточку", ob_empty:"Только английский — значения показаны английским определением.",
+  ob_go:"Поехали", back:"Назад", always:"всегда", presets:"Быстрый выбор", eng_only:"Только EN",
+  nav_today:"Сегодня", nav_path:"Путь", nav_games:"Игры", nav_words:"Слова", nav_set:"Настройки",
+  day_w:"День", day_n:"День {n}", streak:"{n} дн. подряд", streak0:"Начни серию сегодня",
+  lead:"{w} слов + {p} фразы · примерно 15–20 мин. Не обязательно за один раз.",
+  lead7:"Сегодня новых слов нет. Проверь дни 1–6: повторение, слабые слова и тест из 30 вопросов.",
+  lead14:"Последний день: 40 вопросов по всем словам. Это итог 14 дней.",
+  day7:"Повторение недели", day14:"Финал",
+  st_review:"Повторение", st_review_s:"Пора повторить старых слов: {n}", st_review_0:"Сегодня повторять нечего",
+  st_new:"Новые слова", st_new_s:"Карточек: {n} · сначала вспомни, потом переверни", st_game:"Игра дня",
+  st_test:"Мини-тест", st_test_n:"Тест · {n} вопросов", st_test_s:"{n} вопросов, ответы в конце", st_score:"Результат: {s}/{t}",
+  st_weak:"Слабые слова", st_weak_s:"Слова с наибольшим числом ошибок",
+  words_today:"Слова дня · нажми, чтобы услышать",
+  rest_t:"День {n} пройден!", rest_s:"На сегодня достаточно — перерыв помогает памяти. День {m} ждёт завтра, но можно начать и сейчас.",
+  start_now:"Начать день {m} сейчас", review_n:"Повторить: {n}", a_game:"Сыграть в игру",
+  fin_t:"14 дней пройдено!", fin_s:"Слов увидено: {a}/{b}. В коробках 4–5: {c}. Финальный тест: {d}.",
+  fin_next:"Дальше: реши настоящий тест Reading на время и ищи эти слова в тексте. Карточки для повторения будут приходить и дальше.",
+  back_cur:"К текущему дню",
+  path_t:"Твои 14 дней", path_s:"Начало: {d}. После пройденного дня следующий открывается сразу, остальные — по календарю.",
+  opens:"откроется {d}", today_tag:"сегодня", in_prog:"в процессе",
+  boxes_t:"Коробки карточек", boxes_s:"Знакомое слово переходит в следующую коробку. Коробка 5 — выучено прочно.", seen:"Увидено: {a}/{b}", box:"коробка",
+  games_t:"Игры", games_s:"Каждая игра смотрит на слово с другой стороны. Слова с ошибками возвращаются на повторение.",
+  pool_day:"День {n}", pool_l:"Изученные · {n}", pool_w:"Слабые · {n}", pool_a:"Все · {n}",
+  g_cards:"Карточки", g_cards_w:"Вспомни, переверни, оцени себя",
+  g_rcards:"Обратные карточки", g_rcards_w:"Видишь значение — вспомни английское слово",
+  g_mcq:"Выбери значение", g_mcq_w:"Слово → значение и обратно, 4 варианта",
+  g_cloze:"Заполни пропуск", g_cloze_w:"Найди слово внутри предложения",
+  g_spot:"Найди синоним", g_spot_w:"Перефраз в IELTS: в вопросе синоним, в тексте слово",
+  g_type:"Напиши сам", g_type_w:"Смотри на значение, пиши слово",
+  g_match:"Пары", g_match_w:"6 пар на время",
+  g_form:"Форма слова", g_form_w:"predator, predation, predatory — что подходит?",
+  words_t:"Слова", words_s:"252 слова + 24 фразы. Поиск работает на всех языках и по синонимам.",
+  search:"Поиск: слово, значение, синоним",
+  f_all:"Все", f_new:"Новые", f_learn:"Учу", f_known:"Знаю", f_solid:"Прочно", all_days:"Все дни", n_words:"Слов: {n}", new_tag:"новое",
+  set_t:"Настройки", set_ui:"Язык приложения", set_combo:"Языки значений",
+  prog_t:"Прогресс", started:"Начало: {d} · по календарю день {n}",
+  reset:"Сбросить всё", reset_q:"Все карточки, тесты и дата начала будут удалены. Языки останутся. Это нельзя отменить.",
+  reset_y:"Да, сбросить", cancel:"Отмена",
+  sync_local:"Прогресс сохраняется в этом браузере.", sync_ok:"Прогресс сохраняется в аккаунте — продолжай на любом устройстве.",
+  sync_wait:"Подключение к аккаунту…", sync_err:"Не удалось сохранить в аккаунт; сохранено в этом браузере.",
+  how_t:"Как это работает",
+  how1:"Интервальное повторение: знакомое слово возвращается всё позже (1, 2, 3, 5, 8 дней). Незнакомое — в тот же день.",
+  how2:"Сначала вспомни, потом смотри: попытка вспомнить до переворота лучше закрепляет слово — даже если вспомнить не получилось.",
+  how3:"В предложении: в Reading слова всегда стоят в предложениях, поэтому у каждого слова свой пример.",
+  how4:"Синонимы: вопросы IELTS часто передают слово из текста синонимом. «Найди синоним» тренирует именно это.",
+  how5:"Откуда слова: 72 текста Academic Reading из Cambridge IELTS 16–21; самые частые слова вне общего списка из 2800 слов (NGSL). Примеры написаны отдельно.",
+  close:"Закрыть", tap_flip:"Нажми на карточку, чтобы перевернуть", swipe:"← ещё раз   ·   знаю →",
+  r0:"Ещё раз", r1:"Трудно", r2:"Знаю", r3:"Легко", d_today:"сегодня", d_in:"через {n} дн.",
+  recall_m:"Что это значит?", recall_w:"Как по-английски?", family:"Семья слов",
+  q_meaning:"Что это значит?", q_reverse:"Какое английское слово?", q_syn:"Какое слово ближе всего?", q_cloze:"Какое слово подходит в пропуск?", q_form:"Какая форма подходит?",
+  ok1:"Верно!", ok2:"Отлично!", ok3:"Да, именно!", bad:"В этот раз нет", bad_s:"Слово вернулось на повторение.",
+  next:"Дальше", results:"Итог", check:"Проверить", hint:"Открыть букву", dunno:"Не знаю", letters:"Букв: {n}",
+  almost:"Почти — 1–2 буквы не те. Проверь ещё раз.", type_bad:"Вот правильное написание. Произнеси его вслух один раз.",
+  match_h:"Соедини каждое слово с его значением", secs:"{n} с", match_r:"Пар: {p}, неверных нажатий: {m}.",
+  spot_q:"В вопросе написано", spot_tap:"Какое слово в тексте значит то же? Нажми на него.", spot_ok:"Есть!", spot_bad:"Не это — выделенное слово.",
+  res90:"Отлично. Эти слова уже твои.", res70:"Хороший результат. Слова с ошибками вернулись на повторение.",
+  res50:"Нормально, слова ещё новые. Слова с ошибками снова встретятся.", res0:"Не переживай, с новыми словами так и бывает. Каждое слово с ошибкой ждёт в повторении.",
+  look:"Посмотри на них ещё раз", p_again:"Сыграть ещё", b_today:"К сегодняшнему дню", b_games:"К играм",
+  cards_n:"карточек", learn_r:"Сразу узнано слов: {f}. Остальные ты увидел(а) один раз — этого достаточно. Завтра будет короткое повторение.",
+  review_r:"С первого раза: {f}. Карточки «ещё раз» вернулись в очередь.",
+  type_r:"Писать — самое трудное упражнение, и оно запоминается глубже всего.", spot_r:"Так и устроен Reading: в вопросе одно слово, в тексте его синоним.",
+  few:"Для этой игры пока мало слов. Сначала выучи несколько карточек.", day_done:"День {n} пройден!", seconds:"секунд",
+  pos_n:"сущ.", pos_v:"глагол", pos_adj:"прил.", pos_adv:"нареч.", pos_phrase:"фраза", sentence:"пример",
+  load_err:"Не удалось загрузить слова. Обнови страницу."
+},
+tr: {
+  ob_pick:"Dilini seç", ob_build:"Kartını oluştur",
+  ob_build_sub:"İngilizce her zaman en üstte. Dil eklemek için dokun, sırayı değiştirmek için satırı sürükle, çıkarmak için aşağı bırak.",
+  ob_tray:"Dokun ya da karta sürükle", ob_empty:"Sadece İngilizce — anlamlar İngilizce tanımla gösterilir.",
+  ob_go:"Başlayalım", back:"Geri", always:"her zaman", presets:"Hazır seçimler", eng_only:"Sadece EN",
+  nav_today:"Bugün", nav_path:"Yol", nav_games:"Oyunlar", nav_words:"Kelimeler", nav_set:"Ayarlar",
+  day_w:"Gün", day_n:"{n}. gün", streak:"{n} gün üst üste", streak0:"Serini bugün başlat",
+  lead:"{w} kelime + {p} kalıp · yaklaşık 15–20 dk. Tek seferde bitirmek şart değil.",
+  lead7:"Bugün yeni kelime yok. 1–6. günleri kontrol et: tekrar, zayıf kelimeler ve 30 soruluk test.",
+  lead14:"Son gün: bütün kelimelerden 40 soru. Bu, 14 günün sonucu.",
+  day7:"Haftanın tekrarı", day14:"Final",
+  st_review:"Tekrar", st_review_s:"{n} eski kelimenin zamanı geldi", st_review_0:"Bugün tekrar yok",
+  st_new:"Yeni kelimeler", st_new_s:"{n} kart · önce hatırla, sonra çevir", st_game:"Günün oyunu",
+  st_test:"Mini test", st_test_n:"Test · {n} soru", st_test_s:"{n} soru, cevaplar sonda", st_score:"Sonuç: {s}/{t}",
+  st_weak:"Zayıf kelimeler", st_weak_s:"En çok hata yapılan kelimeler",
+  words_today:"Bugünün kelimeleri · dinlemek için dokun",
+  rest_t:"{n}. gün bitti!", rest_s:"Bugünlük yeter — ara vermek hafızaya iyi gelir. {m}. gün yarın seni bekliyor, ama istersen şimdi de başlayabilirsin.",
+  start_now:"{m}. güne şimdi başla", review_n:"Tekrar: {n}", a_game:"Bir oyun oyna",
+  fin_t:"14 gün bitti!", fin_s:"Gördüğün kelimeler: {a}/{b}. 4–5. kutuda: {c}. Final test: {d}.",
+  fin_next:"Sıradaki adım: gerçek bir Reading testini süreyle çöz ve bu kelimeleri metinde ara. Tekrar kartları gelmeye devam edecek.",
+  back_cur:"Güncel güne dön",
+  path_t:"Senin 14 günün", path_s:"Başlangıç: {d}. Bitirdiğin günden sonraki gün hemen açılır, diğerleri takvime göre.",
+  opens:"açılış: {d}", today_tag:"bugün", in_prog:"devam ediyor",
+  boxes_t:"Kart kutuları", boxes_s:"Bildiğin kelime bir üst kutuya çıkar. 5. kutu — sağlam öğrenilmiş.", seen:"Görülen: {a}/{b}", box:"kutu",
+  games_t:"Oyunlar", games_s:"Her oyun kelimeye başka bir yerden bakar. Hata yaptığın kelime tekrara döner.",
+  pool_day:"{n}. gün", pool_l:"Öğrendiklerim · {n}", pool_w:"Zayıf · {n}", pool_a:"Hepsi · {n}",
+  g_cards:"Kartlar", g_cards_w:"Hatırla, çevir, kendini değerlendir",
+  g_rcards:"Ters kartlar", g_rcards_w:"Anlamı gör, İngilizce kelimeyi hatırla",
+  g_mcq:"Anlamı seç", g_mcq_w:"Kelime → anlam ve tersi, 4 seçenek",
+  g_cloze:"Boşluğu doldur", g_cloze_w:"Kelimeyi cümlenin içinde bul",
+  g_spot:"Eş anlamlıyı bul", g_spot_w:"IELTS paraphrase: soruda eş anlamlı, metinde kelime",
+  g_type:"Kendin yaz", g_type_w:"Anlama bak, kelimeyi yaz",
+  g_match:"Eşleştir", g_match_w:"6 çift, zamana karşı",
+  g_form:"Kelime biçimi", g_form_w:"predator, predation, predatory — hangisi uyar?",
+  words_t:"Kelimeler", words_s:"252 kelime + 24 kalıp. Arama bütün dillerde ve eş anlamlılarda çalışır.",
+  search:"Ara: kelime, anlam, eş anlamlı",
+  f_all:"Hepsi", f_new:"Yeni", f_learn:"Öğreniliyor", f_known:"Biliniyor", f_solid:"Sağlam", all_days:"Bütün günler", n_words:"{n} kelime", new_tag:"yeni",
+  set_t:"Ayarlar", set_ui:"Uygulama dili", set_combo:"Anlam dilleri",
+  prog_t:"İlerleme", started:"Başlangıç: {d} · takvime göre {n}. gün",
+  reset:"Her şeyi sıfırla", reset_q:"Bütün kartlar, testler ve başlangıç tarihi silinecek. Diller kalacak. Bu geri alınamaz.",
+  reset_y:"Evet, sıfırla", cancel:"Vazgeç",
+  sync_local:"İlerleme bu tarayıcıda kaydediliyor.", sync_ok:"İlerleme hesabında kaydediliyor — her cihazda devam et.",
+  sync_wait:"Hesaba bağlanıyor…", sync_err:"Hesaba kaydedilemedi; bu tarayıcıda kaydedildi.",
+  how_t:"Nasıl çalışır",
+  how1:"Aralıklı tekrar: bildiğin kelime giderek daha geç döner (1, 2, 3, 5, 8 gün). Bilmediğin kelime aynı gün döner.",
+  how2:"Önce hatırla, sonra bak: çevirmeden önce hatırlamaya çalışmak kelimeyi daha iyi yerleştirir — hatırlayamasan bile.",
+  how3:"Cümle içinde: Reading'de kelime hep cümlede çıkar, bu yüzden her kelimenin kendi örneği var.",
+  how4:"Eş anlamlı: IELTS soruları metindeki kelimeyi çoğu zaman eş anlamlısıyla verir. «Eş anlamlıyı bul» tam olarak bunu çalıştırır.",
+  how5:"Kelimeler nereden: Cambridge IELTS 16–21'deki 72 Academic Reading metni; genel 2800 kelimelik listenin (NGSL) dışında en sık geçen kelimeler. Örnek cümleler ayrıca yazıldı.",
+  close:"Kapat", tap_flip:"Çevirmek için karta dokun", swipe:"← tekrar   ·   bildim →",
+  r0:"Tekrar", r1:"Zor", r2:"Bildim", r3:"Kolay", d_today:"bugün", d_in:"{n} gün sonra",
+  recall_m:"Anlamı ne?", recall_w:"İngilizcesi ne?", family:"Aile",
+  q_meaning:"Anlamı hangisi?", q_reverse:"İngilizcesi hangisi?", q_syn:"Hangi kelime en yakın?", q_cloze:"Boşluğa hangi kelime uyar?", q_form:"Hangi biçim uyar?",
+  ok1:"Doğru!", ok2:"Harika!", ok3:"Evet, tam olarak!", bad:"Bu sefer olmadı", bad_s:"Kelime tekrara döndü.",
+  next:"Sonraki", results:"Sonuç", check:"Kontrol et", hint:"Bir harf aç", dunno:"Bilmiyorum", letters:"{n} harf",
+  almost:"Az kaldı — 1–2 harf farklı. Tekrar kontrol et.", type_bad:"Doğru yazılışı bu. Bir kez yüksek sesle söyle.",
+  match_h:"Her kelimeyi anlamıyla eşleştir", secs:"{n} sn", match_r:"{p} çift, {m} yanlış dokunuş.",
+  spot_q:"Soruda böyle yazıyor", spot_tap:"Metinde hangi kelime bunu söylüyor? Ona dokun.", spot_ok:"Buldun!", spot_bad:"Bu değil — işaretli kelime.",
+  res90:"Mükemmel. Bu kelimeler artık senin.", res70:"İyi sonuç. Hata yaptıkların tekrara döndü.",
+  res50:"Normal, kelimeler daha yeni. Hata yaptıkların yine karşına çıkacak.", res0:"Merak etme, yeni kelimelerde bu normal. Her hatalı kelime tekrarda seni bekliyor.",
+  look:"Bunlara bir daha bak", p_again:"Tekrar oyna", b_today:"Bugüne dön", b_games:"Oyunlara dön",
+  cards_n:"kart", learn_r:"{f} kelimeyi ilk bakışta bildin. Kalanları bir kez gördün — bu yeterli. Yarın kısa bir tekrar olacak.",
+  review_r:"{f} kartı ilk seferde bildin. «Tekrar» dediklerin sıraya döndü.",
+  type_r:"Yazmak en zor alıştırmadır ve en derin şekilde akılda kalır.", spot_r:"Reading de böyle: soruda bir kelime, metinde eş anlamlısı.",
+  few:"Bu oyun için henüz yeterli kelime yok. Önce birkaç kart öğren.", day_done:"{n}. gün tamamlandı!", seconds:"saniye",
+  pos_n:"isim", pos_v:"fiil", pos_adj:"sıfat", pos_adv:"zarf", pos_phrase:"kalıp", sentence:"cümle",
+  load_err:"Kelime dosyası yüklenemedi. Sayfayı yenile."
+}
+};
+const T2 = {
+en: {
+  ob_name:"What's your name?", ob_name_sub:"I'll use it to cheer you on. It also appears on the leaderboard.", name_ph:"Your name",
+  hi_m:"Good morning, {name}!", hi_d:"Hi, {name}!", hi_e:"Good evening, {name}!", hi_n:"Still up, {name}?",
+  c_first:"Welcome! Day 1 starts now — 21 words, one small step.", c_streak:"{n} days in a row — keep the fire going!",
+  c_back:"Good to see you again! A short review first and you're back on track.", c_done:"Today's plan is done. You're ahead of schedule!",
+  c_near:"Only {n} days left to the final. Look how far you've come!",
+  m1:"Every word you learn today is one less surprise in the exam.", m2:"Fifteen minutes a day beats three hours once a week.",
+  m3:"You don't need to remember everything. Coming back is what counts.", m4:"Mistakes are part of the method — missed words come back exactly when you need them.",
+  m5:"Reading gets easier with every word. You're building that right now.", m6:"Small steps, every day. That's how a Band 7 is built.",
+  tap_me:"Tap me for another tip", praise_hi:"Great job, {name}!", praise_lo:"Keep going, {name}!",
+  nav_me:"Profile", lvl:"Level {n}", next_lvl:"Next level: {a}/{b} XP", goal:"Daily goal", goal_done:"Daily goal reached!", lvl_up:"Level up: {n}!",
+  board_t:"Leaderboard", board_s:"Everyone who studies with this page.", board_you:"you", board_empty:"Nobody here yet — take first place!",
+  board_off:"The leaderboard needs an internet connection to the app's server.", board_ro:"Your progress is saved only in this browser here, so you are not on this leaderboard.",
+  b_row:"Day {d} · {w} words", badges_t:"Badges", badge_new:"New badge: {b}", s_xp:"Total XP", s_streak:"Streak", s_seen:"Words seen", s_solid:"Solid words",
+  edit_name:"Change name", save:"Save", anon:"Student", sync_web:"Progress is saved online for this browser and shows on the leaderboard.",
+  bd_first:"First step", bd_first_d:"Learn your first cards", bd_day:"Day complete", bd_day_d:"Finish a full day",
+  bd_s3:"On fire", bd_s3_d:"3 days in a row", bd_s7:"Unstoppable", bd_s7_d:"7 days in a row",
+  bd_w100:"Word collector", bd_w100_d:"See 100 words", bd_perfect:"Perfect test", bd_perfect_d:"Score 100% on a test",
+  bd_solid:"Iron memory", bd_solid_d:"50 words in box 4–5", bd_fast:"Speedster", bd_fast_d:"Finish pairs in under 30 s",
+  bd_half:"Halfway", bd_half_d:"Finish day 7", bd_final:"Champion", bd_final_d:"Finish all 14 days", bd_all:"Full deck", bd_all_d:"See all 276 words", bd_lvl5:"Level 5", bd_lvl5_d:"Reach level 5"
+},
+az: {
+  ob_name:"Adın nədir?", ob_name_sub:"Səni adınla ruhlandıracağam. Adın reytinq cədvəlində də görünəcək.", name_ph:"Adın",
+  hi_m:"Sabahın xeyir, {name}!", hi_d:"Salam, {name}!", hi_e:"Axşamın xeyir, {name}!", hi_n:"Hələ oyaqsan, {name}?",
+  c_first:"Xoş gəldin! 1-ci gün indi başlayır — 21 söz, bir kiçik addım.", c_streak:"{n} gün ardıcıl — alovu söndürmə!",
+  c_back:"Yenidən görməyə şadam! Əvvəl qısa təkrar, sonra yenə yoldasan.", c_done:"Bu günün planı bitdi. Plandan öndəsən!",
+  c_near:"Finala cəmi {n} gün qaldı. Bax nə qədər yol gəlmisən!",
+  m1:"Bu gün öyrəndiyin hər söz imtahanda bir sürpriz azdır.", m2:"Gündə 15 dəqiqə həftədə bir dəfə 3 saatdan yaxşıdır.",
+  m3:"Hər şeyi yadda saxlamaq lazım deyil. Əsas olan geri qayıtmaqdır.", m4:"Səhvlər metodun bir hissəsidir — səhv etdiyin sözlər lazım olan vaxt qayıdacaq.",
+  m5:"Hər sözlə Reading asanlaşır. Sən bunu indi qurursan.", m6:"Hər gün kiçik addımlar. Band 7 belə qurulur.",
+  tap_me:"Yeni məsləhət üçün mənə toxun", praise_hi:"Afərin, {name}!", praise_lo:"Davam et, {name}!",
+  nav_me:"Profil", lvl:"Səviyyə {n}", next_lvl:"Növbəti səviyyə: {a}/{b} XP", goal:"Gündəlik hədəf", goal_done:"Gündəlik hədəfə çatdın!", lvl_up:"Yeni səviyyə: {n}!",
+  board_t:"Reytinq", board_s:"Bu səhifə ilə oxuyan hər kəs.", board_you:"sən", board_empty:"Hələ heç kim yoxdur — birinci yeri tut!",
+  board_off:"Reytinq üçün tətbiqin serverinə internet bağlantısı lazımdır.", board_ro:"Sənin irəliləyişin burada yalnız bu brauzerdə saxlanılır, ona görə bu reytinqdə yoxsan.",
+  b_row:"Gün {d} · {w} söz", badges_t:"Nişanlar", badge_new:"Yeni nişan: {b}", s_xp:"Ümumi XP", s_streak:"Seriya", s_seen:"Görülən sözlər", s_solid:"Möhkəm sözlər",
+  edit_name:"Adı dəyiş", save:"Saxla", anon:"Tələbə", sync_web:"İrəliləyiş bu brauzer üçün onlayn saxlanılır və reytinqdə görünür.",
+  bd_first:"İlk addım", bd_first_d:"İlk kartları öyrən", bd_day:"Gün tamam", bd_day_d:"Bir günü tam bitir",
+  bd_s3:"Alovlu", bd_s3_d:"3 gün ardıcıl", bd_s7:"Dayanılmaz", bd_s7_d:"7 gün ardıcıl",
+  bd_w100:"Söz kolleksiyaçısı", bd_w100_d:"100 söz gör", bd_perfect:"Mükəmməl test", bd_perfect_d:"Testdə 100% topla",
+  bd_solid:"Dəmir yaddaş", bd_solid_d:"4–5-ci qutuda 50 söz", bd_fast:"Şimşək", bd_fast_d:"Cütləri 30 saniyədən tez bitir",
+  bd_half:"Yarı yol", bd_half_d:"7-ci günü bitir", bd_final:"Çempion", bd_final_d:"14 günün hamısını bitir", bd_all:"Tam dəstə", bd_all_d:"276 sözün hamısını gör", bd_lvl5:"Səviyyə 5", bd_lvl5_d:"5-ci səviyyəyə çat"
+},
+uz: {
+  ob_name:"Ismingiz nima?", ob_name_sub:"Sizni ismingiz bilan ruhlantiraman. Ismingiz reytingda ham koʻrinadi.", name_ph:"Ismingiz",
+  hi_m:"Xayrli tong, {name}!", hi_d:"Salom, {name}!", hi_e:"Xayrli kech, {name}!", hi_n:"Hali uxlamadingizmi, {name}?",
+  c_first:"Xush kelibsiz! 1-kun hozir boshlanadi — 21 soʻz, bitta kichik qadam.", c_streak:"{n} kun ketma-ket — olovni oʻchirmang!",
+  c_back:"Sizni yana koʻrganimdan xursandman! Avval qisqa takrorlash, keyin yana yoʻldasiz.", c_done:"Bugungi reja bajarildi. Siz rejadan oldindasiz!",
+  c_near:"Finalgacha atigi {n} kun qoldi. Qanchalik uzoq yoʻl bosib oʻtganingizga qarang!",
+  m1:"Bugun oʻrgangan har bir soʻzingiz imtihonda bitta kutilmagan holat kamroq degani.", m2:"Kuniga 15 daqiqa haftada bir marta 3 soatdan yaxshiroq.",
+  m3:"Hammasini eslab qolish shart emas. Asosiysi — qaytib kelish.", m4:"Xatolar metodning bir qismi — xato qilingan soʻzlar aynan kerakli paytda qaytadi.",
+  m5:"Har bir soʻz bilan Reading osonlashadi. Siz buni hozir qurmoqdasiz.", m6:"Har kuni kichik qadamlar. Band 7 shunday quriladi.",
+  tap_me:"Yangi maslahat uchun meni bosing", praise_hi:"Barakalla, {name}!", praise_lo:"Davom eting, {name}!",
+  nav_me:"Profil", lvl:"{n}-daraja", next_lvl:"Keyingi daraja: {a}/{b} XP", goal:"Kunlik maqsad", goal_done:"Kunlik maqsadga erishdingiz!", lvl_up:"Yangi daraja: {n}!",
+  board_t:"Reyting", board_s:"Shu sahifa bilan oʻqiyotgan hamma.", board_you:"siz", board_empty:"Hali hech kim yoʻq — birinchi oʻrinni egallang!",
+  board_off:"Reyting uchun ilova serveriga internet ulanishi kerak.", board_ro:"Natijalaringiz bu yerda faqat shu brauzerda saqlanadi, shuning uchun siz bu reytingda yoʻqsiz.",
+  b_row:"{d}-kun · {w} ta soʻz", badges_t:"Nishonlar", badge_new:"Yangi nishon: {b}", s_xp:"Jami XP", s_streak:"Seriya", s_seen:"Koʻrilgan soʻzlar", s_solid:"Mustahkam soʻzlar",
+  edit_name:"Ismni oʻzgartirish", save:"Saqlash", anon:"Talaba", sync_web:"Natijalar shu brauzer uchun onlayn saqlanadi va reytingda koʻrinadi.",
+  bd_first:"Birinchi qadam", bd_first_d:"Birinchi kartalarni oʻrganing", bd_day:"Kun yakunlandi", bd_day_d:"Bir kunni toʻliq tugating",
+  bd_s3:"Olovli", bd_s3_d:"3 kun ketma-ket", bd_s7:"Toʻxtatib boʻlmas", bd_s7_d:"7 kun ketma-ket",
+  bd_w100:"Soʻz kolleksiyachisi", bd_w100_d:"100 ta soʻz koʻring", bd_perfect:"Mukammal test", bd_perfect_d:"Testda 100% oling",
+  bd_solid:"Temir xotira", bd_solid_d:"4–5-qutida 50 ta soʻz", bd_fast:"Chaqmoq", bd_fast_d:"Juftliklarni 30 soniyadan tez tugating",
+  bd_half:"Yarim yoʻl", bd_half_d:"7-kunni tugating", bd_final:"Chempion", bd_final_d:"14 kunning hammasini tugating", bd_all:"Toʻliq toʻplam", bd_all_d:"276 ta soʻzning hammasini koʻring", bd_lvl5:"5-daraja", bd_lvl5_d:"5-darajaga erishing"
+},
+ru: {
+  ob_name:"Как тебя зовут?", ob_name_sub:"Буду подбадривать тебя по имени. Имя также видно в рейтинге.", name_ph:"Твоё имя",
+  hi_m:"Доброе утро, {name}!", hi_d:"Привет, {name}!", hi_e:"Добрый вечер, {name}!", hi_n:"Ещё не спишь, {name}?",
+  c_first:"Добро пожаловать! День 1 начинается — 21 слово, один маленький шаг.", c_streak:"{n} дн. подряд — не дай огню погаснуть!",
+  c_back:"Снова привет! Сначала короткое повторение — и ты снова в пути.", c_done:"План на сегодня выполнен. Ты опережаешь график!",
+  c_near:"До финала всего {n} дн. Позади уже большой путь!",
+  m1:"Каждое слово, выученное сегодня, — на один сюрприз меньше на экзамене.", m2:"15 минут в день лучше, чем 3 часа раз в неделю.",
+  m3:"Не нужно помнить всё. Главное — возвращаться.", m4:"Ошибки — часть метода: слова с ошибками вернутся именно тогда, когда нужно.",
+  m5:"С каждым словом Reading становится легче. Ты строишь это прямо сейчас.", m6:"Маленькие шаги каждый день. Так и строится Band 7.",
+  tap_me:"Нажми на меня — будет новый совет", praise_hi:"Молодец, {name}!", praise_lo:"Не сдавайся, {name}!",
+  nav_me:"Профиль", lvl:"Уровень {n}", next_lvl:"До след. уровня: {a}/{b} XP", goal:"Цель дня", goal_done:"Цель дня выполнена!", lvl_up:"Новый уровень: {n}!",
+  board_t:"Рейтинг", board_s:"Все, кто учится на этой странице.", board_you:"ты", board_empty:"Пока здесь пусто — займи первое место!",
+  board_off:"Для рейтинга нужно подключение к серверу приложения.", board_ro:"Здесь твой прогресс сохраняется только в этом браузере, поэтому тебя нет в этом рейтинге.",
+  b_row:"День {d} · слов: {w}", badges_t:"Значки", badge_new:"Новый значок: {b}", s_xp:"Всего XP", s_streak:"Серия", s_seen:"Слов увидено", s_solid:"Прочные слова",
+  edit_name:"Изменить имя", save:"Сохранить", anon:"Студент", sync_web:"Прогресс сохраняется онлайн для этого браузера и виден в рейтинге.",
+  bd_first:"Первый шаг", bd_first_d:"Выучи первые карточки", bd_day:"День пройден", bd_day_d:"Пройди целый день",
+  bd_s3:"В ударе", bd_s3_d:"3 дня подряд", bd_s7:"Не остановить", bd_s7_d:"7 дней подряд",
+  bd_w100:"Коллекционер слов", bd_w100_d:"Увидь 100 слов", bd_perfect:"Идеальный тест", bd_perfect_d:"Набери 100% в тесте",
+  bd_solid:"Железная память", bd_solid_d:"50 слов в коробках 4–5", bd_fast:"Молния", bd_fast_d:"Пары быстрее 30 с",
+  bd_half:"Полпути", bd_half_d:"Пройди день 7", bd_final:"Чемпион", bd_final_d:"Пройди все 14 дней", bd_all:"Полная колода", bd_all_d:"Увидь все 276 слов", bd_lvl5:"Уровень 5", bd_lvl5_d:"Достигни 5 уровня"
+},
+tr: {
+  ob_name:"Adın ne?", ob_name_sub:"Seni adınla cesaretlendireceğim. Adın sıralamada da görünecek.", name_ph:"Adın",
+  hi_m:"Günaydın, {name}!", hi_d:"Merhaba, {name}!", hi_e:"İyi akşamlar, {name}!", hi_n:"Hâlâ uyanık mısın, {name}?",
+  c_first:"Hoş geldin! 1. gün şimdi başlıyor — 21 kelime, küçük bir adım.", c_streak:"{n} gün üst üste — ateşi söndürme!",
+  c_back:"Seni tekrar görmek güzel! Önce kısa bir tekrar, sonra yine yoldasın.", c_done:"Bugünün planı tamam. Plandan öndesin!",
+  c_near:"Finale sadece {n} gün kaldı. Bak ne kadar yol geldin!",
+  m1:"Bugün öğrendiğin her kelime sınavda bir sürpriz eksik demek.", m2:"Günde 15 dakika, haftada bir kez 3 saatten iyidir.",
+  m3:"Her şeyi hatırlaman gerekmiyor. Önemli olan geri dönmek.", m4:"Hatalar yöntemin bir parçası — hata yaptığın kelimeler tam ihtiyacın olduğunda geri gelir.",
+  m5:"Her kelimeyle Reading kolaylaşıyor. Bunu şu an sen inşa ediyorsun.", m6:"Her gün küçük adımlar. Band 7 böyle kurulur.",
+  tap_me:"Yeni bir ipucu için bana dokun", praise_hi:"Aferin, {name}!", praise_lo:"Devam et, {name}!",
+  nav_me:"Profil", lvl:"Seviye {n}", next_lvl:"Sonraki seviye: {a}/{b} XP", goal:"Günlük hedef", goal_done:"Günlük hedefe ulaştın!", lvl_up:"Yeni seviye: {n}!",
+  board_t:"Sıralama", board_s:"Bu sayfayla çalışan herkes.", board_you:"sen", board_empty:"Henüz kimse yok — birinci ol!",
+  board_off:"Sıralama için uygulamanın sunucusuna internet bağlantısı gerekir.", board_ro:"Burada ilerlemen sadece bu tarayıcıda kaydediliyor, bu yüzden bu sıralamada yoksun.",
+  b_row:"{d}. gün · {w} kelime", badges_t:"Rozetler", badge_new:"Yeni rozet: {b}", s_xp:"Toplam XP", s_streak:"Seri", s_seen:"Görülen kelimeler", s_solid:"Sağlam kelimeler",
+  edit_name:"Adı değiştir", save:"Kaydet", anon:"Öğrenci", sync_web:"İlerleme bu tarayıcı için çevrimiçi kaydediliyor ve sıralamada görünüyor.",
+  bd_first:"İlk adım", bd_first_d:"İlk kartları öğren", bd_day:"Gün tamam", bd_day_d:"Bir günü tamamen bitir",
+  bd_s3:"Alev alev", bd_s3_d:"3 gün üst üste", bd_s7:"Durdurulamaz", bd_s7_d:"7 gün üst üste",
+  bd_w100:"Kelime koleksiyoncusu", bd_w100_d:"100 kelime gör", bd_perfect:"Kusursuz test", bd_perfect_d:"Bir testte %100 yap",
+  bd_solid:"Demir hafıza", bd_solid_d:"4–5. kutuda 50 kelime", bd_fast:"Şimşek", bd_fast_d:"Eşleştirmeyi 30 sn'den hızlı bitir",
+  bd_half:"Yarı yol", bd_half_d:"7. günü bitir", bd_final:"Şampiyon", bd_final_d:"14 günün hepsini bitir", bd_all:"Tam deste", bd_all_d:"276 kelimenin hepsini gör", bd_lvl5:"Seviye 5", bd_lvl5_d:"5. seviyeye ulaş"
+}
+};
+for (const l in T2) Object.assign(T[l], T2[l]);
+function t(k, v) {
+  const L = (S && S.ui) || "en";
+  let s = (T[L] && T[L][k]) ?? T.en[k] ?? k;
+  if (v) s = s.replace(/\{(\w+)\}/g, (_, x) => v[x] ?? "");
+  return s;
+}
+
+/* ---------- icons ---------- */
+const ICON = {
+  home:'<path d="M3 10.5 12 3l9 7.5V20a1 1 0 0 1-1 1h-5.5v-6h-5v6H4a1 1 0 0 1-1-1z"/>',
+  path:'<circle cx="6" cy="18" r="2.5"/><circle cx="18" cy="6" r="2.5"/><path d="M8.5 18H15a3 3 0 0 0 0-6H9a3 3 0 0 1 0-6h6.5"/>',
+  games:'<rect x="2.5" y="7" width="19" height="11" rx="5"/><path d="M7 10.5v4M5 12.5h4"/><path d="M15.5 11.5h.01M17.5 13.5h.01" stroke-width="3"/>',
+  words:'<path d="M5 4.5A1.5 1.5 0 0 1 6.5 3H19v15H6.5A1.5 1.5 0 0 0 5 19.5z"/><path d="M5 19.5A1.5 1.5 0 0 0 6.5 21H19v-3M9 7.5h6"/>',
+  set:'<path d="M4 7h10M18 7h2M4 17h4M12 17h8"/><circle cx="16" cy="7" r="2.2"/><circle cx="10" cy="17" r="2.2"/>',
+  cards:'<rect x="3.5" y="6.5" width="11" height="14" rx="2.5" transform="rotate(-9 9 13.5)"/><rect x="9.5" y="3.5" width="11" height="14" rx="2.5"/>',
+  rcards:'<path d="M4 8h14l-3-3M20 16H6l3 3"/>',
+  mcq:'<rect x="3" y="3.5" width="18" height="5" rx="2"/><rect x="3" y="10.5" width="18" height="5" rx="2"/><path d="M5 20h9"/>',
+  cloze:'<path d="M3 8h4M17 8h4M3 15h18"/><rect x="8.5" y="5" width="7" height="6" rx="1.8"/>',
+  spot:'<circle cx="10.5" cy="10.5" r="6"/><path d="M15 15l5.5 5.5"/>',
+  type:'<rect x="2.5" y="6" width="19" height="12" rx="3"/><path d="M6 10h.01M9.5 10h.01M13 10h.01M16.5 10h.01M8 14h8"/>',
+  match:'<circle cx="6" cy="6.5" r="2.5"/><circle cx="18" cy="17.5" r="2.5"/><path d="M8.5 6.5h2.5a3 3 0 0 1 3 3v5a3 3 0 0 0 1.5 2.6"/>',
+  form:'<path d="M6 3v18M6 9c6 0 6-4 12-4M6 15c6 0 6 4 12 4"/>',
+  review:'<path d="M20 12a8 8 0 1 1-2.3-5.6M20 4v4h-4"/>',
+  test:'<rect x="5" y="4" width="14" height="17" rx="2.5"/><path d="M9 4V3h6v1M9 11l2 2 4-4M9 17h6"/>',
+  spark:'<path d="M12 3l2.1 5.9L20 11l-5.9 2.1L12 19l-2.1-5.9L4 11l5.9-2.1z"/>',
+  check:'<path d="M5 12.5l4.5 4.5L19 7.5"/>',
+  x:'<path d="M6 6l12 12M18 6 6 18"/>',
+  arrow:'<path d="M9 5l7 7-7 7"/>',
+  lock:'<rect x="5" y="11" width="14" height="10" rx="2.5"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/>',
+  trophy:'<path d="M7 4h10v5a5 5 0 0 1-10 0zM7 6H4v1a3 3 0 0 0 3 3M17 6h3v1a3 3 0 0 1-3 3M12 14v4M8 21h8"/>',
+  me:'<circle cx="12" cy="8" r="4"/><path d="M4.5 21a7.5 7.5 0 0 1 15 0"/>',
+  gear:'<circle cx="12" cy="12" r="3"/><path d="M12 2.5v3M12 18.5v3M2.5 12h3M18.5 12h3M5.3 5.3l2.1 2.1M16.6 16.6l2.1 2.1M5.3 18.7l2.1-2.1M16.6 7.4l2.1-2.1"/>',
+  flame:'<path d="M12 21c-4 0-6.5-2.6-6.5-6 0-3.6 3-5.6 3.5-9 2.3 1.5 3.6 3.6 3.8 5.6 1-.8 1.6-2 1.7-3.2 2.4 1.8 4 4.3 4 6.6 0 3.4-2.5 6-6.5 6z"/>',
+  bolt:'<path d="M13 2 4.5 13.5H11L10 22l8.5-11.5H12z"/>',
+  book:'<path d="M3 5.5C5.5 4 8.5 4 12 6c3.5-2 6.5-2 9-.5V19c-2.5-1.5-5.5-1.5-9 .5-3.5-2-6.5-2-9-.5z"/><path d="M12 6v13.5"/>',
+  brain:'<path d="M9 4a3 3 0 0 0-3 3 3 3 0 0 0-2 5 3 3 0 0 0 2 5 3 3 0 0 0 6 1V5a2 2 0 0 0-3-1zM15 4a3 3 0 0 1 3 3 3 3 0 0 1 2 5 3 3 0 0 1-2 5 3 3 0 0 1-6 1"/>',
+  star:'<path d="M12 3l2.7 5.6 6.1.8-4.5 4.2 1.1 6.1L12 16.8l-5.4 2.9 1.1-6.1-4.5-4.2 6.1-.8z"/>'
+};
+const svg = (n, s = 24, w = 2.2) => `<svg viewBox="0 0 24 24" width="${s}" height="${s}" fill="none" stroke="currentColor" stroke-width="${w}" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">${ICON[n]}</svg>`;
+const SPK = '<svg viewBox="0 0 20 20" width="15" height="15" aria-hidden="true"><path d="M3 8h3l4-3v10l-4-3H3z" fill="currentColor"/><path d="M13 7.5c.9.8 1.4 1.6 1.4 2.5s-.5 1.7-1.4 2.5M15.3 5.4c1.5 1.3 2.3 2.8 2.3 4.6s-.8 3.3-2.3 4.6" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>';
+
+/* ---------- dates + state ---------- */
+const ymd = d => { const z = new Date(d.getTime() - d.getTimezoneOffset() * 6e4); return z.toISOString().slice(0, 10); };
+const TODAY = ymd(new Date());
+const addDays = (s, n) => ymd(new Date(Date.parse(s + "T12:00:00") + n * 864e5));
+const MON = {
+  en: "January February March April May June July August September October November December",
+  az: "yanvar fevral mart aprel may iyun iyul avqust sentyabr oktyabr noyabr dekabr",
+  uz: "yanvar fevral mart aprel may iyun iyul avgust sentabr oktabr noyabr dekabr",
+  ru: "января февраля марта апреля мая июня июля августа сентября октября ноября декабря",
+  tr: "Ocak Şubat Mart Nisan Mayıs Haziran Temmuz Ağustos Eylül Ekim Kasım Aralık"
+};
+function fmtDate(s) {
+  const [, m, d] = s.split("-").map(Number), L = (S && S.ui) || "en", name = MON[L].split(" ")[m - 1];
+  return L === "uz" ? `${d}-${name}` : `${d} ${name}`;
+}
+
+let ALL = [], BYID = {}, S = null;
+let view = "today", backTo = "today", selDay = null, keyHandler = null, activeTimer = null;
+let wq = "", wd = "", ws = "", poolKind = "day", syncKey = "local";
+const openRows = new Set();
+const app = $("#app");
+
+function fresh() { return { v: 3, start: TODAY, ui: null, name: "", onb: false, lset: false, langs: ["az"], cards: {}, days: {}, act: [], xp: 0, xpd: {}, badges: {}, perfect: false, fast: false, updated: 0 }; }
+const cleanName = s => String(s || "").replace(/[\u0000-\u001f<>]/g, "").replace(/\s+/g, " ").trim().slice(0, 24);
+function normalize(o) {
+  const s = Object.assign(fresh(), JSON.parse(JSON.stringify(o || {})));
+  s.name = cleanName(s.name);
+  if (typeof s.xp !== "number" || !isFinite(s.xp) || s.xp < 0) s.xp = 0;
+  if (!s.xpd || typeof s.xpd !== "object") s.xpd = {};
+  if (!s.badges || typeof s.badges !== "object") s.badges = {};
+  if (!Array.isArray(s.langs)) s.langs = ["az"];
+  s.langs = [...new Set(s.langs.filter(l => MLANGS.includes(l)))];
+  if (!UIL.includes(s.ui)) { s.ui = null; s.onb = false; }
+  if (!/^\d{4}-\d{2}-\d{2}$/.test(s.start)) s.start = TODAY;
+  if (!s.cards || typeof s.cards !== "object") s.cards = {};
+  if (!s.days || typeof s.days !== "object") s.days = {};
+  if (!Array.isArray(s.act)) s.act = [];
+  return s;
+}
+const dIdx = s => Math.round((Date.parse(s + "T12:00:00") - Date.parse(S.start + "T12:00:00")) / 864e5);
+const todayIdx = () => Math.max(0, dIdx(TODAY));
+const calDay = () => Math.min(14, todayIdx() + 1);
+const day = n => S.days[n] || (S.days[n] = {});
+const dayDone = n => { const d = S.days[n] || {}; return TEST_DAYS[n] ? d.test != null : !!(d.learn && d.test != null); };
+const started = n => !!(S.days[n] && Object.keys(S.days[n]).length);
+function curDay() { for (let n = 1; n <= 14; n++) if (!dayDone(n)) return n; return 14; }
+const available = n => n === 1 || n <= calDay() || dayDone(n - 1);
+function checkDone(n) { if (dayDone(n) && S.days[n].at == null) { S.days[n].at = todayIdx(); addXP(50); return true; } return false; }
+function itemsOfDay(n) {
+  if (TEST_DAYS[n]) { const [a, b] = TEST_DAYS[n]; return ALL.filter(x => x.day >= a && x.day <= b); }
+  return ALL.filter(x => x.day === n);
+}
+const dueIds = () => { const tt = todayIdx(); return Object.keys(S.cards).filter(id => BYID[id] && S.cards[id].due <= tt); };
+const isWeak = it => { const c = S.cards[it.id]; return c && (c.b <= 1 || c.w > c.r); };
+function weakOf(items) { const w = items.filter(isWeak); return w.length >= 6 ? w : items; }
+function touch() { const tt = todayIdx(); if (!S.act.includes(tt)) { S.act.push(tt); S.act = S.act.slice(-60); } }
+function streak() { const set = new Set(S.act); let d = todayIdx(); if (!set.has(d)) d--; let n = 0; while (set.has(d)) { n++; d--; } return n; }
+
+function rate(id, q) {
+  const tt = todayIdx();
+  const c = S.cards[id] || { b: 0, due: tt, r: 0, w: 0, n: 0 };
+  if (q === 0) { c.b = 0; c.due = tt; c.w++; }
+  else if (q === 1) { c.b = Math.max(1, c.b); c.due = tt + 1; }
+  else { c.b = Math.min(5, c.b + (q === 2 ? 1 : 2)); c.due = tt + INT[c.b]; c.r++; }
+  c.n++; c.t = tt; S.cards[id] = c; touch(); addXP(q === 0 ? 1 : q === 1 ? 3 : 5); persist();
+}
+function nextLabel(id, q) {
+  const c = S.cards[id], b = c ? c.b : 0;
+  if (q === 0) return t("d_today");
+  return t("d_in", { n: q === 1 ? 1 : INT[Math.min(5, b + (q === 2 ? 1 : 2))] });
+}
+function mark(id, ok) {
+  touch();
+  const c = S.cards[id];
+  if (c) { if (ok) c.r++; else { c.w++; c.due = Math.min(c.due, todayIdx()); } }
+  addXP(ok ? 10 : 2);
+  persist();
+}
+
+/* ---------- XP, levels, daily goal, badges, toast ---------- */
+const GOAL = 100;
+let sessXP = 0;
+function lvlOf(xp) { let L = 1, need = 100; while (xp >= need) { xp -= need; L++; need += 50; } return { L, cur: xp, need }; }
+const xpToday = () => S.xpd[todayIdx()] || 0;
+function addXP(n) {
+  const before = lvlOf(S.xp).L, g0 = xpToday();
+  S.xp += n; sessXP += n;
+  const k = todayIdx(); S.xpd[k] = g0 + n;
+  const keys = Object.keys(S.xpd).map(Number).sort((a, b) => a - b);
+  while (keys.length > 30) delete S.xpd[keys.shift()];
+  const xc = $("#xpc"); if (xc) { xc.textContent = "+" + sessXP + " XP"; xc.classList.remove("pop"); void xc.offsetWidth; xc.classList.add("pop"); }
+  const after = lvlOf(S.xp).L;
+  if (after > before) { toast(svg("star", 20, 2.4) + esc(t("lvl_up", { n: after })), "var(--grape)"); setTimeout(() => confetti(innerWidth / 2, 60, 50), 150); }
+  else if (g0 < GOAL && g0 + n >= GOAL) { toast(svg("flame", 20, 2.4) + esc(t("goal_done")), "var(--coral)"); setTimeout(() => confetti(innerWidth / 2, 60, 40), 150); }
+}
+const seenN = () => Object.keys(S.cards).length;
+const solidN = () => Object.values(S.cards).filter(c => c.b >= 4).length;
+const doneN = () => { let k = 0; for (let n = 1; n <= 14; n++) if (dayDone(n)) k++; return k; };
+const BADGES = [
+  { id: "first", i: "cards", c: "var(--coral)", ok: () => seenN() >= 1 },
+  { id: "day", i: "check", c: "var(--mint)", ok: () => doneN() >= 1 },
+  { id: "s3", i: "flame", c: "var(--sun)", ok: () => streak() >= 3 },
+  { id: "w100", i: "book", c: "var(--sky)", ok: () => seenN() >= 100 },
+  { id: "perfect", i: "star", c: "var(--pink)", ok: () => !!S.perfect },
+  { id: "fast", i: "bolt", c: "var(--grape)", ok: () => !!S.fast },
+  { id: "s7", i: "flame", c: "var(--coral)", ok: () => streak() >= 7 },
+  { id: "half", i: "path", c: "var(--mint)", ok: () => dayDone(7) },
+  { id: "solid", i: "brain", c: "var(--sky)", ok: () => solidN() >= 50 },
+  { id: "lvl5", i: "star", c: "var(--grape)", ok: () => lvlOf(S.xp).L >= 5 },
+  { id: "all", i: "cards", c: "var(--pink)", ok: () => seenN() >= ALL.length },
+  { id: "final", i: "trophy", c: "var(--sun)", ok: () => dayDone(14) },
+];
+function checkBadges() {
+  if (!S || !S.onb) return;
+  for (const b of BADGES) if (!S.badges[b.id] && b.ok()) {
+    S.badges[b.id] = todayIdx() + 1;
+    setTimeout(() => { toast(svg(b.i, 20, 2.4) + esc(t("badge_new", { b: t("bd_" + b.id) })), b.c); confetti(innerWidth / 2, 60, 36); }, 900);
+  }
+}
+const toastQ = []; let toastBusy = false;
+function toast(html, c) { toastQ.push([html, c]); if (!toastBusy) nextToast(); }
+function nextToast() {
+  const el = $("#toast"), it = toastQ.shift();
+  if (!it) { toastBusy = false; return; }
+  toastBusy = true; el.innerHTML = it[0]; el.style.setProperty("--c", it[1] || "var(--sun)");
+  requestAnimationFrame(() => el.classList.add("show")); buzz(15);
+  setTimeout(() => { el.classList.remove("show"); setTimeout(nextToast, 420); }, 2600);
+}
+const initial = s => (String(s || "?").trim()[0] || "?").toUpperCase();
+const hueOf = s => { let h = 0; for (const ch of String(s)) h = (h * 31 + ch.codePointAt(0)) >>> 0; return col(h); };
+const myName = () => S.name || t("anon");
+
+/* ---------- persistence ---------- */
+// Web build: fill these with the Supabase project URL and its public anon key (safe to ship; RLS protects rows).
+const SUPA = {"url": "https://pacucuaxnahnkubzpopx.supabase.co", "key": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InBhY3VjdWF4bmFobmt1Ynpwb3B4Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3OTU3NjczMzksImV4cCI6MjExMTM0MzMzOX0.XWe_mDnoSDmrz9XrJwKG2u7Pmajc6F12r9ryFiAOg0c"};
+let BE = null, BOARD = null, boardState = "off", boardRO = false, nameHint = "";
+let saving = false, again = false, saveT = null, lastBoard = "";
+function loadLocal() { try { const s = localStorage.getItem(LS_KEY); return s ? JSON.parse(s) : null; } catch (e) { return null; } }
+function saveLocal() { try { localStorage.setItem(LS_KEY, JSON.stringify(S)); } catch (e) {} }
+function persist() { checkBadges(); S.updated = Date.now(); saveLocal(); clearTimeout(saveT); saveT = setTimeout(flush, 1200); }
+const boardSummary = () => ({ name: myName(), xp: S.xp, lvl: lvlOf(S.xp).L, day: curDay(), done: doneN(), seen: seenN(), solid: solidN(), streak: streak() });
+async function flush() {
+  if (!BE) return;
+  if (saving) { again = true; return; }
+  saving = true;
+  try { await BE.saveState(JSON.parse(JSON.stringify(S))); setSync("ok"); } catch (e) { setSync("err"); }
+  if (S.name && S.onb && !boardRO) {
+    const b = boardSummary(), k = JSON.stringify(b);
+    if (k !== lastBoard) { try { await BE.saveBoard(b); lastBoard = k; } catch (e) { boardRO = true; if (view === "me") drawBoard(); } }
+  }
+  saving = false;
+  if (again) { again = false; flush(); }
+}
+function setSync(k) { syncKey = k; const el = $("#sync"); if (el) el.textContent = t(k === "ok" && BE && BE.kind === "supa" ? "sync_web" : "sync_" + k); }
+function mergeRemote(data) {
+  const remote = normalize(data);
+  if ((remote.updated || 0) > (S.updated || 0)) { S = remote; saveLocal(); if (view !== "session") render(); }
+  else if ((S.updated || 0) > (remote.updated || 0)) flush();
+}
+const withTimeout = (p, ms) => Promise.race([p, new Promise(r => setTimeout(() => r("__timeout"), ms))]);
+async function connectClaude(C) {
+  C.use("tts").then(x => { tts = x || null; }).catch(() => {});
+  setSync("wait");
+  const db = await withTimeout(C.use("db"), 10000);
+  if (!db || db === "__timeout") return false;
+  const user = await withTimeout(C.use("user"), 10000);
+  const id = user && user !== "__timeout" ? await user.id() : null;
+  if (!id) return false;
+  if (!S.name && user.name) { nameHint = cleanName(await user.name()); const ni = $("#nin"); if (ni && !ni.value) { ni.value = nameHint; ni.dispatchEvent(new Event("input")); } }
+  const ref = db.doc("data/users/" + id + "/progress"), bref = db.doc("board/" + id);
+  BE = { kind: "claude", me: id, saveState: s => ref.set(s), saveBoard: b => bref.set(Object.assign({}, b, { t: Date.now() })) };
+  db.collection("board").onSnapshot(snap => {
+    BOARD = snap.docs.filter(d => d.exists).map(d => Object.assign({ id: d.id }, d.data()));
+    boardState = "ok"; if (view === "me") drawBoard();
+  }, () => { boardState = "off"; if (view === "me") drawBoard(); });
+  const snap = await withTimeout(ref.get(), 10000);
+  if (snap === "__timeout") { BE = null; return false; }
+  if (snap.exists) mergeRemote(snap.data()); else if (S.updated) flush();
+  return true;
+}
+
+/* Supabase (web build): anonymous auth per browser + PostgREST over fetch, no library */
+const SB_KEY = "ielts14-sb";
+let sbSess = null;
+const sbHead = (auth, extra) => Object.assign({ apikey: SUPA.key, "Content-Type": "application/json" }, auth && sbSess ? { Authorization: "Bearer " + sbSess.access_token } : {}, extra || {});
+async function sbSession() {
+  if (!sbSess) { try { sbSess = JSON.parse(localStorage.getItem(SB_KEY) || "null"); } catch (e) { sbSess = null; } }
+  const now = Date.now() / 1000;
+  if (sbSess && sbSess.expires_at > now + 60) return sbSess;
+  let r = null;
+  if (sbSess && sbSess.refresh_token) {
+    r = await fetch(SUPA.url + "/auth/v1/token?grant_type=refresh_token", { method: "POST", headers: sbHead(false), body: JSON.stringify({ refresh_token: sbSess.refresh_token }) });
+    if (!r.ok && r.status >= 500) throw new Error("auth " + r.status); // server trouble: keep the old identity
+  }
+  if (!r || !r.ok) {
+    // another tab may be creating the identity right now: wait for it instead of making a second user
+    let lock = 0; try { lock = +localStorage.getItem(SB_KEY + "-lock") || 0; } catch (e) {}
+    if (Date.now() - lock < 6000) {
+      await new Promise(res => setTimeout(res, 2500));
+      try { const s2 = JSON.parse(localStorage.getItem(SB_KEY) || "null"); if (s2 && s2.expires_at > now + 60) { sbSess = s2; return sbSess; } } catch (e) {}
+    }
+    try { localStorage.setItem(SB_KEY + "-lock", String(Date.now())); } catch (e) {}
+    r = await fetch(SUPA.url + "/auth/v1/signup", { method: "POST", headers: sbHead(false), body: "{}" });
+  }
+  if (!r.ok) throw new Error("auth " + r.status);
+  const j = await r.json();
+  sbSess = { access_token: j.access_token, refresh_token: j.refresh_token, expires_at: j.expires_at || now + (j.expires_in || 3600), uid: j.user.id };
+  try { localStorage.setItem(SB_KEY, JSON.stringify(sbSess)); } catch (e) {}
+  return sbSess;
+}
+async function sbUpsert(table, row) {
+  await sbSession();
+  const r = await fetch(SUPA.url + "/rest/v1/" + table, { method: "POST", headers: sbHead(true, { Prefer: "resolution=merge-duplicates,return=minimal" }), body: JSON.stringify(row) });
+  if (!r.ok) throw new Error(table + " " + r.status);
+}
+async function loadBoardSupa() {
+  try {
+    const r = await fetch(SUPA.url + "/rest/v1/board?select=id,name,xp,lvl,day,done,seen,solid,streak&order=xp.desc&limit=100", { headers: sbHead(false, { Authorization: "Bearer " + SUPA.key }) });
+    if (!r.ok) throw new Error(r.status);
+    BOARD = await r.json(); boardState = "ok";
+  } catch (e) { if (!BOARD) boardState = "off"; }
+  if (view === "me") drawBoard();
+}
+async function connectSupa() {
+  setSync("wait");
+  await sbSession();
+  const stamp = () => new Date().toISOString();
+  BE = { kind: "supa", me: sbSess.uid,
+    saveState: s => sbUpsert("progress", { id: sbSess.uid, state: s, updated_at: stamp() }),
+    saveBoard: b => sbUpsert("board", Object.assign({ id: sbSess.uid }, b, { updated_at: stamp() })) };
+  loadBoardSupa();
+  setInterval(() => { if (view === "me" && !document.hidden) loadBoardSupa(); }, 30000);
+  const r = await fetch(SUPA.url + "/rest/v1/progress?select=state&id=eq." + encodeURIComponent(sbSess.uid), { headers: sbHead(true) });
+  if (!r.ok) throw new Error("progress " + r.status);
+  const rows = await r.json();
+  if (rows.length) mergeRemote(rows[0].state); else if (S.updated) flush();
+  return true;
+}
+async function connect() {
+  const C = window.claude;
+  try {
+    if (C && typeof C.use === "function") { if (await connectClaude(C)) { setSync("ok"); return; } }
+    else if (SUPA.url && SUPA.key) { if (await connectSupa()) { setSync("ok"); return; } }
+  } catch (e) {}
+  if (!BE || BE.kind !== "supa") BE = null;
+  setSync(BE ? "err" : "local");
+}
+
+/* ---------- speech, haptics, confetti ---------- */
+let tts = null;
+function fallbackSay(text) {
+  try {
+    const u = new SpeechSynthesisUtterance(text);
+    const vs = speechSynthesis.getVoices();
+    const v = vs.find(v => /en[-_]GB/i.test(v.lang)) || vs.find(v => /^en/i.test(v.lang));
+    if (v) u.voice = v;
+    u.lang = v ? v.lang : "en-GB"; u.rate = 0.92;
+    speechSynthesis.cancel(); speechSynthesis.speak(u);
+  } catch (e) {}
+}
+function say(text) {
+  if (tts) {
+    tts.speak(text, { language: "en" }).catch(e => {
+      const c = e && e.code;
+      if (c === "stopped" || c === "replaced") return;
+      if (c === "not_granted" || c === "unavailable") tts = null;
+      fallbackSay(text);
+    });
+  } else fallbackSay(text);
+}
+document.addEventListener("click", e => {
+  const b = e.target.closest("[data-say]");
+  if (!b) return;
+  e.preventDefault(); e.stopPropagation();
+  say(b.dataset.say);
+  if (b.classList.contains("say")) { b.classList.remove("ping"); void b.offsetWidth; b.classList.add("ping"); }
+}, true);
+const buzz = p => { try { navigator.vibrate && navigator.vibrate(p); } catch (e) {} };
+function confetti(x, y, n = 28) {
+  if (RM) return;
+  const cols = ["#FF7A5C", "#FFC83D", "#3DD6A8", "#5AAEFF", "#B49AFF", "#FF8CC0"];
+  for (let i = 0; i < n; i++) {
+    const d = document.createElement("i");
+    d.className = "cf"; d.style.left = x + "px"; d.style.top = y + "px"; d.style.background = cols[i % 6];
+    document.body.appendChild(d);
+    const a = Math.random() * Math.PI * 2, v = 70 + Math.random() * 150;
+    const an = d.animate([
+      { transform: "translate(-50%,-50%) rotate(0deg)", opacity: 1 },
+      { transform: `translate(${Math.cos(a) * v}px,${Math.sin(a) * v + 140}px) rotate(${Math.random() * 720}deg)`, opacity: 0 }
+    ], { duration: 900 + Math.random() * 600, easing: "cubic-bezier(.2,.7,.3,1)" });
+    an.onfinish = () => d.remove();
+  }
+}
+const burstAt = (el, n) => { if (!el) return; const r = el.getBoundingClientRect(); confetti(r.left + r.width / 2, r.top + r.height / 2, n); };
+
+/* ---------- display helpers ---------- */
+const enDef = it => it.def || it.syns.join(", ");
+const primary = it => S.langs.length ? it.m[S.langs[0]] : enDef(it);
+const lb = l => `<span class="lb" style="--c:${LCOL[l]}">${CODE[l]}</span>`;
+const sayBtn = (text, label, big) => `<button type="button" class="say${big ? " big" : ""}" data-say="${esc(text)}" aria-label="▶ ${esc(text)}">${SPK}${label ? " " + esc(label) : ""}</button>`;
+function markEx(it) { const e = esc(it.ex), a = esc(it.ans), i = e.indexOf(a); return i < 0 ? e : e.slice(0, i) + "<mark>" + a + "</mark>" + e.slice(i + a.length); }
+function blankEx(it) { const e = esc(it.ex), a = esc(it.ans), i = e.indexOf(a); return i < 0 ? e : e.slice(0, i) + '<span class="blank"></span>' + e.slice(i + a.length); }
+const meanRows = it => S.langs.map(l => `<div class="mrow">${lb(l)}<span class="mt" lang="${l}">${esc(it.m[l])}</span></div>`).join("");
+function detailHTML(it) {
+  return meanRows(it)
+    + (it.def ? `<p class="defl">${lb("en")}<span lang="en">${esc(it.def)}</span></p>` : "")
+    + `<div class="syns"><b>≈</b>${it.syns.map(s => `<span class="syn" lang="en">${esc(s)}</span>`).join("")}</div>`
+    + `<p class="exl" lang="en">${markEx(it)} ${sayBtn(it.ex, t("sentence"))}</p>`
+    + (it.forms && it.forms.length > 1 ? `<p class="fam">${t("family")}: <span lang="en">${it.forms.map(esc).join(" · ")}</span></p>` : "");
+}
+const afterHTML = it => `<div class="aft"><b lang="en" style="font-size:18px">${esc(it.w)}</b> ${sayBtn(it.w)} <span class="ipa">/${esc(it.ipa)}/</span><div>${esc(primary(it))}</div><p class="ex" lang="en">${markEx(it)}</p></div>`;
+function boxDots(id) {
+  const c = S.cards[id];
+  if (!c) return `<span class="bx"><span class="nw">${t("new_tag")}</span></span>`;
+  return `<span class="bx">${[1, 2, 3, 4, 5].map(k => `<i class="${k <= c.b ? "f" : ""}"></i>`).join("")}</span>`;
+}
+function ring(a, b) {
+  const r = 34, C = 2 * Math.PI * r, off = C * (1 - (b ? a / b : 0));
+  return `<svg class="ring" width="88" height="88" viewBox="0 0 88 88" aria-label="${a}/${b}"><circle class="bgc" cx="44" cy="44" r="${r}"/><circle class="fgc" cx="44" cy="44" r="${r}" stroke-dasharray="${C.toFixed(1)}" stroke-dashoffset="${off.toFixed(1)}" transform="rotate(-90 44 44)" style="--C:${C.toFixed(1)}"/><text x="44" y="50" text-anchor="middle">${a}/${b}</text></svg>`;
+}
+
+/* ---------- questions ---------- */
+const shareSyn = (a, b) => a.syns.includes(b.w) || b.syns.includes(a.w) || a.syns.some(s => b.syns.includes(s));
+function options(it, labelFn) {
+  const used = new Set([norm(labelFn(it))]), phrase = it.pos === "phrase";
+  const cands = shuffle(ALL.filter(x => x.id !== it.id && (x.pos === "phrase") === phrase));
+  const ordered = [...cands.filter(x => x.pos === it.pos), ...cands.filter(x => x.pos !== it.pos)];
+  const out = [];
+  for (const x of ordered) {
+    if (out.length >= 3) break;
+    const L = labelFn(x);
+    if (!L || used.has(norm(L)) || shareSyn(it, x)) continue;
+    used.add(norm(L)); out.push(x);
+  }
+  return shuffle([{ label: labelFn(it), correct: true }, ...out.map(x => ({ label: labelFn(x), correct: false }))]);
+}
+function makeQ(kind, it) {
+  const W = x => x.w;
+  const cut = s => s.length > 44 ? s.slice(0, 44) + "…" : s;
+  if (kind === "meaning") return { item: it, short: it.w, optLang: S.langs[0] || "en",
+    prompt: `<p class="qh">${t("q_meaning")}</p><div class="qword" lang="en">${esc(it.w)} ${sayBtn(it.w)}</div><p class="ipa" style="margin:4px 0 0">/${esc(it.ipa)}/</p>`,
+    options: options(it, primary) };
+  if (kind === "reverse") return { item: it, short: primary(it), optLang: "en",
+    prompt: `<p class="qh">${t("q_reverse")}</p><p class="qmean">${esc(primary(it))}</p>${S.langs.length && it.def ? `<p class="ipa" lang="en" style="margin:0">${esc(it.def)}</p>` : ""}`,
+    options: options(it, W) };
+  if (kind === "syn") { const syn = it.syns[0]; if (!syn) return null;
+    return { item: it, short: "≈ " + syn, optLang: "en",
+      prompt: `<p class="qh">${t("q_syn")}</p><span class="qsyn" lang="en">${esc(syn)}</span>`, options: options(it, W) }; }
+  if (kind === "cloze") return { item: it, short: cut(it.ex.replace(it.ans, "___")), optLang: "en",
+    prompt: `<p class="qh">${t("q_cloze")}</p><p class="qsent" lang="en">${blankEx(it)}</p>`, options: options(it, W) };
+  if (kind === "form") {
+    const a = it.ans.toLowerCase();
+    if (!it.forms || it.forms.length < 2 || !it.forms.includes(a)) return null;
+    const fs = shuffle([a, ...shuffle(it.forms.filter(f => f !== a)).slice(0, 3)]);
+    return { item: it, short: cut(it.ex.replace(it.ans, "___")), optLang: "en",
+      prompt: `<p class="qh">${t("q_form")}</p><p class="qsent" lang="en">${blankEx(it)}</p>`, options: fs.map(f => ({ label: f, correct: f === a })) };
+  }
+  return null;
+}
+function buildQs(items, count, kinds) {
+  const out = []; let k = 0;
+  for (const it of shuffle(items)) {
+    if (out.length >= count) break;
+    for (let j = 0; j < kinds.length; j++) { const q = makeQ(kinds[(k + j) % kinds.length], it); if (q) { out.push(q); k++; break; } }
+  }
+  return out;
+}
+const formable = it => it.forms && it.forms.length >= 2 && it.forms.includes(it.ans.toLowerCase());
+
+/* ---------- session frame ---------- */
+function shell(title, color, build) {
+  view = "session"; keyHandler = null; clearInterval(activeTimer); closeFb();
+  try { speechSynthesis.cancel(); } catch (e) {}
+  document.body.classList.add("bare"); navMark(); window.scrollTo(0, 0); sessXP = 0;
+  app.innerHTML = `<section style="--c:${color}"><div class="stop"><button type="button" class="xbtn" id="xb" aria-label="${t("close")}">${svg("x", 20, 2.6)}</button><div class="pbar"><i id="pb" style="width:0%"></i></div><span class="pcount" id="pc"></span><span class="xpc" id="xpc">+0 XP</span></div><p class="stitle">${esc(title)}</p><div id="stage"></div></section>`;
+  $("#xb").onclick = () => { clearInterval(activeTimer); closeFb(); view = backTo; render(); };
+  build($("#stage"), (i, n) => { $("#pb").style.width = (n ? Math.round(i / n * 100) : 0) + "%"; $("#pc").textContent = `${Math.min(i + 1, n)}/${n}`; });
+}
+function showFb(ok, html, last, onNext) {
+  const fb = $("#fb");
+  fb.innerHTML = `<div class="fb-in ${ok ? "ok" : "bad"}"><div class="fb-h">${svg(ok ? "check" : "x", 24, 3)} ${ok ? pick([t("ok1"), t("ok2"), t("ok3")]) : t("bad")}</div>${html}<button type="button" class="btn wide c" style="--c:${ok ? "var(--ok)" : "var(--bad)"}" id="nx">${last ? t("results") : t("next")} →</button></div>`;
+  requestAnimationFrame(() => fb.classList.add("show"));
+  $("#nx").onclick = () => { closeFb(); onNext(); };
+  buzz(ok ? 12 : [30, 40, 30]);
+}
+function closeFb() { const fb = $("#fb"); if (fb) fb.classList.remove("show"); }
+function endScreen(stage, o) {
+  keyHandler = null; clearInterval(activeTimer); closeFb();
+  const pb = $("#pb"); if (pb) pb.style.width = "100%";
+  if (!o.banner && S.name && o.big !== "0") o.banner = t(o.pct == null || o.pct >= .7 ? "praise_hi" : "praise_lo", { name: S.name });
+  stage.innerHTML = `<div class="end">${o.banner ? `<div class="banner">${esc(o.banner)}</div>` : ""}${sessXP ? `<div style="margin:2px 0 6px"><span class="xpc pop">+${sessXP} XP</span></div>` : ""}<div class="blob" style="--c:${o.color || "var(--mint)"}"><span class="big">${esc(o.big)}</span>${o.small ? `<small>${esc(o.small)}</small>` : ""}</div>${o.text ? `<p>${esc(o.text)}</p>` : ""}${o.extra || ""}<div class="acts">${o.again ? `<button type="button" class="btn ghost wide" id="ag">${t("p_again")}</button>` : ""}<button type="button" class="btn wide" id="hm">${backTo === "today" ? t("b_today") : t("b_games")}</button></div></div>`;
+  if (o.again) $("#ag").onclick = o.again;
+  $("#hm").onclick = () => { view = backTo; render(); };
+  window.scrollTo(0, 0);
+  if (o.celebrate) setTimeout(() => confetti(innerWidth / 2, 200, o.banner ? 80 : 40), 200);
+}
+function gameDone() {
+  let n = selDay || curDay();
+  if (!selDay && n > 1 && !started(n) && S.days[n - 1] && S.days[n - 1].at === todayIdx()) n = n - 1;
+  day(n).game = true; const fin = checkDone(n); persist(); return fin ? n : 0;
+}
+const resMsg = p => p >= .9 ? t("res90") : p >= .7 ? t("res70") : p >= .5 ? t("res50") : t("res0");
+const weakListHTML = items => items.length ? `<p class="sh" style="text-align:left">${t("look")}</p><div class="wlist">${[...new Set(items)].map(it => `<div><b lang="en">${esc(it.w)}</b>${sayBtn(it.w)}<span>${esc(primary(it))}</span></div>`).join("")}</div>` : "";
+
+/* ---------- flashcards with flip + swipe ---------- */
+function runCards(ids, mode, n, reverse) {
+  let q = mode === "learn" ? ids.slice() : shuffle(ids);
+  const total = q.length; let done = 0, first = 0; const missed = new Set();
+  const title = mode === "learn" ? t("st_new") : mode === "review" ? t("st_review") : reverse ? t("g_rcards") : t("g_cards");
+  const color = mode === "review" ? "var(--sky)" : reverse ? "var(--pink)" : "var(--coral)";
+  shell(title, color, (stage, prog) => {
+    if (!total) return endScreen(stage, { big: "0", text: t("few") });
+    const show = () => {
+      if (!q.length) return finish();
+      const it = BYID[q[0]]; let flipped = false, busy = false;
+      prog(done, total);
+      const fc = col(it.day + (missed.has(it.id) ? 2 : 0) + done);
+      const front = reverse
+        ? `<span class="pos">${t("pos_" + it.pos)}</span><div class="fw sm">${esc(primary(it))}</div>${S.langs.length > 1 ? `<div class="oth">${S.langs.slice(1).map(l => esc(it.m[l])).join(" · ")}</div>` : ""}${it.def && S.langs.length ? `<div class="oth" lang="en">${esc(it.def)}</div>` : ""}<p class="hintq">${t("recall_w")}</p>`
+        : `<span class="pos">${t("pos_" + it.pos)}</span><div class="fw" lang="en">${esc(it.w)}</div><div class="ipa">/${esc(it.ipa)}/</div>${sayBtn(it.w, "", true)}<p class="hintq">${t("recall_m")}</p>`;
+      const back = `<div class="bk-head"><b lang="en">${esc(it.w)}</b>${sayBtn(it.w)}<span class="ipa">/${esc(it.ipa)}/</span></div>${detailHTML(it)}`;
+      const L = [[t("r0"), "var(--bad)"], [t("r1"), "var(--sun)"], [t("r2"), "var(--mint)"], [t("r3"), "var(--sky)"]];
+      stage.innerHTML = `<div class="deck"><div class="swipe" id="sw"><div class="flip" id="fl"><div class="flip-in"><div class="face front" style="--c:${fc}">${front}</div><div class="face back">${back}</div></div></div><div class="stamp st-no" id="sn">${t("r0")}</div><div class="stamp st-ok" id="so">${t("r2")}</div></div></div>
+        <p class="hint" id="hint">${t("tap_flip")}</p><div class="rate" id="rate" hidden>${L.map(([l, c], k) => `<button type="button" data-q="${k}" style="--c:${c}"><b>${l}</b><small>${nextLabel(it.id, k)}</small></button>`).join("")}</div>`;
+      const sw = $("#sw"), fl = $("#fl"), sn = $("#sn"), so = $("#so");
+      if (!reverse && mode !== "review" && !missed.has(it.id)) say(it.w);
+      const flip = () => {
+        if (flipped) return; flipped = true; fl.classList.add("on"); buzz(8);
+        $("#rate").hidden = false; $("#hint").textContent = t("swipe");
+        if (reverse) say(it.w);
+      };
+      const choose = r => {
+        rate(it.id, r); q.shift();
+        if (r === 0) { missed.add(it.id); q.splice(Math.min(3, q.length), 0, it.id); }
+        else { done++; if (!missed.has(it.id)) first++; }
+        show();
+      };
+      const fly = r => {
+        if (busy) return; busy = true; buzz(r === 0 ? 20 : 10);
+        const dir = r === 0 ? -1 : r === 1 ? 0 : 1;
+        sw.classList.remove("dragging");
+        sw.style.transform = dir ? `translateX(${dir * 130}%) rotate(${dir * 16}deg)` : "translateY(70px) scale(.9)";
+        sw.style.opacity = "0";
+        setTimeout(() => choose(r), RM ? 0 : 240);
+      };
+      $$("#rate button").forEach(b => b.onclick = () => fly(+b.dataset.q));
+      let sx = 0, sy = 0, dx = 0, active = false, drag = false, suppress = false;
+      sw.addEventListener("pointerdown", e => { if (!flipped || busy) return; active = true; drag = false; sx = e.clientX; sy = e.clientY; dx = 0; });
+      sw.addEventListener("pointermove", e => {
+        if (!active) return;
+        const mx = e.clientX - sx, my = e.clientY - sy;
+        if (!drag) {
+          if (Math.abs(mx) > 10 && Math.abs(mx) > Math.abs(my)) { drag = true; try { sw.setPointerCapture(e.pointerId); } catch (er) {} sw.classList.add("dragging"); }
+          else if (Math.abs(my) > 12) active = false;
+          return;
+        }
+        dx = mx;
+        sw.style.transform = `translateX(${dx}px) rotate(${dx / 18}deg)`;
+        sn.style.opacity = Math.min(1, Math.max(0, -dx / 90)); so.style.opacity = Math.min(1, Math.max(0, dx / 90));
+      });
+      const end = () => {
+        if (!active) return; active = false;
+        if (drag) { suppress = true; if (Math.abs(dx) > 90) fly(dx > 0 ? 2 : 0); else { sw.classList.remove("dragging"); sw.style.transform = ""; sn.style.opacity = so.style.opacity = 0; } }
+      };
+      sw.addEventListener("pointerup", end); sw.addEventListener("pointercancel", end);
+      sw.addEventListener("click", () => { if (suppress) { suppress = false; return; } flip(); });
+      keyHandler = e => {
+        if (e.key === " " || e.key === "Enter") { e.preventDefault(); flip(); }
+        else if (flipped && "1234".includes(e.key)) { e.preventDefault(); fly(+e.key - 1); }
+        else if (flipped && e.key === "ArrowLeft") fly(0);
+        else if (flipped && e.key === "ArrowRight") fly(2);
+      };
+    };
+    const finish = () => {
+      let banner = "";
+      if (mode === "learn") { day(n).learn = true; if (checkDone(n)) banner = t("day_done", { n }); }
+      else if (mode === "review") day(n).review = true;
+      else { const f = gameDone(); if (f) banner = t("day_done", { n: f }); }
+      persist();
+      endScreen(stage, { big: String(total), small: t("cards_n"), color, banner, celebrate: true,
+        text: mode === "learn" ? t("learn_r", { f: first }) : t("review_r", { f: first }),
+        again: mode === "free" ? () => runCards(ids, mode, n, reverse) : null });
+    };
+    show();
+  });
+}
+
+/* ---------- multiple choice ---------- */
+function runMCQ(title, color, qs, opt = {}) {
+  let i = 0, score = 0; const res = [];
+  shell(title, color, (stage, prog) => {
+    if (!qs.length) return endScreen(stage, { big: "0", text: t("few") });
+    const show = () => {
+      if (i >= qs.length) return finish();
+      prog(i, qs.length);
+      const q = qs[i]; let done = false;
+      stage.innerHTML = `<div class="qa">${q.prompt}<div class="opts">${q.options.map((o, k) => `<button type="button" class="opt" data-k="${k}" style="animation-delay:${k * 50}ms;--c:${col(k)}"><span class="k">${"ABCD"[k]}</span><span lang="${q.optLang}">${esc(o.label)}</span></button>`).join("")}</div></div>`;
+      const btns = $$(".opt", stage);
+      const next = () => { i++; show(); };
+      const pickK = k => {
+        if (done) return; done = true;
+        const ok = q.options[k].correct; if (ok) score++;
+        res.push({ q, k, ok }); mark(q.item.id, ok);
+        btns.forEach(b => b.disabled = true);
+        if (opt.test) { btns[k].classList.add("picked"); buzz(8); setTimeout(next, 330); return; }
+        btns.forEach((b, j) => { if (q.options[j].correct) b.classList.add("right"); else if (j === k) b.classList.add("wrong"); });
+        if (ok) burstAt(btns[k], 16);
+        showFb(ok, (ok ? "" : `<p>${t("bad_s")}</p>`) + afterHTML(q.item), i + 1 >= qs.length, next);
+      };
+      btns.forEach((b, k) => b.onclick = () => pickK(k));
+      keyHandler = e => {
+        const m = "1234abcd".indexOf(e.key.toLowerCase());
+        if (!done && m >= 0 && m % 4 < btns.length) { e.preventDefault(); pickK(m % 4); }
+        else if (done && !opt.test && e.key === "Enter") { e.preventDefault(); closeFb(); next(); }
+      };
+    };
+    const finish = () => {
+      let banner = "";
+      if (opt.onEnd) { if (opt.onEnd(score, qs.length)) banner = t("day_done", { n: opt.n }); }
+      else { const f = gameDone(); if (f) banner = t("day_done", { n: f }); }
+      persist();
+      const pct = score / qs.length, wrong = res.filter(r => !r.ok).map(r => r.q.item);
+      let extra = "";
+      if (opt.test) extra = `<div class="rlist">${res.map((r, j) => `<div class="rrow" style="animation-delay:${j * 30}ms"><span class="n">${j + 1}</span><span><span class="q">${esc(r.q.short)}</span><span class="y">${esc(r.q.options[r.k].label)}</span>${r.ok ? "" : `<span class="r">✓ ${esc(r.q.options.find(o => o.correct).label)}</span>`}</span><span class="badge ${r.ok ? "ok" : "no"}">${svg(r.ok ? "check" : "x", 16, 3)}</span></div>`).join("")}</div>`;
+      else extra = weakListHTML(wrong);
+      endScreen(stage, { big: `${score}/${qs.length}`, pct, color: pct >= .7 ? "var(--mint)" : pct >= .5 ? "var(--sun)" : "var(--coral)", banner,
+        text: resMsg(pct), extra, celebrate: pct >= .7 || !!banner, again: opt.again });
+    };
+    show();
+  });
+}
+function runTest(items, count, n, title) {
+  const weak = items.filter(it => !S.cards[it.id] || isWeak(it)), rest = items.filter(it => !weak.includes(it));
+  let pk = [...sample(weak, Math.ceil(count * .6)), ...sample(rest, count)].slice(0, count);
+  if (pk.length < count) pk = [...pk, ...shuffle(items.filter(x => !pk.includes(x)))].slice(0, count);
+  runMCQ(title, "var(--sun)", buildQs(pk, count, ["meaning", "cloze", "syn", "reverse"]), { test: true, n,
+    onEnd: (s, tot) => { const d = day(n); d.test = s; d.testOf = tot; if (s === tot && tot >= 10) S.perfect = true; touch(); return checkDone(n); } });
+}
+
+/* ---------- type it ---------- */
+function lev(a, b) {
+  const m = a.length, n = b.length, d = Array.from({ length: m + 1 }, (_, i) => [i]);
+  for (let j = 1; j <= n; j++) d[0][j] = j;
+  for (let i = 1; i <= m; i++) for (let j = 1; j <= n; j++) d[i][j] = Math.min(d[i - 1][j] + 1, d[i][j - 1] + 1, d[i - 1][j - 1] + (a[i - 1] === b[j - 1] ? 0 : 1));
+  return d[m][n];
+}
+function runType(items) {
+  const qs = sample(items, Math.min(10, items.length)); let i = 0, score = 0;
+  shell(t("g_type"), "var(--sky)", (stage, prog) => {
+    if (!qs.length) return endScreen(stage, { big: "0", text: t("few") });
+    const show = () => {
+      if (i >= qs.length) { const f = gameDone(); return endScreen(stage, { big: `${score}/${qs.length}`, pct: score / qs.length, color: "var(--sky)", text: t("type_r"), celebrate: score / qs.length >= .7, banner: f ? t("day_done", { n: f }) : "", again: () => runType(items) }); }
+      const it = qs[i]; let hint = 1, tries = 0, done = false;
+      prog(i, qs.length);
+      const slots = () => it.w.split("").map((c, j) => c === " " ? '<i class="sp"></i>' : j < hint ? `<i class="f">${esc(c)}</i>` : "<i></i>").join("");
+      stage.innerHTML = `<div class="qa"><p class="qh">${t("recall_w")}</p>${S.langs.length ? `<p class="qmean">${esc(primary(it))}</p>${S.langs.length > 1 ? `<p class="ipa" style="margin:0">${S.langs.slice(1).map(l => esc(it.m[l])).join(" · ")}</p>` : ""}` : ""}
+        <p class="ipa" lang="en" style="margin:6px 0 0">${esc(enDef(it))}</p>
+        <div class="slots" id="sl" lang="en">${slots()}</div><p class="ipa" style="margin:0">${t("letters", { n: it.w.replace(/ /g, "").length })}</p>
+        <input class="tin" id="ti" lang="en" autocomplete="off" autocapitalize="off" autocorrect="off" spellcheck="false" enterkeyhint="done" aria-label="English">
+        <p class="msg" id="msg"></p>
+        <div class="tacts"><button type="button" class="btn c" style="--c:var(--mint)" id="ck">${t("check")}</button><button type="button" class="btn ghost" id="hn">${t("hint")}</button><button type="button" class="btn ghost" id="gv">${t("dunno")}</button></div></div>`;
+      const ti = $("#ti"), msg = $("#msg");
+      setTimeout(() => ti.focus({ preventScroll: true }), 50);
+      const next = () => { i++; show(); };
+      const reveal = ok => {
+        done = true; ti.disabled = true; ti.blur(); if (!ok) ti.value = it.w;
+        mark(it.id, ok); if (ok) { score++; burstAt(ti, 18); }
+        say(it.w);
+        showFb(ok, (ok ? "" : `<p>${t("type_bad")}</p>`) + afterHTML(it), i + 1 >= qs.length, next);
+      };
+      const check = () => {
+        if (done) return;
+        const v = norm(ti.value); if (!v) return;
+        if (v === norm(it.w)) return reveal(true);
+        tries++;
+        if (tries < 2 && lev(v, norm(it.w)) <= 2) { msg.textContent = t("almost"); ti.classList.remove("shake"); void ti.offsetWidth; ti.classList.add("shake"); buzz(25); ti.select(); return; }
+        reveal(false);
+      };
+      $("#ck").onclick = check;
+      $("#hn").onclick = () => { if (hint < it.w.length - 1) { hint++; $("#sl").innerHTML = slots(); } ti.focus(); };
+      $("#gv").onclick = () => { if (!done) reveal(false); };
+      ti.addEventListener("keydown", e => { if (e.key === "Enter") { e.preventDefault(); check(); } });
+      keyHandler = e => { if (done && e.key === "Enter") { e.preventDefault(); closeFb(); next(); } };
+    };
+    show();
+  });
+}
+
+/* ---------- pairs ---------- */
+function runMatch(items) {
+  const pool = [], seen = new Set();
+  for (const it of shuffle(items)) { const L = norm(primary(it)); if (seen.has(L)) continue; seen.add(L); pool.push(it); if (pool.length >= 12) break; }
+  const rounds = [];
+  for (let k = 0; k < pool.length; k += 6) rounds.push(pool.slice(k, k + 6));
+  if (rounds.length > 1 && rounds[rounds.length - 1].length < 3) rounds[rounds.length - 2].push(...rounds.pop());
+  let r = 0, miss = 0, matched = 0; const t0 = Date.now();
+  shell(t("g_match"), "var(--grape)", (stage, prog) => {
+    if (pool.length < 3) return endScreen(stage, { big: "0", text: t("few") });
+    const tick = () => { prog(matched, pool.length); $("#pc").textContent = t("secs", { n: Math.round((Date.now() - t0) / 1000) }); };
+    tick(); activeTimer = setInterval(tick, 1000);
+    const show = () => {
+      const R = rounds[r]; let sel = null, left = R.length;
+      stage.innerHTML = `<p class="qh">${t("match_h")}</p><div class="mgrid"><div class="mcol">${shuffle(R).map((x, k) => `<button type="button" class="mt2" data-id="${x.id}" data-s="L" lang="en" style="animation-delay:${k * 40}ms">${esc(x.w)}</button>`).join("")}</div><div class="mcol">${shuffle(R).map((x, k) => `<button type="button" class="mt2" data-id="${x.id}" data-s="R" lang="${S.langs[0] || "en"}" style="animation-delay:${k * 40 + 20}ms">${esc(primary(x))}</button>`).join("")}</div></div>`;
+      $$(".mt2", stage).forEach(b => b.onclick = () => {
+        if (b.disabled) return;
+        if (!sel || sel.dataset.s === b.dataset.s) { if (sel) sel.classList.remove("sel"); sel = b; b.classList.add("sel"); buzz(6); return; }
+        if (sel.dataset.id === b.dataset.id) {
+          const pc = col(matched);
+          [sel, b].forEach(x => { x.classList.remove("sel"); x.style.setProperty("--pc", pc); x.classList.add("done"); x.disabled = true; });
+          burstAt(b, 10); say(BYID[b.dataset.id].w); buzz(12);
+          sel = null; matched++; tick();
+          if (--left === 0) { r++; if (r < rounds.length) setTimeout(show, 420); else setTimeout(finish, 350); }
+        } else {
+          miss++; buzz([25, 30, 25]);
+          const a = sel, c = b; mark(a.dataset.s === "L" ? a.dataset.id : c.dataset.id, false);
+          [a, c].forEach(x => { x.classList.remove("sel"); x.classList.add("no"); });
+          setTimeout(() => [a, c].forEach(x => x.classList.remove("no")), 420);
+          sel = null;
+        }
+      });
+    };
+    const finish = () => {
+      const secs = Math.round((Date.now() - t0) / 1000);
+      if (secs < 30 && pool.length >= 6) S.fast = true;
+      const f = gameDone();
+      endScreen(stage, { big: String(secs), small: t("seconds"), color: "var(--grape)", celebrate: true, banner: f ? t("day_done", { n: f }) : "",
+        text: t("match_r", { p: pool.length, m: miss }), again: () => runMatch(items) });
+    };
+    show();
+  });
+}
+
+/* ---------- spot the synonym ---------- */
+function runSpot(items) {
+  const okItems = items.filter(x => x.syns.some(s => !x.ex.toLowerCase().includes(s.toLowerCase())));
+  const qs = sample(okItems, Math.min(8, okItems.length)); let i = 0, score = 0;
+  shell(t("g_spot"), "var(--pink)", (stage, prog) => {
+    if (!qs.length) return endScreen(stage, { big: "0", text: t("few") });
+    const show = () => {
+      if (i >= qs.length) { const f = gameDone(); return endScreen(stage, { big: `${score}/${qs.length}`, pct: score / qs.length, color: "var(--pink)", text: t("spot_r"), celebrate: score / qs.length >= .7, banner: f ? t("day_done", { n: f }) : "", again: () => runSpot(items) }); }
+      const it = qs[i]; let done = false;
+      prog(i, qs.length);
+      const syn = it.syns.find(s => !it.ex.toLowerCase().includes(s.toLowerCase()));
+      const a = it.ex.indexOf(it.ans), b = a + it.ans.length;
+      let pos = 0, html = "";
+      it.ex.split(/(\s+)/).forEach(part => {
+        if (!part) return;
+        if (/^\s+$/.test(part)) { html += " "; pos += part.length; return; }
+        const s = pos, e = pos + part.length; pos = e;
+        html += `<button type="button" class="tok" data-hit="${s < b && e > a ? 1 : 0}">${esc(part)}</button>`;
+      });
+      stage.innerHTML = `<div class="qa"><p class="qh">${t("spot_q")}</p><span class="qsyn" lang="en">«${esc(syn)}»</span><p class="qh">${t("spot_tap")}</p><p class="spot" lang="en">${html}</p></div>`;
+      const next = () => { i++; show(); };
+      $$(".tok", stage).forEach(tk => tk.onclick = () => {
+        if (done) return; done = true;
+        const hit = tk.dataset.hit === "1"; if (hit) score++;
+        mark(it.id, hit);
+        $$(".tok", stage).forEach(x => { x.disabled = true; if (x.dataset.hit === "1") x.classList.add("hit"); });
+        if (!hit) tk.classList.add("miss"); else burstAt(tk, 14);
+        showFb(hit, `<p>${hit ? t("spot_ok") : t("spot_bad")}</p><p><b lang="en">${esc(it.w)}</b> ${sayBtn(it.w)} ≈ <span lang="en">${esc(it.syns.join(", "))}</span></p><p>${esc(primary(it))}</p>`, i + 1 >= qs.length, next);
+      });
+      keyHandler = e => { if (done && e.key === "Enter") { e.preventDefault(); closeFb(); next(); } };
+    };
+    show();
+  });
+}
+
+/* ---------- games ---------- */
+const GAMES = [
+  { id: "cards", icon: "cards", c: "var(--coral)", run: items => runCards(items.map(x => x.id), "free", 0, false) },
+  { id: "rcards", icon: "rcards", c: "var(--pink)", run: items => runCards(items.map(x => x.id), "free", 0, true) },
+  { id: "mcq", icon: "mcq", c: "var(--sun)", run: items => { const f = () => runMCQ(t("g_mcq"), "var(--sun)", buildQs(items, 10, ["meaning", "reverse"]), { again: f }); f(); } },
+  { id: "cloze", icon: "cloze", c: "var(--mint)", run: items => { const f = () => runMCQ(t("g_cloze"), "var(--mint)", buildQs(items, 10, ["cloze"]), { again: f }); f(); } },
+  { id: "spot", icon: "spot", c: "var(--grape)", run: items => runSpot(items) },
+  { id: "type", icon: "type", c: "var(--sky)", run: items => runType(items) },
+  { id: "match", icon: "match", c: "var(--coral)", run: items => runMatch(items) },
+  { id: "form", icon: "form", c: "var(--mint)", run: items => {
+      let f = items.filter(formable);
+      if (f.length < 5) f = [...f, ...ALL.filter(x => formable(x) && S.cards[x.id] && !f.includes(x))];
+      if (f.length < 5) f = ALL.filter(formable);
+      const go = () => runMCQ(t("g_form"), "var(--mint)", buildQs(f, 8, ["form"]), { again: go }); go();
+    } },
+];
+const DAILY = ["mcq", "cloze", "spot", "type", "match", "form"];
+const gameById = id => GAMES.find(g => g.id === id);
+const gameOfDay = n => gameById(DAILY[(n < 7 ? n - 1 : n - 2) % DAILY.length]);
+
+/* ---------- combo builder (tap / drag) ---------- */
+const PRESETS = [["az"], ["az", "tr"], ["az", "ru"], ["uz"], ["uz", "ru"], ["ru"], ["tr"], ["az", "uz", "ru", "tr"], []];
+const presetLabel = p => p.length ? "EN+" + p.map(l => CODE[l]).join("+") : t("eng_only");
+const sameArr = (a, b) => a.length === b.length && a.every((x, i) => x === b[i]);
+function comboBuilder(root, onChange) {
+  const H = 58;
+  const it = ALL.find(x => x.w === "accelerate") || ALL[0];
+  const commit = (L, freshL) => { S.langs = L; S.lset = true; persist(); draw(freshL); onChange && onChange(); };
+  const draw = freshL => {
+    const L = S.langs;
+    root.innerHTML = `<div class="cb-card" id="cbc"><div class="cb-word" lang="en">${esc(it.w)} ${sayBtn(it.w)}</div>
+      <div class="cb-en">${lb("en")}<span lang="en">${esc(it.def)}</span><span class="lock">${svg("lock", 13, 2.4)} ${t("always")}</span></div>
+      <div class="cb-slots" id="cbs" style="height:${L.length ? L.length * H - 8 : 0}px">${L.map((l, i) => `<div class="cb-row ${freshL === l ? "new" : ""}" data-l="${l}" style="transform:translateY(${i * H}px);--c:${LCOL[l]}"><span class="grip" aria-hidden="true">⋮⋮</span>${lb(l)}<span class="mt" lang="${l}">${esc(it.m[l])}</span><button type="button" class="x" data-x="${l}" aria-label="−${CODE[l]}">${svg("x", 15, 2.8)}</button></div>`).join("")}</div>
+      ${L.length ? "" : `<p class="cb-empty">${t("ob_empty")}</p>`}</div>
+      <p class="cb-tl">${t("ob_tray")}</p><div class="cb-tray" id="cbt">${MLANGS.filter(l => !L.includes(l)).map(l => `<button type="button" class="cb-chip" data-l="${l}" style="--c:${LCOL[l]}">${CODE[l]} <small>${NATIVE[l]}</small></button>`).join("") || '<span class="cb-full">✓</span>'}</div>
+      <p class="cb-tl">${t("presets")}</p><div class="seg">${PRESETS.map((p, k) => `<button type="button" class="pchip" data-p="${k}" aria-pressed="${sameArr(L, p)}">${presetLabel(p)}</button>`).join("")}</div>`;
+    const card = $("#cbc", root), slots = $("#cbs", root), tray = $("#cbt", root);
+    $$("[data-x]", root).forEach(b => b.onclick = e => { e.stopPropagation(); buzz(10); commit(S.langs.filter(x => x !== b.dataset.x)); });
+    $$("[data-p]", root).forEach(b => b.onclick = () => { buzz(8); commit(PRESETS[+b.dataset.p].slice()); });
+    // drag rows to reorder, drag below the card to remove
+    $$(".cb-row", root).forEach(row => row.addEventListener("pointerdown", e => {
+      if (e.target.closest(".x,.say")) return;
+      e.preventDefault();
+      const l = row.dataset.l, ord = S.langs.slice(), i0 = ord.indexOf(l), y0 = e.clientY, rows = $$(".cb-row", root);
+      let cur = i0, out = false;
+      try { row.setPointerCapture(e.pointerId); } catch (er) {}
+      row.classList.add("drag");
+      const move = ev => {
+        const dy = ev.clientY - y0;
+        row.style.transform = `translateY(${i0 * H + dy}px) scale(1.03)`;
+        const ni = Math.max(0, Math.min(ord.length - 1, Math.round((i0 * H + dy) / H)));
+        if (ni !== cur) { ord.splice(cur, 1); ord.splice(ni, 0, l); cur = ni; rows.forEach(r => { if (r !== row) r.style.transform = `translateY(${ord.indexOf(r.dataset.l) * H}px)`; }); buzz(6); }
+        out = ev.clientY > card.getBoundingClientRect().bottom + 12;
+        row.classList.toggle("out", out); tray.classList.toggle("hot", out);
+      };
+      const up = () => {
+        row.removeEventListener("pointermove", move); row.removeEventListener("pointerup", up); row.removeEventListener("pointercancel", up);
+        tray.classList.remove("hot");
+        commit(out ? ord.filter(x => x !== l) : ord);
+      };
+      row.addEventListener("pointermove", move); row.addEventListener("pointerup", up); row.addEventListener("pointercancel", up);
+    }));
+    // tap or drag a tray chip onto the card
+    $$(".cb-chip", root).forEach(ch => ch.addEventListener("pointerdown", e => {
+      e.preventDefault();
+      const l = ch.dataset.l, x0 = e.clientX, y0 = e.clientY; let ghost = null;
+      try { ch.setPointerCapture(e.pointerId); } catch (er) {}
+      const over = ev => { const r = card.getBoundingClientRect(); return ev.clientY > r.top - 24 && ev.clientY < r.bottom + 24; };
+      const move = ev => {
+        if (!ghost && Math.hypot(ev.clientX - x0, ev.clientY - y0) > 6) { ghost = ch.cloneNode(true); ghost.classList.add("cb-ghost"); document.body.appendChild(ghost); ch.style.opacity = ".3"; }
+        if (ghost) { ghost.style.left = ev.clientX + "px"; ghost.style.top = ev.clientY + "px"; card.classList.toggle("hot", over(ev)); }
+      };
+      const up = ev => {
+        ch.removeEventListener("pointermove", move); ch.removeEventListener("pointerup", up); ch.removeEventListener("pointercancel", up);
+        card.classList.remove("hot");
+        if (!ghost) { buzz(10); commit([...S.langs, l], l); return; }
+        ghost.remove(); ch.style.opacity = "";
+        if (ev.type === "pointerup" && over(ev)) {
+          const st = slots.getBoundingClientRect().top;
+          const idx = Math.max(0, Math.min(S.langs.length, Math.round((ev.clientY - st) / H)));
+          const L = S.langs.slice(); L.splice(idx, 0, l); buzz(10); commit(L, l);
+        }
+      };
+      ch.addEventListener("pointermove", move); ch.addEventListener("pointerup", up); ch.addEventListener("pointercancel", up);
+    }));
+  };
+  draw();
+}
+
+/* ---------- views ---------- */
+function navMark() { $$(".bnav button").forEach(b => b.setAttribute("aria-current", b.dataset.v === view ? "page" : "false")); }
+function applyUI() {
+  document.documentElement.lang = S.ui || "en";
+  $$(".bnav button").forEach(b => { $(".bl", b).textContent = t("nav_" + b.dataset.v); $(".bi", b).innerHTML = svg(b.dataset.i ? b.dataset.i : $(".bi", b).dataset.i, 22); });
+}
+function render() {
+  keyHandler = null; clearInterval(activeTimer); closeFb();
+  if (!S.ui || !S.name || !S.onb) view = "onb";
+  else if (view === "session" || view === "onb") view = backTo || "today";
+  document.body.classList.toggle("bare", view === "onb");
+  applyUI(); navMark();
+  ({ onb: vOnb, today: vToday, path: vPath, games: vGames, words: vWords, set: vSet, me: vMe })[view]();
+}
+$$(".bnav button").forEach(b => b.onclick = () => { view = b.dataset.v; backTo = view; if (view === "today") selDay = null; buzz(6); render(); window.scrollTo(0, 0); });
+const comboTxt = () => "EN" + (S.langs.length > 2 ? "+" + S.langs.length : S.langs.map(l => "+" + CODE[l]).join(""));
+const topbar = () => `<div class="topbar"><div class="brand"><i>14</i>IELTS Reading</div><div class="tright"><button type="button" class="lpill" id="lp" aria-label="${esc(t("nav_set"))}">${CODE[S.ui]} · ${comboTxt()}</button><button type="button" class="av" id="avb" style="--c:${hueOf(myName())}" aria-label="${esc(t("nav_me"))}">${esc(initial(myName()))}<small>${lvlOf(S.xp).L}</small></button></div></div>`;
+const bindTop = () => {
+  const b = $("#lp"); if (b) b.onclick = () => { view = "set"; backTo = "set"; render(); window.scrollTo(0, 0); };
+  const a = $("#avb"); if (a) a.onclick = () => { view = "me"; backTo = "me"; buzz(6); render(); window.scrollTo(0, 0); };
+  bindGreet();
+};
+
+/* greeting: one context line per visit, the mascot gives more tips on tap */
+let greetCtx = null, tipIdx = -1;
+function greetLine() {
+  if (tipIdx >= 0) return t("m" + (tipIdx + 1));
+  if (!greetCtx) {
+    const st = streak(), n = curDay(), last = S.act.length ? Math.max(...S.act) : null;
+    if (!S.act.length) greetCtx = ["c_first"];
+    else if (todayIdx() - last >= 2) greetCtx = ["c_back"];
+    else if (n > 1 && dayDone(n - 1) && S.days[n - 1].at === todayIdx() && !started(n)) greetCtx = ["c_done"];
+    else if (st >= 2) greetCtx = ["c_streak", { n: st }];
+    else if (n >= 11 && n < 14) greetCtx = ["c_near", { n: 14 - n }];
+    else { tipIdx = Math.floor(Math.random() * 6); return greetLine(); }
+  }
+  return t(greetCtx[0], greetCtx[1]);
+}
+function greetBlock() {
+  const h = new Date().getHours();
+  const hi = t(h < 5 ? "hi_n" : h < 12 ? "hi_m" : h < 18 ? "hi_d" : h < 23 ? "hi_e" : "hi_n", { name: myName() });
+  return `<div class="greet"><button type="button" class="mascot" id="masc" aria-label="${esc(t("tap_me"))}"><i></i><i></i><b></b></button><div class="bubble"><b>${esc(hi)}</b><span id="gl">${esc(greetLine())}</span></div></div>`;
+}
+function bindGreet() {
+  const m = $("#masc"); if (!m) return;
+  m.onclick = () => {
+    tipIdx = (tipIdx + 1) % 6; buzz(10);
+    m.classList.remove("hop"); void m.offsetWidth; m.classList.add("hop");
+    const g = $("#gl"); g.textContent = greetLine(); g.classList.remove("fade"); void g.offsetWidth; g.classList.add("fade");
+  };
+}
+
+let onbForce = 0;
+function vOnb() {
+  const step = onbForce || (!S.ui ? 1 : !S.name ? 2 : 3);
+  const dots = k => `<div class="dots-step">${[1, 2, 3].map(i => `<i class="${i <= k ? "on" : ""}"></i>`).join("")}</div>`;
+  if (step === 2) {
+    app.innerHTML = `<section class="onb">${dots(2)}<div class="greet" style="margin:0 0 18px"><button type="button" class="mascot" id="masc" tabindex="-1" aria-hidden="true"><i></i><i></i><b></b></button><div class="bubble"><b lang="${S.ui}">${esc(HELLO[S.ui])}</b><span>${esc(t("ob_name_sub"))}</span></div></div>
+      <h2>${t("ob_name")}</h2><input class="nin" id="nin" maxlength="24" autocomplete="nickname" enterkeyhint="next" placeholder="${esc(t("name_ph"))}" value="${esc(S.name || nameHint)}" aria-label="${esc(t("name_ph"))}">
+      <div class="onb-acts"><button type="button" class="btn ghost" id="bk">${t("back")}</button><button type="button" class="btn c" style="--c:var(--mint)" id="go">${t("next")} →</button></div></section>`;
+    const ni = $("#nin"), go = $("#go");
+    const upd = () => { go.disabled = !cleanName(ni.value); };
+    ni.oninput = upd; upd();
+    ni.onkeydown = e => { if (e.key === "Enter" && !go.disabled) { e.preventDefault(); go.click(); } };
+    setTimeout(() => ni.focus({ preventScroll: true }), 120);
+    $("#masc").onclick = () => { const m = $("#masc"); m.classList.remove("hop"); void m.offsetWidth; m.classList.add("hop"); };
+    $("#bk").onclick = () => { onbForce = 0; S.ui = null; render(); };
+    go.onclick = () => {
+      S.name = cleanName(ni.value); onbForce = 0; lastBoard = ""; buzz(12); burstAt(go, 20); persist();
+      if (S.onb) { view = "today"; backTo = "today"; }
+      setTimeout(render, RM ? 0 : 260);
+    };
+    return;
+  }
+  if (step === 1) {
+    app.innerHTML = `<section class="onb">${dots(1)}<h1 class="cycle" id="cyc"></h1>
+      <div class="ltiles">${UIL.map((l, k) => `<button type="button" class="ltile" data-l="${l}" style="--c:${LCOL[l]};animation-delay:${80 + k * 70}ms" lang="${l}"><span><b>${NATIVE[l]}</b><small>${HELLO[l]}</small></span><span class="code">${CODE[l]}</span></button>`).join("")}</div></section>`;
+    let k = 0;
+    const cyc = () => { $("#cyc").innerHTML = `<span lang="${UIL[k]}">${esc(T[UIL[k]].ob_pick)}</span>`; k = (k + 1) % UIL.length; };
+    cyc(); if (!RM) activeTimer = setInterval(cyc, 1700);
+    $$(".ltile").forEach(b => b.onclick = () => {
+      const l = b.dataset.l;
+      S.ui = l; if (!S.lset) S.langs = l === "en" ? [] : [l];
+      b.classList.add("chosen"); burstAt(b, 22); buzz(15);
+      clearInterval(activeTimer);
+      setTimeout(() => { onbForce = 0; persist(); render(); }, RM ? 0 : 420);
+    });
+    return;
+  }
+  const head = t("ob_build");
+  app.innerHTML = `<section class="onb">${dots(3)}<h2>${esc(S.name)}, ${esc(head[0].toLocaleLowerCase(S.ui) + head.slice(1))}</h2><p class="sub">${t("ob_build_sub")}</p><div id="cb"></div>
+    <div class="onb-acts"><button type="button" class="btn ghost" id="bk">${t("back")}</button><button type="button" class="btn c" style="--c:var(--mint)" id="go">${t("ob_go")} →</button></div></section>`;
+  comboBuilder($("#cb"));
+  $("#bk").onclick = () => { onbForce = 2; render(); };
+  $("#go").onclick = () => { S.onb = true; persist(); view = "today"; backTo = "today"; render(); setTimeout(() => confetti(innerWidth / 2, 160, 60), 120); };
+}
+
+function vToday() {
+  const n = selDay || curDay(), items = itemsOfDay(n), due = dueIds(), d = S.days[n] || {}, isTest = !!TEST_DAYS[n];
+  let html = topbar() + greetBlock();
+  if (!selDay && dayDone(14)) {
+    const seen = Object.keys(S.cards).length, solid = Object.values(S.cards).filter(c => c.b >= 4).length;
+    app.innerHTML = html + `<div class="note" style="margin-top:12px"><div class="blob" style="--c:var(--sun)">${svg("trophy", 64, 2)}</div><h2>${t("fin_t")}</h2><p>${t("fin_s", { a: seen, b: ALL.length, c: solid, d: `${S.days[14].test}/${S.days[14].testOf}` })}</p><p class="sub">${t("fin_next")}</p><div class="acts">${due.length ? `<button type="button" class="btn c" style="--c:var(--sky)" id="rv">${t("review_n", { n: due.length })}</button>` : ""}<button type="button" class="btn ghost" id="gm">${t("a_game")}</button></div></div>`;
+    bindTop();
+    if (due.length) $("#rv").onclick = () => { backTo = "today"; runCards(due, "review", 14); };
+    $("#gm").onclick = () => { view = "games"; backTo = "games"; render(); };
+    return;
+  }
+  if (!selDay && n > 1 && dayDone(n - 1) && S.days[n - 1].at === todayIdx() && !started(n)) {
+    app.innerHTML = html + `<div class="note" style="margin-top:12px"><div class="blob" style="--c:${dayColor(n - 1)}"><span class="big">${svg("check", 64, 3)}</span></div><h2>${t("rest_t", { n: n - 1 })}</h2><p class="sub">${t("rest_s", { m: n })}</p>
+      <div class="acts">${due.length ? `<button type="button" class="btn c" style="--c:var(--sky)" id="rv">${t("review_n", { n: due.length })}</button>` : ""}<button type="button" class="btn ghost" id="gm">${t("a_game")}</button><button type="button" class="btn c" style="--c:${dayColor(n)}" id="go">${t("start_now", { m: n })} →</button></div></div>`;
+    bindTop();
+    $("#go").onclick = () => { selDay = n; render(); };
+    if (due.length) $("#rv").onclick = () => { backTo = "today"; runCards(due, "review", n - 1); };
+    $("#gm").onclick = () => { view = "games"; backTo = "games"; render(); };
+    return;
+  }
+  const g = gameOfDay(n), testN = n === 7 ? 30 : n === 14 ? 40 : 10;
+  const words = items.filter(x => x.pos !== "phrase").length, phr = items.length - words;
+  const steps = [
+    { c: "var(--sky)", i: "review", t: t("st_review"), s: due.length ? t("st_review_s", { n: due.length }) : t("st_review_0"), done: !due.length, go: due.length ? () => runCards(due, "review", n) : null },
+    isTest
+      ? { c: "var(--pink)", i: "spark", t: t("st_weak"), s: t("st_weak_s"), done: !!d.game, go: () => runMCQ(t("st_weak"), "var(--pink)", buildQs(weakOf(items), 12, ["meaning", "reverse", "cloze"]), {}) }
+      : { c: "var(--coral)", i: "spark", t: t("st_new"), s: t("st_new_s", { n: items.length }), done: !!d.learn, go: () => runCards(items.map(x => x.id), "learn", n) },
+    ...(isTest ? [] : [{ c: g.c, i: g.icon, t: t("st_game") + ": " + t("g_" + g.id), s: t("g_" + g.id + "_w"), done: !!d.game, go: () => g.run(items) }]),
+    { c: "var(--sun)", i: "test", t: isTest ? t("st_test_n", { n: testN }) : t("st_test"), s: d.test != null ? t("st_score", { s: d.test, t: d.testOf }) : t("st_test_s", { n: testN }), done: d.test != null, mk: d.test != null ? `${d.test}/${d.testOf}` : "",
+      go: () => runTest(items, testN, n, (isTest ? t("st_test_n", { n: testN }) : t("st_test")) + " · " + t("day_n", { n })) },
+  ];
+  const doneN = steps.filter(s => s.done).length, st = streak();
+  const lead = n === 7 ? t("lead7") : n === 14 ? t("lead14") : t("lead", { w: words, p: phr });
+  html += `<section class="hero" style="--c:${dayColor(n)}"><div class="hero-row"><div><span class="streak">🔥 ${st ? t("streak", { n: st }) : t("streak0")}</span>
+      <div class="daynum"><small>${t("day_w")}${isTest ? " · " + (n === 7 ? t("day7") : t("day14")) : ""}</small>${n}<em> / 14</em></div></div>${ring(doneN, steps.length)}</div><p>${lead}</p>
+      <div class="goal"><span>${t("goal")}</span><span class="gb"><i style="width:${Math.min(100, Math.round(xpToday() / GOAL * 100))}%"></i></span><b>${Math.min(xpToday(), 999)}/${GOAL} XP</b></div></section>
+    <div class="steps">${steps.map((s, k) => `<button type="button" class="step ${s.done ? "done" : ""} ${s.go ? "" : "off"}" data-step="${k}" style="--c:${s.c};animation-delay:${120 + k * 70}ms" ${s.go ? "" : "disabled"}><span class="ic">${svg(s.i, 26)}</span><span><b>${esc(s.t)}</b><small>${esc(s.s)}</small></span>${s.mk ? `<span class="mk">${s.mk}</span>` : `<span class="go">${svg(s.done ? "check" : "arrow", 18, 2.8)}</span>`}</button>`).join("")}</div>`;
+  if (!isTest) html += `<p class="sh">${t("words_today")}</p><div class="chips-x">${items.map((it, k) => `<button type="button" class="wchip" data-say="${esc(it.w)}" style="--c:${col(k)};animation-delay:${200 + k * 30}ms"><b lang="en">${esc(it.w)}</b><span>${esc(primary(it))}</span></button>`).join("")}</div>`;
+  if (selDay && selDay !== curDay()) html += `<button type="button" class="linkb" id="cur">← ${t("back_cur")}</button>`;
+  app.innerHTML = html;
+  bindTop();
+  $$("[data-step]", app).forEach(b => b.onclick = () => { const s = steps[+b.dataset.step]; if (s.go) { backTo = "today"; buzz(8); s.go(); } });
+  const c = $("#cur"); if (c) c.onclick = () => { selDay = null; render(); };
+}
+
+function vPath() {
+  const cur = selDay || curDay(), X = [0, 30, 56, 72, 56, 30, 0];
+  let nodes = "";
+  for (let n = 1; n <= 14; n++) {
+    const items = itemsOfDay(n), d = S.days[n] || {}, done = dayDone(n), av = available(n), isT = !!TEST_DAYS[n];
+    const cls = [isT ? "test" : "", done ? "done" : "", n === cur ? "cur" : "", !av ? "lock" : ""].join(" ");
+    const label = isT ? (n === 7 ? t("day7") : t("day14")) : items.slice(0, 2).map(x => x.w).join(", ") + "…";
+    const sub = done ? `✓ ${d.test}/${d.testOf}` : n === cur ? `<span class="tag">${t("today_tag")}</span>` : !av ? t("opens", { d: fmtDate(addDays(S.start, n - 1)) }) : started(n) ? t("in_prog") : "";
+    const inner = !av ? svg("lock", 22, 2.4) : isT ? svg("trophy", 26, 2.2) : (done ? svg("check", 26, 3) : n);
+    nodes += `<button type="button" class="node ${cls}" data-d="${n}" style="--x:${X[(n - 1) % 7]}px;--c:${dayColor(n)};animation-delay:${n * 35}ms" ${av ? "" : "disabled"}><span class="dot">${inner}</span><span class="nlab"><b><span lang="${isT ? S.ui : "en"}">${esc(label)}</span></b><small>${t("day_n", { n })}${sub ? " · " : ""}${sub}</small></span></button>`;
+  }
+  const cards = Object.values(S.cards), box = [0, 0, 0, 0, 0, 0]; cards.forEach(c => box[c.b]++);
+  const mx = Math.max(1, ...box);
+  app.innerHTML = topbar() + `<h2>${t("path_t")}</h2><p class="sub">${t("path_s", { d: fmtDate(S.start) })}</p><div class="path">${nodes}</div>
+    <p class="sh">${t("boxes_t")}</p><p class="sub">${t("boxes_s")} ${t("seen", { a: cards.length, b: ALL.length })}</p>
+    <div class="bars">${box.map((v, b) => `<div class="bar" style="--c:${col(b)}"><b>${v}</b><i style="height:${Math.round(v / mx * 100)}%;animation-delay:${b * 60}ms"></i><small>${b}</small></div>`).join("")}</div>`;
+  bindTop();
+  $$("[data-d]", app).forEach(b => b.onclick = () => { const n = +b.dataset.d; selDay = n === curDay() ? null : n; view = "today"; backTo = "today"; buzz(8); render(); window.scrollTo(0, 0); });
+}
+
+function poolItems() {
+  const n = curDay();
+  if (poolKind === "learned") { const l = ALL.filter(x => S.cards[x.id]); return l.length >= 4 ? l : itemsOfDay(n); }
+  if (poolKind === "weak") { const w = ALL.filter(isWeak); return w.length >= 4 ? w : itemsOfDay(n); }
+  if (poolKind === "all") return ALL;
+  return itemsOfDay(n);
+}
+function vGames() {
+  const n = curDay(), learned = ALL.filter(x => S.cards[x.id]).length, weak = ALL.filter(isWeak).length;
+  const kinds = [["day", t("pool_day", { n })], ["learned", t("pool_l", { n: learned })], ["weak", t("pool_w", { n: weak })], ["all", t("pool_a", { n: ALL.length })]];
+  app.innerHTML = topbar() + `<h2>${t("games_t")}</h2><p class="sub">${t("games_s")}</p>
+    <div class="seg">${kinds.map(([k, l]) => `<button type="button" class="pchip" data-k="${k}" aria-pressed="${poolKind === k}">${esc(l)}</button>`).join("")}</div>
+    <div class="ggrid">${GAMES.map((g, k) => `<button type="button" class="gt" data-g="${g.id}" style="--c:${g.c};animation-delay:${k * 50}ms"><span class="gi">${svg(g.icon, 26)}</span><b>${t("g_" + g.id)}</b><small>${t("g_" + g.id + "_w")}</small></button>`).join("")}</div>`;
+  bindTop();
+  $$("[data-k]", app).forEach(b => b.onclick = () => { poolKind = b.dataset.k; buzz(6); vGames(); });
+  $$("[data-g]", app).forEach(b => b.onclick = () => { backTo = "games"; buzz(8); gameById(b.dataset.g).run(poolItems()); });
+}
+
+function vWords() {
+  const fs = [["", t("f_all")], ["new", t("f_new")], ["learn", t("f_learn")], ["ok", t("f_known")], ["solid", t("f_solid")]];
+  let dopts = `<option value="">${t("all_days")}</option>`;
+  for (let n = 1; n <= 14; n++) if (!TEST_DAYS[n]) dopts += `<option value="${n}" ${String(n) === wd ? "selected" : ""}>${t("day_n", { n })}</option>`;
+  app.innerHTML = topbar() + `<h2>${t("words_t")}</h2><p class="sub">${t("words_s")}</p>
+    <input class="search" id="q" type="search" placeholder="${esc(t("search"))}" value="${esc(wq)}" aria-label="${esc(t("search"))}">
+    <div class="seg"><select class="daysel" id="fd" aria-label="${esc(t("all_days"))}">${dopts}</select>${fs.map(([k, l]) => `<button type="button" class="pchip" data-f="${k}" aria-pressed="${ws === k}">${l}</button>`).join("")}</div>
+    <p class="count" id="cnt"></p><div id="wl"></div>`;
+  bindTop();
+  const list = () => {
+    const q = norm(wq);
+    const rows = ALL.filter(it => {
+      if (wd && String(it.day) !== wd) return false;
+      const c = S.cards[it.id];
+      if (ws === "new" && c) return false;
+      if (ws === "learn" && !(c && c.b <= 1)) return false;
+      if (ws === "ok" && !(c && c.b >= 2 && c.b <= 3)) return false;
+      if (ws === "solid" && !(c && c.b >= 4)) return false;
+      return !q || [it.w, ...it.syns, ...Object.values(it.m), it.def].some(s => norm(s).includes(q));
+    });
+    $("#cnt").textContent = t("n_words", { n: rows.length });
+    $("#wl").innerHTML = rows.map(it => `<div class="wrow" style="--c:${dayColor(it.day)}"><button type="button" class="wbtn" data-id="${it.id}" aria-expanded="${openRows.has(it.id)}"><span><b lang="en">${esc(it.w)}</b> <span class="ipa">/${esc(it.ipa)}/</span></span>${boxDots(it.id)}<span class="m">${S.langs.length ? S.langs.map(l => esc(it.m[l])).join(" · ") : esc(enDef(it))}</span></button>${sayBtn(it.w)}${openRows.has(it.id) ? `<div class="wdet">${it.def ? `<p class="defl">${lb("en")}<span lang="en">${esc(it.def)}</span></p>` : ""}<div class="syns"><b>≈</b>${it.syns.map(s => `<span class="syn" lang="en">${esc(s)}</span>`).join("")}</div><p class="exl" lang="en">${markEx(it)} ${sayBtn(it.ex, t("sentence"))}</p>${it.forms && it.forms.length > 1 ? `<p class="fam">${t("family")}: <span lang="en">${it.forms.map(esc).join(" · ")}</span></p>` : ""}<p class="fam">${t("pos_" + it.pos)} · ${t("day_n", { n: it.day })}</p></div>` : ""}</div>`).join("");
+    $$("#wl .wbtn").forEach(b => b.onclick = () => { const id = b.dataset.id; openRows.has(id) ? openRows.delete(id) : openRows.add(id); list(); });
+  };
+  $("#q").oninput = e => { wq = e.target.value; list(); };
+  $("#fd").onchange = e => { wd = e.target.value; list(); };
+  $$("[data-f]", app).forEach(b => b.onclick = () => { ws = b.dataset.f; $$("[data-f]", app).forEach(x => x.setAttribute("aria-pressed", x === b)); list(); });
+  list();
+}
+
+function vSet() {
+  app.innerHTML = topbar() + `<h2>${t("set_t")}</h2>
+    <p class="sh">${t("set_ui")}</p><div class="seg wrapit">${UIL.map(l => `<button type="button" class="pchip" data-ui="${l}" aria-pressed="${S.ui === l}" lang="${l}">${CODE[l]} · ${NATIVE[l]}</button>`).join("")}</div>
+    <p class="sh">${t("set_combo")}</p><p class="sub">${t("ob_build_sub")}</p><div id="cb"></div>
+    <p class="sh">${t("prog_t")}</p><p class="sub">${t("started", { d: fmtDate(S.start), n: calDay() })}</p><div id="rz"><button type="button" class="btn ghost wide" id="reset">${t("reset")}</button></div>
+    <p class="sh">${t("how_t")}</p><ol class="how">${[1, 2, 3, 4, 5].map(k => `<li>${esc(t("how" + k))}</li>`).join("")}</ol>
+    <p class="sync" id="sync">${t("sync_" + syncKey)}</p>`;
+  bindTop();
+  comboBuilder($("#cb"), () => { const lp = $("#lp"); if (lp) lp.textContent = `${CODE[S.ui]} · ${comboTxt()}`; });
+  $$("[data-ui]", app).forEach(b => b.onclick = () => { S.ui = b.dataset.ui; persist(); buzz(10); render(); burstAt($(`[data-ui="${S.ui}"]`), 14); });
+  $("#reset").onclick = () => {
+    $("#rz").innerHTML = `<p class="sub">${t("reset_q")}</p><div class="onb-acts" style="margin-top:0"><button type="button" class="btn ghost" id="no">${t("cancel")}</button><button type="button" class="btn c" style="--c:var(--bad)" id="yes">${t("reset_y")}</button></div>`;
+    $("#no").onclick = vSet;
+    $("#yes").onclick = () => { const keep = { ui: S.ui, name: S.name, onb: true, lset: S.lset, langs: S.langs }; S = Object.assign(fresh(), keep); selDay = null; persist(); view = "today"; backTo = "today"; render(); };
+  };
+}
+
+/* ---------- profile + leaderboard ---------- */
+function vMe() {
+  const lv = lvlOf(S.xp), st = streak(), nb = Object.keys(S.badges).length;
+  const stats = [[t("s_xp"), S.xp, "var(--sun)"], [t("s_streak"), st, "var(--coral)"], [t("s_seen"), `${seenN()}/${ALL.length}`, "var(--sky)"], [t("s_solid"), solidN(), "var(--mint)"]];
+  app.innerHTML = topbar() + `<section class="pcard" style="--c:${hueOf(myName())}"><div class="row"><span class="bigav">${esc(initial(myName()))}</span><div style="min-width:0"><div class="pname">${esc(myName())}</div><div class="plvl">${t("lvl", { n: lv.L })} · ${S.xp} XP</div></div></div>
+      <div class="xbar"><i style="width:${Math.round(lv.cur / lv.need * 100)}%"></i></div><small>${t("next_lvl", { a: lv.cur, b: lv.need })}</small>
+      <div id="nmw"><button type="button" class="pedit" id="ed">✎ ${t("edit_name")}</button></div></section>
+    <div class="stats">${stats.map(([l, v, c], k) => `<div class="stat" style="--c:${c};animation-delay:${k * 60}ms"><b>${v}</b><small>${l}</small></div>`).join("")}</div>
+    <p class="sh">${t("board_t")}</p><p class="sub" style="margin-bottom:10px">${t("board_s")}</p><div id="board"></div>
+    <p class="sh">${t("badges_t")} · ${nb}/${BADGES.length}</p>
+    <div class="badges">${BADGES.map((b, k) => { const on = !!S.badges[b.id]; return `<div class="bdg ${on ? "" : "off"}" style="--c:${b.c};animation-delay:${k * 40}ms"><span class="bi2">${svg(on ? b.i : "lock", 22, 2.3)}</span><b>${t("bd_" + b.id)}</b><small>${t("bd_" + b.id + "_d")}</small></div>`; }).join("")}</div>
+    <button type="button" class="btn ghost wide" id="gs" style="margin-top:22px">${svg("gear", 20)} ${t("nav_set")}</button>`;
+  bindTop();
+  $("#gs").onclick = () => { view = "set"; backTo = "set"; render(); window.scrollTo(0, 0); };
+  $("#ed").onclick = () => {
+    $("#nmw").innerHTML = `<div class="namebox"><input id="nin2" maxlength="24" value="${esc(S.name)}" aria-label="${esc(t("name_ph"))}" autocomplete="nickname"><button type="button" class="btn" id="sv">${t("save")}</button></div>`;
+    const ni = $("#nin2"); ni.focus(); ni.select();
+    const save = () => { const v = cleanName(ni.value); if (v) { S.name = v; lastBoard = ""; persist(); buzz(10); } vMe(); };
+    $("#sv").onclick = save;
+    ni.onkeydown = e => { if (e.key === "Enter") { e.preventDefault(); save(); } };
+  };
+  drawBoard();
+}
+function drawBoard() {
+  const el = $("#board"); if (!el) return;
+  const me = BE && BE.me;
+  const rows = (BOARD || []).filter(r => r && typeof r.name === "string")
+    .map(r => ({ id: r.id, name: cleanName(r.name) || t("anon"), xp: Math.max(0, +r.xp || 0), day: +r.day || 1, seen: +r.seen || 0, streak: +r.streak || 0 }));
+  const mine = { id: me || "__me", name: myName(), xp: S.xp, day: curDay(), seen: seenN(), streak: streak() };
+  const at = rows.findIndex(r => r.id === mine.id);
+  if (at >= 0) rows[at] = mine; else if (S.name && me && !boardRO) rows.push(mine);
+  rows.sort((a, b) => b.xp - a.xp);
+  let html = "";
+  if (!BE && boardState !== "ok") html += `<p class="onote">${t("board_off")}</p>`;
+  if (boardRO) html += `<p class="onote">${t("board_ro")}</p>`;
+  if (!rows.length && BE) html += `<p class="onote">${t("board_empty")}</p>`;
+  const you = r => r.id === mine.id ? ` · ${t("board_you")}` : "";
+  if (rows.length >= 3) {
+    const P = [[1, 64, "var(--sky)"], [0, 92, "var(--sun)"], [2, 46, "var(--coral)"]];
+    html += `<div class="podium">${P.map(([i, h, c], k) => { const r = rows[i]; return `<div class="pod" style="animation-delay:${k * 90}ms"><span class="av" style="--c:${hueOf(r.name)}">${esc(initial(r.name))}</span><b>${esc(r.name)}${you(r)}</b><small>${r.xp} XP</small><div class="blk" style="--c:${c};height:${h}px">${i + 1}</div></div>`; }).join("")}</div>`;
+  }
+  const from = rows.length >= 3 ? 3 : 0;
+  html += rows.slice(from, 50).map((r, j) => `<div class="lrow ${r.id === mine.id ? "me" : ""}" style="animation-delay:${Math.min(j, 10) * 40}ms"><span class="n">${from + j + 1}</span><span class="av" style="--c:${hueOf(r.name)}">${esc(initial(r.name))}</span><span style="min-width:0"><b>${esc(r.name)}${you(r)}</b><small>${t("b_row", { d: r.day, w: r.seen })}${r.streak ? ` · 🔥 ${r.streak}` : ""}</small></span><span class="x">${r.xp} XP</span></div>`).join("");
+  const myRank = rows.findIndex(r => r.id === mine.id);
+  if (myRank >= 50) html += `<div class="lrow me"><span class="n">${myRank + 1}</span><span class="av" style="--c:${hueOf(mine.name)}">${esc(initial(mine.name))}</span><span style="min-width:0"><b>${esc(mine.name)}${you(mine)}</b><small>${t("b_row", { d: mine.day, w: mine.seen })}</small></span><span class="x">${mine.xp} XP</span></div>`;
+  if (el._h === html) return;
+  el._h = html; el.innerHTML = html;
+}
+
+/* ---------- keys + boot ---------- */
+document.addEventListener("keydown", e => {
+  if (!keyHandler || e.ctrlKey || e.metaKey || e.altKey) return;
+  const tg = e.target;
+  if (tg && tg.matches && tg.matches("input,textarea,select")) return;
+  if (tg && tg.tagName === "BUTTON" && (e.key === "Enter" || e.key === " ")) return;
+  keyHandler(e);
+});
+$$(".bnav .bi").forEach(b => { b.dataset.i = b.dataset.i; });
+function boot() { S = normalize(loadLocal()); render(); connect(); }
+fetch("words.json").then(r => { if (!r.ok) throw new Error(r.status); return r.json(); })
+  .then(d => { ALL = [...d.words, ...d.phrases]; ALL.forEach(x => BYID[x.id] = x); boot(); })
+  .catch(() => { app.innerHTML = `<p class="err" style="padding-top:40px">${esc(T.en.load_err)} · ${esc(T.az.load_err)}</p>`; });
+})();
+</script>
+
+</body>
+</html>
