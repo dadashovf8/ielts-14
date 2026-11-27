@@ -29,7 +29,12 @@
 }
 *{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
 html,body{margin:0}
-body{background:var(--bg);color:var(--ink);font:16px/1.5 Rubik,system-ui,sans-serif;min-height:100vh;overflow-x:hidden;
+/* html clips sideways overflow (a card flying off-screen must not widen the page on iOS);
+   body uses clip so it never becomes its own scroll container (keeps sticky headers working).
+   overscroll-behavior-x stops Chrome's swipe-to-go-back/forward on horizontal overscroll. */
+html{overflow-x:hidden;overscroll-behavior-x:none}
+html.sess{overscroll-behavior:none}
+body{background:var(--bg);color:var(--ink);font:16px/1.5 Rubik,system-ui,sans-serif;min-height:100vh;overflow-x:clip;overscroll-behavior-x:none;
   padding:0 max(16px,env(safe-area-inset-right)) calc(100px + env(safe-area-inset-bottom)) max(16px,env(safe-area-inset-left))}
 body.bare{padding-bottom:calc(28px + env(safe-area-inset-bottom))}
 .wrap{max-width:540px;margin:0 auto}
@@ -206,7 +211,9 @@ body.bare .bnav{display:none}
 .sync{font:600 12.5px Rubik;color:var(--ink-2);margin-top:18px}
 
 /* session */
-.stop{display:flex;align-items:center;gap:12px;padding:14px 0 10px;position:sticky;top:0;background:var(--bg);z-index:5}
+.stop{display:flex;align-items:center;gap:12px;padding:14px max(16px,env(safe-area-inset-right)) 10px max(16px,env(safe-area-inset-left));
+  margin:0 calc(-1 * max(16px,env(safe-area-inset-right))) 0 calc(-1 * max(16px,env(safe-area-inset-left)));position:sticky;top:0;background:var(--bg);z-index:5}
+@media (min-width:572px){.stop{margin:0;padding-left:0;padding-right:0}}
 .xbtn{width:42px;height:42px;border-radius:13px;border:2.5px solid var(--line);background:var(--surface);display:grid;place-items:center;box-shadow:0 2px 0 var(--shadow);flex:none}
 .pbar{flex:1;height:18px;border-radius:999px;background:var(--soft);border:2.5px solid var(--line);overflow:hidden}
 .pbar i{display:block;height:100%;background:var(--c);border-radius:999px;transition:width .4s cubic-bezier(.3,1.1,.4,1)}
@@ -214,7 +221,7 @@ body.bare .bnav{display:none}
 .stitle{font:700 12.5px Unbounded;color:var(--ink-2);text-transform:uppercase;letter-spacing:.06em;margin:4px 0 14px}
 
 /* flash card */
-.deck{position:relative;height:clamp(340px,calc(100vh - 300px),540px);height:clamp(340px,calc(100svh - 300px),540px)}
+.deck{position:relative;touch-action:pan-y;height:clamp(340px,calc(100vh - 300px),540px);height:clamp(340px,calc(100svh - 300px),540px)}
 .swipe{position:absolute;inset:0;touch-action:pan-y;transition:transform .25s,opacity .25s}
 .swipe.dragging{transition:none}
 .flip{position:absolute;inset:0;perspective:1400px}
@@ -346,9 +353,11 @@ body.bare .bnav{display:none}
 .goal{position:relative;z-index:1;margin-top:12px;display:flex;align-items:center;gap:10px;font:600 12.5px Rubik}
 .goal .gb{flex:1;height:12px;border-radius:99px;background:rgba(255,255,255,.55);border:2px solid var(--line);overflow:hidden}
 .goal .gb i{display:block;height:100%;background:var(--on);border-radius:99px;transform-origin:left;animation:grow-x .9s .2s cubic-bezier(.3,1.2,.5,1) both}
-.toast{position:fixed;left:50%;top:calc(12px + env(safe-area-inset-top));z-index:80;transform:translate(-50%,-150%);transition:transform .4s cubic-bezier(.3,1.3,.5,1);background:var(--c);color:var(--on);border:2.5px solid var(--line);border-radius:18px;box-shadow:0 4px 0 var(--shadow);
+.toast{position:fixed;left:50%;top:calc(12px + env(safe-area-inset-top));z-index:80;
+  /* fully off-screen (shadow and safe area included) and invisible while idle */
+  transform:translate(-50%,calc(-100% - 30px - env(safe-area-inset-top)));visibility:hidden;transition:transform .4s cubic-bezier(.3,1.3,.5,1),visibility 0s .4s;background:var(--c);color:var(--on);border:2.5px solid var(--line);border-radius:18px;box-shadow:0 4px 0 var(--shadow);
   padding:10px 16px;font:700 14.5px Rubik;display:flex;gap:10px;align-items:center;max-width:calc(100vw - 32px);width:max-content}
-.toast.show{transform:translate(-50%,0)}
+.toast.show{transform:translate(-50%,0);visibility:visible;transition:transform .4s cubic-bezier(.3,1.3,.5,1)}
 
 /* profile + leaderboard */
 .pcard{background:var(--c);color:var(--on);border:2.5px solid var(--line);border-radius:26px;box-shadow:0 6px 0 var(--shadow);padding:18px;margin:12px 0 0;position:relative;overflow:hidden;animation:rise .4s both}
@@ -1096,7 +1105,7 @@ async function flush() {
 function setSync(k) { syncKey = k; const el = $("#sync"); if (el) el.textContent = t(k === "ok" && BE && BE.kind === "supa" ? "sync_web" : "sync_" + k); }
 function mergeRemote(data) {
   const remote = normalize(data);
-  if ((remote.updated || 0) > (S.updated || 0)) { S = remote; saveLocal(); if (view !== "session") render(); }
+  if ((remote.updated || 0) > (S.updated || 0)) { S = remote; saveLocal(); if (view !== "session") { const y = scrollY; render(); scrollTo(0, y); } }
   else if ((S.updated || 0) > (remote.updated || 0)) flush();
 }
 const withTimeout = (p, ms) => Promise.race([p, new Promise(r => setTimeout(() => r("__timeout"), ms))]);
@@ -1313,9 +1322,11 @@ const formable = it => it.forms && it.forms.length >= 2 && it.forms.includes(it.
 function shell(title, color, build) {
   view = "session"; keyHandler = null; clearInterval(activeTimer); closeFb();
   try { speechSynthesis.cancel(); } catch (e) {}
-  document.body.classList.add("bare"); navMark(); window.scrollTo(0, 0); sessXP = 0;
+  document.body.classList.add("bare"); document.documentElement.classList.add("sess"); navMark(); window.scrollTo(0, 0); sessXP = 0;
+  // One history entry per session: a back swipe/button then closes the session instead of leaving the site.
+  try { if (!(history.state && history.state.s)) history.pushState({ s: 1 }, ""); } catch (e) {}
   app.innerHTML = `<section style="--c:${color}"><div class="stop"><button type="button" class="xbtn" id="xb" aria-label="${t("close")}">${svg("x", 20, 2.6)}</button><div class="pbar"><i id="pb" style="width:0%"></i></div><span class="pcount" id="pc"></span><span class="xpc" id="xpc">+0 XP</span></div><p class="stitle">${esc(title)}</p><div id="stage"></div></section>`;
-  $("#xb").onclick = () => { clearInterval(activeTimer); closeFb(); view = backTo; render(); };
+  $("#xb").onclick = leaveSession;
   build($("#stage"), (i, n) => { $("#pb").style.width = (n ? Math.round(i / n * 100) : 0) + "%"; $("#pc").textContent = `${Math.min(i + 1, n)}/${n}`; });
 }
 function showFb(ok, html, last, onNext) {
@@ -1326,13 +1337,20 @@ function showFb(ok, html, last, onNext) {
   buzz(ok ? 12 : [30, 40, 30]);
 }
 function closeFb() { const fb = $("#fb"); if (fb) fb.classList.remove("show"); }
+function exitSession() { clearInterval(activeTimer); closeFb(); view = backTo; render(); window.scrollTo(0, 0); }
+// Leave through history when the session pushed an entry, so back/forward stay in sync.
+function leaveSession() {
+  if (history.state && history.state.s) { try { history.back(); return; } catch (e) {} }
+  exitSession();
+}
+addEventListener("popstate", () => { if (view === "session") exitSession(); });
 function endScreen(stage, o) {
   keyHandler = null; clearInterval(activeTimer); closeFb();
   const pb = $("#pb"); if (pb) pb.style.width = "100%";
   if (!o.banner && S.name && o.big !== "0") o.banner = t(o.pct == null || o.pct >= .7 ? "praise_hi" : "praise_lo", { name: S.name });
   stage.innerHTML = `<div class="end">${o.banner ? `<div class="banner">${esc(o.banner)}</div>` : ""}${sessXP ? `<div style="margin:2px 0 6px"><span class="xpc pop">+${sessXP} XP</span></div>` : ""}<div class="blob" style="--c:${o.color || "var(--mint)"}"><span class="big">${esc(o.big)}</span>${o.small ? `<small>${esc(o.small)}</small>` : ""}</div>${o.text ? `<p>${esc(o.text)}</p>` : ""}${o.extra || ""}<div class="acts">${o.again ? `<button type="button" class="btn ghost wide" id="ag">${t("p_again")}</button>` : ""}<button type="button" class="btn wide" id="hm">${backTo === "today" ? t("b_today") : t("b_games")}</button></div></div>`;
   if (o.again) $("#ag").onclick = o.again;
-  $("#hm").onclick = () => { view = backTo; render(); };
+  $("#hm").onclick = leaveSession;
   window.scrollTo(0, 0);
   if (o.celebrate) setTimeout(() => confetti(innerWidth / 2, 200, o.banner ? 80 : 40), 200);
 }
@@ -1706,7 +1724,7 @@ function render() {
   keyHandler = null; clearInterval(activeTimer); closeFb();
   if (!S.ui || !S.name || !S.onb) view = "onb";
   else if (view === "session" || view === "onb") view = backTo || "today";
-  document.body.classList.toggle("bare", view === "onb");
+  document.body.classList.toggle("bare", view === "onb"); document.documentElement.classList.remove("sess");
   applyUI(); navMark();
   ({ onb: vOnb, today: vToday, path: vPath, games: vGames, words: vWords, set: vSet, me: vMe })[view]();
 }
